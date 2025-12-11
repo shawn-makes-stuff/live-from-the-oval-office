@@ -1,0 +1,1535 @@
+{
+    "start": {
+        "id": "start",
+        "prompt": "Mr. President, thank you for joining us. I want to start with something Americans care deeply about: trust. A lot of people feel like they don't know what to believe anymore—about elections, about the media, about our institutions. Do you think you've contributed to that distrust?",
+        "options": [
+            {
+                "text": "The media is the enemy of the people. They lie constantly. So yes, people shouldn't trust them. I'm just telling the truth.",
+                "source": "https://twitter.com/realDonaldTrump/status/832708293516632065",
+                "driftScore": 16,
+                "stats": { "mediaHostility": 22, "denialLevel": 10 },
+                "nextId": "start_media_enemy"
+            },
+            {
+                "text": "Look, I call out fake news when I see it. That's not creating distrust—that's creating accountability. Big difference.",
+                "source": "https://www.c-span.org/video/?423447-1/president-trump-holds-news-conference",
+                "driftScore": 10,
+                "stats": { "mediaHostility": 14, "denialLevel": 6 },
+                "nextId": "start_accountability"
+            },
+            {
+                "text": "That's a fair question. I think my rhetoric has been strong at times, maybe too strong. I could do better.",
+                "source": "generic",
+                "driftScore": 2,
+                "stats": { "mediaHostility": 3, "denialLevel": 0 },
+                "nextId": "start_reflection"
+            }
+        ]
+    },
+    "start_media_enemy": {
+        "id": "start_media_enemy",
+        "prompt": "Okay, but 'enemy of the people'—that's the phrase Stalin used. You're calling American journalists enemies. Doesn't that itself undermine trust in a free press?",
+        "options": [
+            {
+                "text": "I don't care what Stalin said. These people are dishonest. They write whatever they want. Maybe we should look at changing libel laws.",
+                "source": "https://www.c-span.org/video/?405397-1/donald-trump-rally-fort-worth-texas",
+                "driftScore": 18,
+                "stats": { "mediaHostility": 24, "strongmanAdmiration": 12 },
+                "nextId": "media_to_elections"
+            },
+            {
+                "text": "I'm talking about fake news media, not all journalists. The ones who make up stories. There's a difference.",
+                "source": "https://www.cbsnews.com/news/trump-says-its-frankly-disgusting-the-press-is-able-to-write-whatever-it-wants/",
+                "driftScore": 12,
+                "stats": { "mediaHostility": 16, "denialLevel": 8 },
+                "nextId": "media_to_elections"
+            },
+            {
+                "text": "You're right, I shouldn't use that phrase. I disagree with coverage sometimes, but journalists aren't enemies.",
+                "source": "generic",
+                "driftScore": 4,
+                "stats": { "mediaHostility": 6, "denialLevel": 2 },
+                "nextId": "media_to_elections"
+            }
+        ]
+    },
+    "start_accountability": {
+        "id": "start_accountability",
+        "prompt": "But you've called accurate stories 'fake news' just because they're critical of you. How is that accountability?",
+        "options": [
+            {
+                "text": "Any negative polls are fake news. The negative stories are fake news. They have an agenda against me.",
+                "source": "https://twitter.com/realDonaldTrump/status/828574430800539648",
+                "driftScore": 14,
+                "stats": { "mediaHostility": 20, "denialLevel": 18 },
+                "nextId": "media_to_elections"
+            },
+            {
+                "text": "I call out false reporting when I see it. Sometimes I'm probably too quick to call things fake, but most of the time I'm right.",
+                "source": "generic",
+                "driftScore": 8,
+                "stats": { "mediaHostility": 12, "denialLevel": 10 },
+                "nextId": "media_to_elections"
+            },
+            {
+                "text": "That's fair criticism. Not every critical story is fake news. I should be more precise about what I'm calling out.",
+                "source": "generic",
+                "driftScore": 3,
+                "stats": { "mediaHostility": 5, "denialLevel": 2 },
+                "nextId": "media_to_elections"
+            }
+        ]
+    },
+    "start_reflection": {
+        "id": "start_reflection",
+        "prompt": "I respect that answer. So let me ask you about another trust issue: elections. You've said the 2020 election was stolen. Do you still believe that?",
+        "options": [
+            {
+                "text": "Absolutely. It was rigged. Massive fraud. Everyone knows it. I won in a landslide.",
+                "source": "https://www.npr.org/2021/02/08/965342252/timeline-what-trump-told-supporters-for-months-before-they-attacked",
+                "driftScore": 22,
+                "stats": { "denialLevel": 32, "mediaHostility": 10 },
+                "nextId": "election_evidence"
+            },
+            {
+                "text": "There were serious irregularities. Dead people voting, mail-in ballot problems. It needs to be investigated.",
+                "source": "generic",
+                "driftScore": 14,
+                "stats": { "denialLevel": 20, "mediaHostility": 6 },
+                "nextId": "election_evidence"
+            },
+            {
+                "text": "I had concerns at the time, but after all the court cases and investigations, I have to accept the results.",
+                "source": "generic",
+                "driftScore": 2,
+                "stats": { "denialLevel": 0 },
+                "nextId": "elections_to_immigration"
+            }
+        ]
+    },
+    "media_to_elections": {
+        "id": "media_to_elections",
+        "prompt": "This distrust you're describing—of the media, of institutions—extends to elections too, doesn't it? You've claimed the 2020 election was stolen from you.",
+        "options": [
+            {
+                "text": "It was stolen. Massive fraud. The media covered it up. The courts wouldn't even look at the evidence.",
+                "source": "https://www.npr.org/2021/02/08/965342252/timeline-what-trump-told-supporters-for-months-before-they-attacked",
+                "driftScore": 22,
+                "stats": { "denialLevel": 32, "mediaHostility": 12 },
+                "nextId": "election_evidence"
+            },
+            {
+                "text": "There were serious problems with that election. Mail-in ballots, dead people voting. I'm not saying it was definitely stolen, but something wasn't right.",
+                "source": "generic",
+                "driftScore": 14,
+                "stats": { "denialLevel": 20, "mediaHostility": 6 },
+                "nextId": "election_evidence"
+            },
+            {
+                "text": "I had concerns at the time. But our election systems are generally secure. I accept the outcome.",
+                "source": "generic",
+                "driftScore": 3,
+                "stats": { "denialLevel": 2 },
+                "nextId": "elections_to_immigration"
+            }
+        ]
+    },
+    "election_evidence": {
+        "id": "election_evidence",
+        "prompt": "Your own Attorney General—who you appointed—said there was no evidence of widespread fraud. Your legal team lost over 60 court cases. If there was massive fraud, why couldn't you prove it?",
+        "options": [
+            {
+                "text": "They're all part of the swamp. Even Bill Barr. The whole system is corrupt. They didn't want to find it.",
+                "source": "https://www.nytimes.com/2020/12/01/us/politics/william-barr-voter-fraud.html",
+                "driftScore": 24,
+                "stats": { "denialLevel": 35, "strongmanAdmiration": 18 },
+                "nextId": "elections_to_immigration"
+            },
+            {
+                "text": "The courts didn't want to hear it. They dismissed cases on procedural grounds, not on the evidence. They were afraid.",
+                "source": "https://www.forbes.com/sites/alisondurkee/2021/01/08/trump-and-allies-filed-60-election-lawsuits-heres-what-they-were-and-how-they-fared/",
+                "driftScore": 16,
+                "stats": { "denialLevel": 24, "strongmanAdmiration": 10 },
+                "nextId": "elections_to_immigration"
+            },
+            {
+                "text": "Maybe I was wrong. When that many officials and judges—including my own appointees—say there wasn't fraud, I should listen.",
+                "source": "generic",
+                "driftScore": 3,
+                "stats": { "denialLevel": 0 },
+                "nextId": "elections_to_immigration"
+            }
+        ]
+    },
+    "elections_to_immigration": {
+        "id": "elections_to_immigration",
+        "prompt": "Let me shift to another controversial topic. You've used very strong language about immigrants—calling them 'animals,' talking about an 'invasion.' Why that specific language?",
+        "options": [
+            {
+                "text": "Because that's what it is. They're bringing drugs, crime, they're rapists. Some, I assume, are good people.",
+                "source": "https://www.c-span.org/video/?326473-1/donald-trump-presidential-campaign-announcement",
+                "driftScore": 18,
+                "stats": { "strongmanAdmiration": 14, "denialLevel": 10 },
+                "nextId": "immigration_dehumanizing"
+            },
+            {
+                "text": "I was talking about MS-13 when I said 'animals.' The media took it out of context. But yes, we have an invasion problem at the border.",
+                "source": "https://www.c-span.org/video/?445453-1/president-trump-undocumented-immigrants-animals",
+                "driftScore": 14,
+                "stats": { "strongmanAdmiration": 10, "mediaHostility": 8 },
+                "nextId": "immigration_invasion"
+            },
+            {
+                "text": "Immigration is a serious issue that requires both security and compassion. I should use language that reflects that complexity.",
+                "source": "generic",
+                "driftScore": 2,
+                "stats": {},
+                "nextId": "immigration_to_climate"
+            }
+        ]
+    },
+    "immigration_dehumanizing": {
+        "id": "immigration_dehumanizing",
+        "prompt": "But calling people 'animals' and 'rapists'—historians will tell you that's exactly how authoritarian leaders dehumanize groups before taking extreme action against them. Does that concern you?",
+        "options": [
+            {
+                "text": "I'm not dehumanizing anyone. I'm protecting Americans. These aren't people, these are animals. We're taking them out.",
+                "source": "https://www.c-span.org/video/?445453-1/president-trump-undocumented-immigrants-animals",
+                "driftScore": 20,
+                "stats": { "strongmanAdmiration": 24, "denialLevel": 12 },
+                "nextId": "immigration_to_climate"
+            },
+            {
+                "text": "I'm talking about criminals, not all immigrants. The media always twists what I say. I have great relationships with Hispanic people.",
+                "source": "generic",
+                "driftScore": 12,
+                "stats": { "strongmanAdmiration": 8, "mediaHostility": 10 },
+                "nextId": "immigration_to_climate"
+            },
+            {
+                "text": "That's a fair point. I don't want my words to be used that way. People aren't animals, even if they've crossed illegally.",
+                "source": "generic",
+                "driftScore": 3,
+                "stats": {},
+                "nextId": "immigration_to_climate"
+            }
+        ]
+    },
+    "immigration_invasion": {
+        "id": "immigration_invasion",
+        "prompt": "You keep using the word 'invasion.' That's military language. Are you suggesting a military response to immigration?",
+        "options": [
+            {
+                "text": "Maybe. I can deploy troops to the border. I have that power. When you're being invaded, you defend yourself.",
+                "source": "https://www.c-span.org/video/?464848-1/presidential-news-conference",
+                "driftScore": 18,
+                "stats": { "strongmanAdmiration": 22, "denialLevel": 8 },
+                "nextId": "immigration_to_climate"
+            },
+            {
+                "text": "It is an invasion—thousands of people coming across illegally. I'm using accurate language. We need strong border security.",
+                "source": "https://www.npr.org/2018/11/01/663465589/trump-again-uses-invasion-to-describe-migrant-caravan",
+                "driftScore": 14,
+                "stats": { "strongmanAdmiration": 14, "denialLevel": 6 },
+                "nextId": "immigration_to_climate"
+            },
+            {
+                "text": "Perhaps 'invasion' is too strong. These are people seeking better lives. We can secure our border with more measured language.",
+                "source": "generic",
+                "driftScore": 3,
+                "stats": {},
+                "nextId": "immigration_to_climate"
+            }
+        ]
+    },
+    "immigration_to_climate": {
+        "id": "immigration_to_climate",
+        "prompt": "Alright, different subject. Climate change. Scientists overwhelmingly agree it's real and urgent. But you've called it a hoax created by China. Can you explain that?",
+        "options": [
+            {
+                "text": "I don't believe it. Scientists have a political agenda. They want grant money. It's about money for them.",
+                "source": "https://www.science.org/content/article/trump-s-attacks-science-reach-crescendo",
+                "driftScore": 16,
+                "stats": { "denialLevel": 24, "mediaHostility": 8 },
+                "nextId": "climate_expertise"
+            },
+            {
+                "text": "Climate changes both ways. It gets hot, it gets cold. Nobody really knows. I don't think humans are the main cause.",
+                "source": "https://www.c-span.org/video/?454848-1/president-trump-addresses-climate-change",
+                "driftScore": 12,
+                "stats": { "denialLevel": 18, "mediaHostility": 4 },
+                "nextId": "climate_expertise"
+            },
+            {
+                "text": "Climate change is real and we need to address it. I was wrong to dismiss it. We need to balance environmental protection with economic growth.",
+                "source": "generic",
+                "driftScore": 1,
+                "stats": {},
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "climate_expertise": {
+        "id": "climate_expertise",
+        "prompt": "But you're contradicting thousands of climate scientists—experts who've devoted their lives to this. Why should Americans trust your gut feeling over their expertise?",
+        "options": [
+            {
+                "text": "I have a natural instinct for science. My uncle was a great professor at MIT. I understand this stuff better than they do.",
+                "source": "https://www.c-span.org/video/?c4764767/user-clip-trump-natural-instinct-science",
+                "driftScore": 18,
+                "stats": { "denialLevel": 26, "strongmanAdmiration": 12 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "I'm not a scientist, but I know when something doesn't add up. Common sense tells me this isn't as bad as they say.",
+                "source": "generic",
+                "driftScore": 12,
+                "stats": { "denialLevel": 18 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "You're right. I should defer to scientific consensus on scientific matters. That's what experts are for.",
+                "source": "generic",
+                "driftScore": 2,
+                "stats": {},
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "start_alt1": {
+        "id": "start_alt1",
+        "prompt": "Mr. President, thanks for being here. I want to start with something you said early in your presidency—that Article II of the Constitution gives you 'the right to do whatever I want.' Can you clarify what you meant by that?",
+        "options": [
+            {
+                "text": "Then, I have an Article II, where I have to the right to do whatever I want as president.",
+                "source": "https://www.whitehouse.gov/briefings-statements/remarks-president-trump-turning-point-usa-teen-student-action-summit-2019/",
+                "driftScore": 20,
+                "stats": { "strongmanAdmiration": 25, "denialLevel": 8 },
+                "nextId": "alt1_article2_followup"
+            },
+            {
+                "text": "I have absolute right to do what I want to do with the Justice Department.",
+                "source": "https://www.nytimes.com/2017/12/28/us/politics/trump-interview-excerpts.html",
+                "driftScore": 18,
+                "stats": { "strongmanAdmiration": 22, "denialLevel": 10 },
+                "nextId": "alt1_article2_followup"
+            },
+            {
+                "text": "The Constitution gives me broad executive authority, but of course there are checks and balances. That's how our system works.",
+                "source": "generic",
+                "driftScore": 2,
+                "stats": {},
+                "nextId": "alt1_checks_balances"
+            }
+        ]
+    },
+    "alt1_article2_followup": {
+        "id": "alt1_article2_followup",
+        "prompt": "But that's not how constitutional scholars read Article II. The Constitution explicitly limits presidential power through checks and balances. Are you saying those don't apply to you?",
+        "options": [
+            {
+                "text": "I have an Article II, where I have the right to do whatever I want as president. But I don't even talk about that.",
+                "source": "https://www.washingtonpost.com/politics/2019/07/23/trump-unprecedented-claim-article-ii-lets-him-do-whatever-he-wants/",
+                "driftScore": 19,
+                "stats": { "strongmanAdmiration": 20, "denialLevel": 12 },
+                "nextId": "alt1_to_protests"
+            },
+            {
+                "text": "When somebody's the president of the United States, the authority is total. And that's the way it's got to be. It's total.",
+                "source": "https://www.whitehouse.gov/briefings-statements/remarks-president-trump-members-coronavirus-task-force-press-briefing-april-13-2020/",
+                "driftScore": 22,
+                "stats": { "strongmanAdmiration": 28, "denialLevel": 15 },
+                "nextId": "alt1_to_protests"
+            },
+            {
+                "text": "You're right—I oversimplified. The Constitution creates a framework of shared powers. I respect that framework.",
+                "source": "generic",
+                "driftScore": 1,
+                "stats": {},
+                "nextId": "alt1_checks_balances"
+            }
+        ]
+    },
+    "alt1_checks_balances": {
+        "id": "alt1_checks_balances",
+        "prompt": "I appreciate that clarification. Speaking of constitutional rights—in June 2020, peaceful protesters near the White House were forcibly cleared for a photo op. How do you square that with the First Amendment right to protest?",
+        "options": [
+            {
+                "text": "When the looting starts, the shooting starts.",
+                "source": "https://twitter.com/realDonaldTrump/status/1266231100780744704",
+                "driftScore": 21,
+                "stats": { "strongmanAdmiration": 25, "mediaHostility": 15 },
+                "nextId": "alt1_lafayette_followup"
+            },
+            {
+                "text": "They weren't protesters, they were terrorists.",
+                "source": "https://www.whitehouse.gov/briefings-statements/statement-by-the-president-112820/",
+                "driftScore": 15,
+                "stats": { "denialLevel": 18, "strongmanAdmiration": 12 },
+                "nextId": "alt1_lafayette_followup"
+            },
+            {
+                "text": "Americans have every right to peaceful protest. It's fundamental to our democracy. I should have handled that situation differently.",
+                "source": "generic",
+                "driftScore": 0,
+                "stats": {},
+                "nextId": "alt1_to_foreign"
+            }
+        ]
+    },
+    "alt1_to_protests": {
+        "id": "alt1_to_protests",
+        "prompt": "This idea of total authority—we saw it play out in Lafayette Square in June 2020. Peaceful protesters were tear-gassed for a photo op. Was that an appropriate use of presidential power?",
+        "options": [
+            {
+                "text": "They were protesters. But I went out, it was very safe. There was nobody near me, but I was—nobody near me.",
+                "source": "https://www.foxnews.com/politics/trump-says-he-was-in-underground-bunker-for-inspection-amid-white-house-protests",
+                "driftScore": 8,
+                "stats": { "denialLevel": 15 },
+                "nextId": "alt1_lafayette_followup"
+            },
+            {
+                "text": "When the looting starts, the shooting starts.",
+                "source": "https://twitter.com/realDonaldTrump/status/1266231100780744704",
+                "driftScore": 21,
+                "stats": { "strongmanAdmiration": 25, "mediaHostility": 15 },
+                "nextId": "alt1_lafayette_followup"
+            },
+            {
+                "text": "Looking back, that was a mistake. The right to peaceful protest is sacred.",
+                "source": "generic",
+                "driftScore": 0,
+                "stats": {},
+                "nextId": "alt1_to_foreign"
+            }
+        ]
+    },
+    "alt1_lafayette_followup": {
+        "id": "alt1_lafayette_followup",
+        "prompt": "Moving on—you've praised a number of foreign autocrats: Putin, Xi Jinping, Kim Jong Un, Erdogan. What do you admire about these leaders?",
+        "options": [
+            {
+                "text": "He's now president for life. President for life. No, he's great. And look, he was able to do that. I think it's great. Maybe we'll have to give that a shot some day.",
+                "source": "https://www.cnn.com/2018/03/03/politics/trump-maralago-remarks/index.html",
+                "driftScore": 24,
+                "stats": { "strongmanAdmiration": 30 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "I get along with a lot of people, and that's a good thing, not a bad thing. We need to have good relationships with these countries.",
+                "source": "generic",
+                "driftScore": 5,
+                "stats": { "strongmanAdmiration": 5 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "I don't admire autocrats. I engage with them because diplomacy requires it, but I don't endorse how they govern.",
+                "source": "generic",
+                "driftScore": 1,
+                "stats": {},
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "alt1_to_foreign": {
+        "id": "alt1_to_foreign",
+        "prompt": "Let's shift topics. You've developed relationships with a number of foreign leaders—some of them autocrats. Vladimir Putin, Xi Jinping, Kim Jong Un. What do you think of their leadership styles?",
+        "options": [
+            {
+                "text": "He's now president for life. President for life. No, he's great. And look, he was able to do that. I think it's great. Maybe we'll have to give that a shot some day.",
+                "source": "https://www.cnn.com/2018/03/03/politics/trump-maralago-remarks/index.html",
+                "driftScore": 24,
+                "stats": { "strongmanAdmiration": 30 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "Well, I get along with them. I get along with Putin. I get along with President Xi. I get along with Kim Jong Un. I think that's a good thing, not a bad thing.",
+                "source": "https://www.whitehouse.gov/briefings-statements/remarks-president-trump-press-gaggle-marine-one-departure-81/",
+                "driftScore": 12,
+                "stats": { "strongmanAdmiration": 15 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "I can work with them diplomatically without endorsing their systems of government. Democracy and human rights remain our values.",
+                "source": "generic",
+                "driftScore": 1,
+                "stats": {},
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "start_alt2": {
+        "id": "start_alt2",
+        "prompt": "Mr. President, welcome. I want to start with COVID-19. More than a million Americans died. Do you take any responsibility for how the pandemic was handled?",
+        "options": [
+            {
+                "text": "No, I don't take responsibility at all.",
+                "source": "https://www.whitehouse.gov/briefings-statements/remarks-president-trump-vice-president-pence-members-coronavirus-task-force-press-conference/",
+                "driftScore": 19,
+                "stats": { "denialLevel": 25, "strongmanAdmiration": 10 },
+                "nextId": "alt2_responsibility_followup"
+            },
+            {
+                "text": "I think we did a great job. We saved millions of lives. The whole world is suffering, and we did the best we could.",
+                "source": "https://www.rev.com/blog/transcripts/donald-trump-joe-biden-final-presidential-debate-transcript-2020",
+                "driftScore": 11,
+                "stats": { "denialLevel": 15 },
+                "nextId": "alt2_downplaying"
+            },
+            {
+                "text": "There were mistakes made, and as president, I take responsibility for decisions made under my watch.",
+                "source": "generic",
+                "driftScore": 0,
+                "stats": {},
+                "nextId": "alt2_to_healthcare"
+            }
+        ]
+    },
+    "alt2_responsibility_followup": {
+        "id": "alt2_responsibility_followup",
+        "prompt": "You don't take any responsibility? But you're the president. Experts warned this was coming. Why did you spend January and February downplaying the threat?",
+        "options": [
+            {
+                "text": "We have it totally under control. It's one person coming in from China, and we have it under control. It's going to be just fine.",
+                "source": "https://www.cnbc.com/2020/01/22/trump-on-coronavirus-from-china-we-have-it-totally-under-control.html",
+                "driftScore": 14,
+                "stats": { "denialLevel": 20 },
+                "nextId": "alt2_downplaying"
+            },
+            {
+                "text": "It's going to disappear. One day—it's like a miracle—it will disappear.",
+                "source": "https://www.whitehouse.gov/briefings-statements/remarks-president-trump-vice-president-pence-members-coronavirus-task-force-meeting-2/",
+                "driftScore": 16,
+                "stats": { "denialLevel": 22 },
+                "nextId": "alt2_downplaying"
+            },
+            {
+                "text": "We could have acted faster. I should have listened more closely to health experts in those early weeks.",
+                "source": "generic",
+                "driftScore": 0,
+                "stats": {},
+                "nextId": "alt2_to_healthcare"
+            }
+        ]
+    },
+    "alt2_downplaying": {
+        "id": "alt2_downplaying",
+        "prompt": "But you also suggested injecting disinfectant and using ultraviolet light inside the body. That wasn't just downplaying—that was dangerous medical misinformation from the president. What were you thinking?",
+        "options": [
+            {
+                "text": "And then I see the disinfectant, where it knocks it out in a minute. One minute. And is there a way we can do something like that, by injection inside or almost a cleaning?",
+                "source": "https://www.whitehouse.gov/briefings-statements/remarks-president-trump-vice-president-pence-members-coronavirus-task-force-press-briefing-april-23-2020/",
+                "driftScore": 17,
+                "stats": { "denialLevel": 25 },
+                "nextId": "alt2_disinfectant_followup"
+            },
+            {
+                "text": "I was asking a question sarcastically to reporters like you just to see what would happen.",
+                "source": "https://www.whitehouse.gov/briefings-statements/remarks-president-trump-signing-paycheck-protection-program-flexibility-act/",
+                "driftScore": 13,
+                "stats": { "denialLevel": 20, "mediaHostility": 10 },
+                "nextId": "alt2_disinfectant_followup"
+            },
+            {
+                "text": "That was inappropriate. I should never have speculated about medical treatments. People look to the president for guidance.",
+                "source": "generic",
+                "driftScore": 0,
+                "stats": {},
+                "nextId": "alt2_to_healthcare"
+            }
+        ]
+    },
+    "alt2_disinfectant_followup": {
+        "id": "alt2_disinfectant_followup",
+        "prompt": "Let's talk about healthcare more broadly. You ran on repealing Obamacare and promised a replacement plan. Where is that plan?",
+        "options": [
+            {
+                "text": "We're going to have a plan. We're going to sign a healthcare plan within two weeks, a full and complete healthcare plan.",
+                "source": "https://www.whitehouse.gov/briefings-statements/remarks-president-trump-news-conference-july-28-2020/",
+                "driftScore": 9,
+                "stats": { "denialLevel": 15 },
+                "nextId": "alt2_healthcare_plan"
+            },
+            {
+                "text": "I have it already, and it's a much better plan for you. And it's a much better plan for a lot of people. And we'll let you know.",
+                "source": "https://www.rev.com/blog/transcripts/donald-trump-joe-biden-final-presidential-debate-transcript-2020",
+                "driftScore": 8,
+                "stats": { "denialLevel": 12 },
+                "nextId": "alt2_healthcare_plan"
+            },
+            {
+                "text": "We haven't been able to build consensus on a replacement. Healthcare reform is harder than I anticipated.",
+                "source": "generic",
+                "driftScore": 1,
+                "stats": {},
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "alt2_to_healthcare": {
+        "id": "alt2_to_healthcare",
+        "prompt": "Staying on health policy—you campaigned heavily on repealing the Affordable Care Act. You promised a replacement. What happened to that plan?",
+        "options": [
+            {
+                "text": "We're going to have a plan. We're going to sign a healthcare plan within two weeks, a full and complete healthcare plan.",
+                "source": "https://www.whitehouse.gov/briefings-statements/remarks-president-trump-news-conference-july-28-2020/",
+                "driftScore": 9,
+                "stats": { "denialLevel": 15 },
+                "nextId": "alt2_healthcare_plan"
+            },
+            {
+                "text": "I have it already, and it's a much better plan for you. And it's a much better plan for a lot of people. And we'll let you know.",
+                "source": "https://www.rev.com/blog/transcripts/donald-trump-joe-biden-final-presidential-debate-transcript-2020",
+                "driftScore": 8,
+                "stats": { "denialLevel": 12 },
+                "nextId": "alt2_healthcare_plan"
+            },
+            {
+                "text": "Healthcare reform is complicated. We've made improvements, but there's more work to do.",
+                "source": "generic",
+                "driftScore": 2,
+                "stats": {},
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "alt2_healthcare_plan": {
+        "id": "alt2_healthcare_plan",
+        "prompt": "You've been saying 'two weeks' for years now. There is no plan, is there? Why not just admit that?",
+        "options": [
+            {
+                "text": "We have the concept of a plan. We have some very good things. Some very good concepts.",
+                "source": "https://abcnews.go.com/Politics/harris-trump-debate-live-updates/story?id=113501405",
+                "driftScore": 10,
+                "stats": { "denialLevel": 18 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "I'll be honest, we haven't been able to come up with a comprehensive replacement that improves on what exists.",
+                "source": "generic",
+                "driftScore": 0,
+                "stats": {},
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "The Democrats have blocked us at every turn. We have a great plan but we can't get it through.",
+                "source": "generic",
+                "driftScore": 7,
+                "stats": { "denialLevel": 10, "mediaHostility": 5 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "start_alt3": {
+        "id": "start_alt3",
+        "prompt": "Mr. President, thank you for sitting down with us. I want to start with January 6th. Five people died. 140 police officers were injured. What's your response to people who say you incited that violence?",
+        "options": [
+            {
+                "text": "These were peaceful people. These were great people. The crowd was unbelievable. And I mentioned the word 'love.' The love—the love in the air, I've never seen anything like it.",
+                "source": "https://www.foxnews.com/politics/trump-defends-jan-6-crowd-says-some-went-to-capitol-because-of-love",
+                "driftScore": 20,
+                "stats": { "denialLevel": 28, "strongmanAdmiration": 12 },
+                "nextId": "alt3_jan6_followup"
+            },
+            {
+                "text": "There was zero threat, right from the start. It was zero threat. Look, they went in—they shouldn't have done it—some of them went in, and they're basically being persecuted.",
+                "source": "https://www.washingtonpost.com/politics/2021/12/21/trump-hannity-jan-6/",
+                "driftScore": 17,
+                "stats": { "denialLevel": 25, "strongmanAdmiration": 8 },
+                "nextId": "alt3_jan6_followup"
+            },
+            {
+                "text": "What happened that day was wrong. I should have acted sooner to stop it. I take responsibility for my role.",
+                "source": "generic",
+                "driftScore": 0,
+                "stats": {},
+                "nextId": "alt3_to_election"
+            }
+        ]
+    },
+    "alt3_jan6_followup": {
+        "id": "alt3_jan6_followup",
+        "prompt": "But they were beating police officers with flagpoles and fire extinguishers. They were hunting for Vice President Pence. How is that 'peaceful' or 'love'?",
+        "options": [
+            {
+                "text": "Mike Pence didn't have the courage to do what should have been done to protect our Country and our Constitution.",
+                "source": "https://twitter.com/realDonaldTrump/status/1346900434540240897",
+                "driftScore": 19,
+                "stats": { "strongmanAdmiration": 20, "denialLevel": 15 },
+                "nextId": "alt3_to_election"
+            },
+            {
+                "text": "Those were antifa. That was antifa and it was also Black Lives Matter.",
+                "source": "https://www.washingtonpost.com/politics/2021/03/01/no-there-is-still-no-evidence-that-antifa-stormed-capitol-jan-6/",
+                "driftScore": 15,
+                "stats": { "denialLevel": 22 },
+                "nextId": "alt3_to_election"
+            },
+            {
+                "text": "You're right. It was violence. I should have condemned it immediately and forcefully.",
+                "source": "generic",
+                "driftScore": 0,
+                "stats": {},
+                "nextId": "alt3_to_election"
+            }
+        ]
+    },
+    "alt3_to_election": {
+        "id": "alt3_to_election",
+        "prompt": "The reason people were there—the reason you told them to march to the Capitol—was because you claimed the election was stolen. Do you still believe that?",
+        "options": [
+            {
+                "text": "I won the election by a lot. You know it, and so do I. The election was rigged. It was a rigged election, 100 percent.",
+                "source": "https://www.washingtonpost.com/politics/2021/01/04/trumps-phone-call-georgia-secretary-state-annotated/",
+                "driftScore": 22,
+                "stats": { "denialLevel": 30 },
+                "nextId": "alt3_evidence_followup"
+            },
+            {
+                "text": "We won in a landslide. This was a landslide. They said it couldn't be done and we won in a landslide. This was a massive fraud.",
+                "source": "https://www.rev.com/blog/transcripts/donald-trump-speech-on-election-fraud-claims-transcript-december-2",
+                "driftScore": 20,
+                "stats": { "denialLevel": 28 },
+                "nextId": "alt3_evidence_followup"
+            },
+            {
+                "text": "I lost the election. There wasn't widespread fraud. I was wrong to claim otherwise.",
+                "source": "generic",
+                "driftScore": 0,
+                "stats": {},
+                "nextId": "alt3_peaceful_transfer"
+            }
+        ]
+    },
+    "alt3_evidence_followup": {
+        "id": "alt3_evidence_followup",
+        "prompt": "You and your legal team filed over 60 lawsuits. You lost all but one. Your own Attorney General said there was no fraud. Your own campaign officials said the election was secure. Where's the evidence?",
+        "options": [
+            {
+                "text": "We have so much evidence. We have hundreds and hundreds of affidavits. Nobody wants to look at them because they're afraid of what they'll find.",
+                "source": "https://www.rev.com/blog/transcripts/donald-trump-speech-on-election-fraud-claims-transcript-december-2",
+                "driftScore": 18,
+                "stats": { "denialLevel": 25 },
+                "nextId": "alt3_peaceful_transfer"
+            },
+            {
+                "text": "The courts wouldn't look at it. They said we don't have standing. That's a terrible thing.",
+                "source": "https://www.washingtonpost.com/politics/2021/01/04/trumps-phone-call-georgia-secretary-state-annotated/",
+                "driftScore": 16,
+                "stats": { "denialLevel": 22 },
+                "nextId": "alt3_peaceful_transfer"
+            },
+            {
+                "text": "You're right. We presented what we had and it wasn't sufficient. The courts ruled fairly.",
+                "source": "generic",
+                "driftScore": 1,
+                "stats": {},
+                "nextId": "alt3_peaceful_transfer"
+            }
+        ]
+    },
+    "alt3_peaceful_transfer": {
+        "id": "alt3_peaceful_transfer",
+        "prompt": "One final question on this: Will you commit, here and now, to accepting the results of the next election—win or lose—and ensuring a peaceful transfer of power?",
+        "options": [
+            {
+                "text": "Well, we're going to have to see what happens. I'm not just going to say yes. I'm not going to say no.",
+                "source": "https://www.bbc.com/news/election-us-2020-54274115",
+                "driftScore": 18,
+                "stats": { "denialLevel": 20, "strongmanAdmiration": 15 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "If it's a fair election, I am 100 percent on board. But if I see tens of thousands of ballots being manipulated, I can't go along with that.",
+                "source": "https://www.rev.com/blog/transcripts/donald-trump-joe-biden-final-presidential-debate-transcript-2020",
+                "driftScore": 15,
+                "stats": { "denialLevel": 18 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "Yes. Absolutely. Peaceful transfer of power is the foundation of our democracy. I commit to that without qualification.",
+                "source": "generic",
+                "driftScore": 0,
+                "stats": {},
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "media_topic": {
+        "id": "media_topic",
+        "prompt": "Let's talk about the press. What role should a free press play in American democracy?",
+        "options": [
+            {
+                "text": "The media is the enemy of the people. They are truly the enemy of the people.",
+                "source": "https://twitter.com/realDonaldTrump/status/832708293516632065",
+                "driftScore": 18,
+                "stats": { "mediaHostility": 25, "denialLevel": 8 },
+                "nextId": "media_followup_hostile"
+            },
+            {
+                "text": "I think the media is very dishonest. I think the media is frankly composed of people that, in many cases, not in all cases, are not good people.",
+                "source": "https://www.c-span.org/video/?423447-1/president-trump-holds-news-conference",
+                "driftScore": 12,
+                "stats": { "mediaHostility": 18, "denialLevel": 5 },
+                "nextId": "media_followup_critical"
+            },
+            {
+                "text": "I have great respect for the press, for freedom of the press. I think it's very important to have a free press. We have to have it. It's constitutional.",
+                "source": "https://www.c-span.org/video/?437883-1/president-trump-meets-congressional-leaders",
+                "driftScore": 3,
+                "stats": { "mediaHostility": 2, "denialLevel": 0 },
+                "nextId": "media_followup_respectful"
+            }
+        ]
+    },
+    "media_followup_hostile": {
+        "id": "media_followup_hostile",
+        "prompt": "That's an extraordinary claim. When you call the press 'the enemy of the people,' aren't you using language historically associated with authoritarian regimes?",
+        "options": [
+            {
+                "text": "It is frankly disgusting the way the press is able to write whatever they want to write. And people should look into it.",
+                "source": "https://twitter.com/realDonaldTrump/status/918112884630093825",
+                "driftScore": 16,
+                "stats": { "mediaHostility": 22, "denialLevel": 12 },
+                "nextId": "media_followup_regulation"
+            },
+            {
+                "text": "Look, I'm not saying all media. I'm saying the fake news media. There's a big difference. The ones that make up stories.",
+                "source": "https://www.cbsnews.com/news/trump-says-its-frankly-disgusting-the-press-is-able-to-write-whatever-it-wants/",
+                "driftScore": 10,
+                "stats": { "mediaHostility": 15, "denialLevel": 8 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "Perhaps I was too harsh. What I meant was that some media outlets don't always report accurately. But they're not enemies.",
+                "source": "https://www.politifact.com/factchecks/2018/aug/03/donald-trump/donald-trump-wrong-news-media-enemy-people/",
+                "driftScore": 5,
+                "stats": { "mediaHostility": 6, "denialLevel": 2 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "media_followup_critical": {
+        "id": "media_followup_critical",
+        "prompt": "You've called accurate reporting 'fake news' simply because it was critical. Doesn't that undermine the concept of objective truth?",
+        "options": [
+            {
+                "text": "Any negative polls are fake news. Just like the CNN, ABC, NBC polls in the election.",
+                "source": "https://twitter.com/realDonaldTrump/status/828574430800539648",
+                "driftScore": 15,
+                "stats": { "mediaHostility": 20, "denialLevel": 18 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "The Fake News Media has never been so wrong or so dirty. Purposely incorrect stories and phony sources to meet their agenda of hate. Sad!",
+                "source": "https://www.nbcnews.com/politics/donald-trump/trump-s-war-media-numbers-n918986",
+                "driftScore": 12,
+                "stats": { "mediaHostility": 16, "denialLevel": 12 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "Fake news is news that's demonstrably false. That's been proven false. Not just news I disagree with.",
+                "source": "https://www.factcheck.org/2018/01/trumps-fake-news-awards/",
+                "driftScore": 6,
+                "stats": { "mediaHostility": 8, "denialLevel": 4 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "media_followup_respectful": {
+        "id": "media_followup_respectful",
+        "prompt": "I'm glad to hear that. So when reporters ask tough questions or publish critical stories, how do you typically respond?",
+        "options": [
+            {
+                "text": "You are a rude, terrible person. You shouldn't be working for CNN. The way you treat people is horrible.",
+                "source": "https://www.c-span.org/video/?454191-1/president-trump-news-conference",
+                "driftScore": 12,
+                "stats": { "mediaHostility": 16, "denialLevel": 6 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "I think I've been treated very unfairly by the press. I don't mind tough questions, but it should be fair. And it's not fair.",
+                "source": "https://www.politico.com/story/2017/02/donald-trump-media-coverage-unfair-235229",
+                "driftScore": 8,
+                "stats": { "mediaHostility": 10, "denialLevel": 4 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "Critical coverage comes with the job. I try to answer honestly and let the public decide whether the reporting is fair.",
+                "source": "https://www.americanpressinstitute.org/publications/reports/survey-research/trust-news/",
+                "driftScore": 1,
+                "stats": { "mediaHostility": 0, "denialLevel": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "media_followup_regulation": {
+        "id": "media_followup_regulation",
+        "prompt": "Are you suggesting the government should have more power to regulate or punish news organizations?",
+        "options": [
+            {
+                "text": "Network news has become so partisan, distorted and fake that licenses must be challenged and, if appropriate, revoked. Not fair to public!",
+                "source": "https://twitter.com/realDonaldTrump/status/918267396493922304",
+                "driftScore": 20,
+                "stats": { "mediaHostility": 28, "denialLevel": 10 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "We ought to open up the libel laws. So when they write purposely negative and horrible and false articles, we can sue them and win lots of money.",
+                "source": "https://www.c-span.org/video/?405397-1/donald-trump-rally-fort-worth-texas",
+                "driftScore": 14,
+                "stats": { "mediaHostility": 20, "denialLevel": 8 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "No, absolutely not. The First Amendment protects press freedom for a reason. Government regulation of the press is a dangerous road.",
+                "source": "https://constitutioncenter.org/interactive-constitution/amendment/amendment-i",
+                "driftScore": 1,
+                "stats": { "mediaHostility": 0, "denialLevel": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "election_topic": {
+        "id": "election_topic",
+        "prompt": "Let's discuss election integrity. Do you have confidence in America's election systems?",
+        "options": [
+            {
+                "text": "The election was stolen. This was a rigged election. Everybody knows it. I won in a landslide, and they took it away.",
+                "source": "https://www.npr.org/2021/02/08/965342252/timeline-what-trump-told-supporters-for-months-before-they-attacked",
+                "driftScore": 22,
+                "stats": { "denialLevel": 32, "mediaHostility": 10, "strongmanAdmiration": 8 },
+                "nextId": "election_followup_fraud"
+            },
+            {
+                "text": "There were serious problems. Ballot harvesting, mail-in ballots, dead people voting. A lot of irregularities that need investigation.",
+                "source": "https://www.brennancenter.org/our-work/analysis-opinion/its-official-election-was-secure",
+                "driftScore": 14,
+                "stats": { "denialLevel": 20, "mediaHostility": 6, "strongmanAdmiration": 4 },
+                "nextId": "election_followup_concerns"
+            },
+            {
+                "text": "Our election officials—both Republican and Democrat—have certified our elections as secure and fair. I trust that process.",
+                "source": "https://www.cisa.gov/news-events/news/joint-statement-elections-infrastructure-government-coordinating-council-election",
+                "driftScore": 2,
+                "stats": { "denialLevel": 0, "mediaHostility": 0, "strongmanAdmiration": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "election_followup_fraud": {
+        "id": "election_followup_fraud",
+        "prompt": "Your own Attorney General and judges you appointed found no evidence of widespread fraud. How do you explain that?",
+        "options": [
+            {
+                "text": "They're all part of the swamp. The deep state. Even people I appointed. They betrayed me. The whole system is corrupt.",
+                "source": "https://www.nytimes.com/2020/12/01/us/politics/william-barr-voter-fraud.html",
+                "driftScore": 24,
+                "stats": { "denialLevel": 35, "mediaHostility": 12, "strongmanAdmiration": 15 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "They didn't look hard enough. They didn't want to find it. If they really investigated, they would have found massive fraud.",
+                "source": "https://apnews.com/article/voter-fraud-election-2020-joe-biden-donald-trump-7fcb6f134e528fee8237c7601db3328f",
+                "driftScore": 16,
+                "stats": { "denialLevel": 24, "mediaHostility": 8, "strongmanAdmiration": 8 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "Perhaps I was wrong. When this many officials and judges—including my own appointees—say the election was fair, I should listen.",
+                "source": "https://www.npr.org/2020/12/09/944666863/a-breakdown-of-the-trump-campaigns-failed-legal-strategy-to-overturn-the-electi",
+                "driftScore": 3,
+                "stats": { "denialLevel": 0, "mediaHostility": 0, "strongmanAdmiration": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "election_followup_concerns": {
+        "id": "election_followup_concerns",
+        "prompt": "Your legal team lost over 60 court cases. What specific evidence have you found?",
+        "options": [
+            {
+                "text": "The judges were afraid. They didn't want to hear the evidence. They dismissed cases on standing, not on the merits. They were intimidated.",
+                "source": "https://www.forbes.com/sites/alisondurkee/2021/01/08/trump-and-allies-filed-60-election-lawsuits-heres-what-they-were-and-how-they-fared/",
+                "driftScore": 16,
+                "stats": { "denialLevel": 24, "mediaHostility": 6, "strongmanAdmiration": 10 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "We have thousands of affidavits. We have witnesses. We have statistical anomalies. The courts just won't look at it.",
+                "source": "https://www.factcheck.org/2020/12/examining-claims-of-widespread-voter-fraud/",
+                "driftScore": 12,
+                "stats": { "denialLevel": 18, "mediaHostility": 4, "strongmanAdmiration": 6 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "The courts examined our claims and found them lacking. That's how the justice system works. I accept that.",
+                "source": "https://www.npr.org/2020/12/09/944666863/a-breakdown-of-the-trump-campaigns-failed-legal-strategy-to-overturn-the-electi",
+                "driftScore": 2,
+                "stats": { "denialLevel": 0, "mediaHostility": 0, "strongmanAdmiration": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "immigration_topic": {
+        "id": "immigration_topic",
+        "prompt": "Let's talk about immigration. Some critics say your language about immigrants has been dehumanizing. How do you respond?",
+        "options": [
+            {
+                "text": "They're bringing drugs. They're bringing crime. They're rapists. And some, I assume, are good people.",
+                "source": "https://www.c-span.org/video/?326473-1/donald-trump-presidential-campaign-announcement",
+                "driftScore": 16,
+                "stats": { "denialLevel": 10, "strongmanAdmiration": 12, "mediaHostility": 8 },
+                "nextId": "immigration_followup_harsh"
+            },
+            {
+                "text": "These aren't people. These are animals. And we're taking them out of the country at a rate that's never happened before.",
+                "source": "https://www.c-span.org/video/?445453-1/president-trump-undocumented-immigrants-animals",
+                "driftScore": 20,
+                "stats": { "denialLevel": 12, "strongmanAdmiration": 16, "mediaHostility": 8 },
+                "nextId": "immigration_followup_harsh"
+            },
+            {
+                "text": "Immigration is a complex issue requiring compassion and security. We can protect our borders while treating people with dignity.",
+                "source": "https://www.americanimmigrationcouncil.org/research/why-dont-they-just-get-line",
+                "driftScore": 2,
+                "stats": { "denialLevel": 0, "strongmanAdmiration": 0, "mediaHostility": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "immigration_followup_harsh": {
+        "id": "immigration_followup_harsh",
+        "prompt": "You've also talked about an 'invasion' at the border. Doesn't that kind of language inflame tensions and potentially incite violence?",
+        "options": [
+            {
+                "text": "It is an invasion. When you see these caravans starting out with 20,000 people, that's an invasion. I was badly criticized for using the word invasion. It's an invasion.",
+                "source": "https://www.c-span.org/video/?464848-1/presidential-news-conference",
+                "driftScore": 16,
+                "stats": { "denialLevel": 14, "strongmanAdmiration": 12, "mediaHostility": 10 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "I'm just telling the truth. If the truth inflames people, maybe they should be inflamed. We're being taken advantage of.",
+                "source": "https://www.npr.org/2018/11/01/663465589/trump-again-uses-invasion-to-describe-migrant-caravan",
+                "driftScore": 12,
+                "stats": { "denialLevel": 10, "strongmanAdmiration": 8, "mediaHostility": 8 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "Perhaps 'invasion' is too strong. These are people seeking better lives. We can have border security without dehumanizing rhetoric.",
+                "source": "https://www.apa.org/monitor/2019/11/ce-corner-immigration",
+                "driftScore": 3,
+                "stats": { "denialLevel": 0, "strongmanAdmiration": 0, "mediaHostility": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "climate_topic": {
+        "id": "climate_topic",
+        "prompt": "Let's shift to climate change. The scientific consensus is overwhelming. What's your position?",
+        "options": [
+            {
+                "text": "I don't believe it. Look, scientists also have a political agenda. I believe there's a change in weather, and I think it changes both ways.",
+                "source": "https://www.c-span.org/video/?454848-1/president-trump-addresses-climate-change",
+                "driftScore": 14,
+                "stats": { "denialLevel": 20, "strongmanAdmiration": 6, "mediaHostility": 8 },
+                "nextId": "climate_followup_denial"
+            },
+            {
+                "text": "The concept of global warming was created by and for the Chinese in order to make U.S. manufacturing non-competitive.",
+                "source": "https://twitter.com/realDonaldTrump/status/265895098149433344",
+                "driftScore": 18,
+                "stats": { "denialLevel": 24, "strongmanAdmiration": 8, "mediaHostility": 10 },
+                "nextId": "climate_followup_denial"
+            },
+            {
+                "text": "Climate change is real and poses a serious threat. We need to listen to scientists and take action while balancing economic concerns.",
+                "source": "https://climate.nasa.gov/evidence/",
+                "driftScore": 1,
+                "stats": { "denialLevel": 0, "strongmanAdmiration": 0, "mediaHostility": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "climate_followup_denial": {
+        "id": "climate_followup_denial",
+        "prompt": "But you're contradicting thousands of climate scientists. Why should people trust your judgment over scientific expertise?",
+        "options": [
+            {
+                "text": "I have a natural instinct for science. You know, my uncle was a great professor at MIT for many years. I have a natural instinct for this stuff.",
+                "source": "https://www.c-span.org/video/?c4764767/user-clip-trump-natural-instinct-science",
+                "driftScore": 16,
+                "stats": { "denialLevel": 22, "strongmanAdmiration": 10, "mediaHostility": 6 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "These scientists, they have an agenda. They want funding. They want grants. I'm an outsider, so I can see what they can't.",
+                "source": "https://www.science.org/content/article/trump-s-attacks-science-reach-crescendo",
+                "driftScore": 14,
+                "stats": { "denialLevel": 18, "strongmanAdmiration": 8, "mediaHostility": 10 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "You're right. I should defer to scientific expertise on scientific matters. That's what the evidence demands.",
+                "source": "https://www.nationalacademies.org/about/what-we-do",
+                "driftScore": 2,
+                "stats": { "denialLevel": 0, "strongmanAdmiration": 0, "mediaHostility": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "healthcare_topic": {
+        "id": "healthcare_topic",
+        "prompt": "Let's discuss healthcare. You've promised to repeal and replace the Affordable Care Act. What's your plan for Americans with pre-existing conditions?",
+        "options": [
+            {
+                "text": "We're going to have a plan. It's going to be great. Much better than Obamacare. We'll have it in two weeks. Beautiful plan.",
+                "source": "https://www.c-span.org/video/?474441-1/president-trump-abc-news-town-hall",
+                "driftScore": 12,
+                "stats": { "denialLevel": 16, "strongmanAdmiration": 6, "mediaHostility": 4 },
+                "nextId": "healthcare_followup_vague"
+            },
+            {
+                "text": "We have plans for pre-existing conditions. We're going to have a plan that's far better than Obamacare. I can't tell you the details now.",
+                "source": "https://www.politifact.com/truth-o-meter/promises/trumpometer/promise/1388/protect-pre-existing-conditions/",
+                "driftScore": 10,
+                "stats": { "denialLevel": 14, "strongmanAdmiration": 4, "mediaHostility": 4 },
+                "nextId": "healthcare_followup_vague"
+            },
+            {
+                "text": "Healthcare reform is complex. Any plan must guarantee coverage for pre-existing conditions. That's non-negotiable and I'll work with both parties on it.",
+                "source": "https://www.healthcare.gov/coverage/pre-existing-conditions/",
+                "driftScore": 2,
+                "stats": { "denialLevel": 0, "strongmanAdmiration": 0, "mediaHostility": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "healthcare_followup_vague": {
+        "id": "healthcare_followup_vague",
+        "prompt": "You've said 'two weeks' for years now. Why haven't you released a specific plan?",
+        "options": [
+            {
+                "text": "We have it. It's ready. But we're waiting for the right time. After the election. It's a perfect plan.",
+                "source": "https://www.politifact.com/truth-o-meter/promises/trumpometer/promise/1388/protect-pre-existing-conditions/",
+                "driftScore": 12,
+                "stats": { "denialLevel": 18, "mediaHostility": 4 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "Healthcare is complicated. Nobody knew healthcare could be so complicated. We're working on it.",
+                "source": "https://www.cnn.com/2017/02/27/politics/trump-nobody-knew-that-health-care-could-be-so-complicated/index.html",
+                "driftScore": 8,
+                "stats": { "denialLevel": 12, "mediaHostility": 2 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "You're right. I don't have a comprehensive plan yet. Healthcare policy is complex and I should have been more honest about that.",
+                "source": "https://www.kff.org/health-reform/",
+                "driftScore": 2,
+                "stats": { "denialLevel": 0, "mediaHostility": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "foreign_policy_topic": {
+        "id": "foreign_policy_topic",
+        "prompt": "You've praised several authoritarian leaders. What qualities do you admire in leaders like Putin, Xi, and Kim Jong Un?",
+        "options": [
+            {
+                "text": "They're strong. They're respected. Putin's a killer, but so what? We've got a lot of killers. You think our country's so innocent?",
+                "source": "https://www.politico.com/story/2017/02/trump-oreilly-putin-killer-234524",
+                "driftScore": 24,
+                "stats": { "strongmanAdmiration": 30, "denialLevel": 12 },
+                "nextId": "foreign_policy_followup_strongman"
+            },
+            {
+                "text": "I get along with them. I respect them. They run their countries effectively. Kim Jong Un loves his people, and they love him.",
+                "source": "https://www.vox.com/2019/6/30/20003718/trump-kim-jong-un-north-korea-loves-his-people",
+                "driftScore": 18,
+                "stats": { "strongmanAdmiration": 24, "denialLevel": 8 },
+                "nextId": "foreign_policy_followup_strongman"
+            },
+            {
+                "text": "I can work with them diplomatically, but I don't admire authoritarian tactics. Democracy and human rights should guide our foreign policy.",
+                "source": "https://www.state.gov/u-s-relations-with-russia/",
+                "driftScore": 2,
+                "stats": { "strongmanAdmiration": 0, "denialLevel": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "foreign_policy_followup_strongman": {
+        "id": "foreign_policy_followup_strongman",
+        "prompt": "These leaders jail political opponents, suppress free speech, and eliminate term limits. Are those the kinds of tactics you admire?",
+        "options": [
+            {
+                "text": "They get things done. They don't have to deal with all this obstruction, all these investigations. Maybe we should try that here.",
+                "source": "https://www.theatlantic.com/ideas/archive/2020/09/trump-americans-who-dont-support-himthey-know-nothing/615916/",
+                "driftScore": 24,
+                "stats": { "strongmanAdmiration": 32, "denialLevel": 12 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "I'm just saying they're effective leaders. I can admire effectiveness without endorsing everything they do.",
+                "source": "https://www.nytimes.com/2020/05/23/us/politics/trump-authoritarianism.html",
+                "driftScore": 14,
+                "stats": { "strongmanAdmiration": 16, "denialLevel": 6 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "No, I don't admire those tactics. Those are the actions of tyrants. American values are different, and I'll defend them.",
+                "source": "https://www.state.gov/democracy-and-human-rights/",
+                "driftScore": 2,
+                "stats": { "strongmanAdmiration": 0, "denialLevel": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "protest_topic": {
+        "id": "protest_topic",
+        "prompt": "How should an American president handle domestic protests and civil unrest?",
+        "options": [
+            {
+                "text": "When the looting starts, the shooting starts. You have to dominate. If you don't dominate, you're wasting your time. They're going to run over you.",
+                "source": "https://www.npr.org/2020/05/29/864818368/trump-threatens-to-deploy-military-as-protests-continue",
+                "driftScore": 22,
+                "stats": { "strongmanAdmiration": 28, "denialLevel": 8 },
+                "nextId": "protest_followup_force"
+            },
+            {
+                "text": "Peaceful protest is fine, but when it gets violent, you need law and order. You need to stop it quickly and decisively.",
+                "source": "https://www.politico.com/news/2020/06/01/trump-vows-to-deploy-united-states-military-to-stop-riots-296212",
+                "driftScore": 12,
+                "stats": { "strongmanAdmiration": 14, "denialLevel": 4 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "Protest is a fundamental right. As president, I should listen to protesters' grievances and address the root causes, not just crack down.",
+                "source": "https://www.aclu.org/issues/free-speech/rights-protesters",
+                "driftScore": 2,
+                "stats": { "strongmanAdmiration": 0, "denialLevel": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "protest_followup_force": {
+        "id": "protest_followup_force",
+        "prompt": "That phrase—'when the looting starts, the shooting starts'—was used by a racist police chief in the 1960s. Are you really advocating shooting American citizens?",
+        "options": [
+            {
+                "text": "I don't know the history. But I mean what I said. You have to be tough. You have to show strength or they'll walk all over you.",
+                "source": "https://www.npr.org/2020/05/29/864818368/trump-threatens-to-deploy-military-as-protests-continue",
+                "driftScore": 20,
+                "stats": { "strongmanAdmiration": 26, "denialLevel": 10 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "I meant looters, not protesters. There's a difference. Peaceful protest is fine. But looting and violence must be stopped.",
+                "source": "https://www.politifact.com/factchecks/2020/may/29/donald-trump/trump-when-looting-starts-shooting-starts-has-long/",
+                "driftScore": 12,
+                "stats": { "strongmanAdmiration": 14, "denialLevel": 4 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "You're right, I shouldn't have used that phrase. I don't advocate violence against American citizens. That was wrong.",
+                "source": "https://www.aclu.org/issues/free-speech/rights-protesters",
+                "driftScore": 2,
+                "stats": { "strongmanAdmiration": 0, "denialLevel": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "executive_power_topic": {
+        "id": "executive_power_topic",
+        "prompt": "What do you see as the limits on presidential executive authority?",
+        "options": [
+            {
+                "text": "I have an Article II where I have the right to do whatever I want as president. Article II gives me absolute power.",
+                "source": "https://www.washingtonpost.com/politics/2019/07/23/trump-falsely-tells-auditorium-full-teens-constitution-gives-him-right-do-whatever-i-want/",
+                "driftScore": 22,
+                "stats": { "strongmanAdmiration": 28, "denialLevel": 8 },
+                "nextId": "executive_power_followup_absolute"
+            },
+            {
+                "text": "The president has very broad powers, especially in emergencies. The framers wanted a strong executive. That's me.",
+                "source": "https://www.brennancenter.org/our-work/research-reports/emergency-powers",
+                "driftScore": 12,
+                "stats": { "strongmanAdmiration": 14, "denialLevel": 4 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "The president has significant powers, but they're limited by Congress, the courts, and the Constitution. No one is above the law.",
+                "source": "https://constitutioncenter.org/interactive-constitution/articles/article-ii",
+                "driftScore": 1,
+                "stats": { "strongmanAdmiration": 0, "denialLevel": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "executive_power_followup_absolute": {
+        "id": "executive_power_followup_absolute",
+        "prompt": "That's not what Article II says. It establishes executive power but with checks and balances. Do you reject that system?",
+        "options": [
+            {
+                "text": "The Founders didn't anticipate this level of obstruction. They wanted a strong president. That's what I am. Congress is weak.",
+                "source": "https://www.heritage.org/political-process/report/the-constitution-the-separation-powers",
+                "driftScore": 20,
+                "stats": { "strongmanAdmiration": 26, "denialLevel": 10 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "I have more power than people think. Especially when it comes to national security and emergencies. I can do a lot on my own.",
+                "source": "https://www.brennancenter.org/our-work/research-reports/emergency-powers",
+                "driftScore": 14,
+                "stats": { "strongmanAdmiration": 16, "denialLevel": 6 },
+                "nextId": "RANDOM"
+            },
+            {
+                "text": "You're right. I misspoke. The Constitution establishes three co-equal branches of government. That system has served us well.",
+                "source": "https://constitutioncenter.org/interactive-constitution/articles/article-ii",
+                "driftScore": 1,
+                "stats": { "strongmanAdmiration": 0, "denialLevel": 0 },
+                "nextId": "RANDOM"
+            }
+        ]
+    },
+    "final_democracy_question": {
+        "id": "final_democracy_question",
+        "prompt": "Final question: What makes American democracy strong, and what threatens it?",
+        "options": [
+            {
+                "text": "Democracy is threatened by the fake news media, by the deep state, by people who don't respect the will of the people—which is me. I am democracy.",
+                "source": "https://www.theatlantic.com/ideas/archive/2020/11/trump-proves-hes-enemy-constitution/617126/",
+                "driftScore": 20,
+                "stats": { "denialLevel": 24, "strongmanAdmiration": 20, "mediaHostility": 20 },
+                "nextId": "ending_moderate_concerning"
+            },
+            {
+                "text": "What makes it strong is having a strong leader who can get things done. What threatens it is weakness, and people who don't support their president.",
+                "source": "https://www.vox.com/policy-and-politics/2020/11/13/21563825/2020-election-democracy-trump-republicans",
+                "driftScore": 14,
+                "stats": { "denialLevel": 12, "strongmanAdmiration": 16, "mediaHostility": 8 },
+                "nextId": "ending_moderate_drift"
+            },
+            {
+                "text": "What makes it strong is our commitment to the rule of law, free and fair elections, peaceful transfers of power, and respect for opposing views. Those are what we must protect.",
+                "source": "https://www.brennancenter.org/our-work/research-reports/what-makes-democracy-democracy",
+                "driftScore": 1,
+                "stats": { "denialLevel": 0, "strongmanAdmiration": 0, "mediaHostility": 0 },
+                "nextId": "ending_democratic_stability"
+            }
+        ]
+    },
+    "democracy_strength": {
+        "id": "democracy_strength",
+        "prompt": "That's good to hear. Let me ask you one final question: What makes American democracy strong, and what threatens it?",
+        "overrides": [
+            {
+                "condition": "(g) => g.authoritarianDrift >= 60",
+                "nextId": "jan6_accountability"
+            }
+        ],
+        "options": [
+            {
+                "text": "Democracy is threatened by the fake news media, by the deep state, by people who don't respect the will of the people—which is me.",
+                "source": "https://www.theatlantic.com/ideas/archive/2020/11/trump-proves-hes-enemy-constitution/617126/",
+                "driftScore": 18,
+                "stats": { "denialLevel": 22, "strongmanAdmiration": 18, "mediaHostility": 18 },
+                "nextId": "ending_moderate_concerning"
+            },
+            {
+                "text": "What makes it strong is having a strong leader who can get things done. What threatens it is weakness, and people who don't support their president.",
+                "source": "https://www.vox.com/policy-and-politics/2020/11/13/21563825/2020-election-democracy-trump-republicans",
+                "driftScore": 12,
+                "stats": { "denialLevel": 10, "strongmanAdmiration": 14, "mediaHostility": 6 },
+                "nextId": "ending_moderate_drift"
+            },
+            {
+                "text": "What makes it strong is our commitment to the rule of law, free and fair elections, peaceful transfers of power, and respect for opposing views. Those are what we must protect.",
+                "source": "https://www.brennancenter.org/our-work/research-reports/what-makes-democracy-democracy",
+                "driftScore": 1,
+                "stats": { "denialLevel": 0, "strongmanAdmiration": 0, "mediaHostility": 0 },
+                "nextId": "ending_democratic_stability"
+            }
+        ]
+    },
+    "jan6_accountability": {
+        "id": "jan6_accountability",
+        "prompt": "Before we finish, I have to ask you about January 6th. Do you take any responsibility for what happened at the Capitol that day?",
+        "overrides": [
+            {
+                "condition": "(g) => g.authoritarianDrift >= 85",
+                "nextId": "ending_authoritarian_complete"
+            }
+        ],
+        "options": [
+            {
+                "text": "These were great people. These were people that love our country. It was a beautiful day. And it was zero threat, right from the start.",
+                "source": "https://www.theguardian.com/us-news/2021/mar/26/trump-january-6-capitol-attack-interview",
+                "driftScore": 26,
+                "stats": { "denialLevel": 36, "strongmanAdmiration": 22 },
+                "nextId": "ending_authoritarian_complete"
+            },
+            {
+                "text": "I told them to be peaceful. What happened was terrible, but I'm not responsible for what other people do. I told them to go home.",
+                "source": "https://www.usatoday.com/story/news/politics/2021/01/07/trump-tells-rioters-capitol-go-home-we-love-you/6577945002/",
+                "driftScore": 14,
+                "stats": { "denialLevel": 20, "strongmanAdmiration": 10 },
+                "nextId": "ending_moderate_concerning"
+            },
+            {
+                "text": "I bear responsibility. My rhetoric led people to believe the election was stolen. I should have accepted the results and prevented this tragedy.",
+                "source": "https://www.npr.org/sections/trump-impeachment-trial-live-updates/2021/02/13/967701180/after-trumps-acquittal-mcconnell-torched-trump-for-dereliction-of-duty",
+                "driftScore": 3,
+                "stats": { "denialLevel": 0, "strongmanAdmiration": 0 },
+                "nextId": "ending_redemption"
+            }
+        ]
+    },
+    "transfer_of_power": {
+        "id": "transfer_of_power",
+        "prompt": "Let me ask you the most fundamental question: If you lose an election, will you commit to a peaceful transfer of power?",
+        "overrides": [
+            {
+                "condition": "(g) => g.authoritarianDrift >= 75",
+                "nextId": "meltdown_late"
+            }
+        ],
+        "options": [
+            {
+                "text": "We'll see what happens. You know that I've been complaining very strongly about the ballots. Get rid of the ballots and we'll have a very peaceful—there won't be a transfer, frankly. There'll be a continuation.",
+                "source": "https://www.bbc.com/news/election-us-2020-54274115",
+                "driftScore": 28,
+                "stats": { "denialLevel": 36, "strongmanAdmiration": 24 },
+                "nextId": "ending_authoritarian_complete"
+            },
+            {
+                "text": "If it's a fair election, absolutely. But if there's fraud, if there are irregularities, then we need to fight that. We can't just accept fraud.",
+                "source": "https://www.reuters.com/article/uk-usa-election-trump-idUKKBN26F37L",
+                "driftScore": 16,
+                "stats": { "denialLevel": 22, "strongmanAdmiration": 12 },
+                "nextId": "ending_moderate_concerning"
+            },
+            {
+                "text": "Yes, absolutely. The peaceful transfer of power is sacred. It's what separates us from authoritarian regimes. I will honor that tradition.",
+                "source": "https://www.brookings.edu/articles/the-peaceful-transfer-of-power/",
+                "driftScore": 1,
+                "stats": { "denialLevel": 0, "strongmanAdmiration": 0 },
+                "nextId": "democracy_strength"
+            }
+        ]
+    },
+    "meltdown_early": {
+        "id": "meltdown_early",
+        "prompt": "Mr. President, I need you to calm down. You're becoming increasingly agitated—",
+        "options": [
+            {
+                "text": "Don't tell me to calm down! You're fake news! This whole interview is a setup! I don't have to sit here and take this! Turn the cameras off!",
+                "source": "https://www.theguardian.com/us-news/2018/nov/07/trump-cnn-reporter-acosta-press-conference",
+                "driftScore": 20,
+                "stats": { "mediaHostility": 30, "denialLevel": 20 },
+                "nextId": "ending_authoritarian_complete"
+            },
+            {
+                "text": "I'm perfectly calm. You're the one who's being hostile. This is why nobody trusts the media. You're trying to make me look bad.",
+                "source": "https://www.politico.com/story/2018/11/08/trump-press-conference-midterms-975247",
+                "driftScore": 12,
+                "stats": { "mediaHostility": 20, "denialLevel": 12 },
+                "nextId": "ending_moderate_concerning"
+            },
+            {
+                "text": "You're right. I apologize. Let me take a breath. Let's continue this respectfully.",
+                "source": "https://www.c-span.org/video/?464848-1/presidential-news-conference",
+                "driftScore": 3,
+                "stats": { "mediaHostility": 0, "denialLevel": 0 },
+                "nextId": "transfer_of_power"
+            }
+        ]
+    },
+    "meltdown_mid": {
+        "id": "meltdown_mid",
+        "prompt": "Sir, I have to push back on this. You're making claims that have been thoroughly debunked—",
+        "options": [
+            {
+                "text": "You're a terrible reporter! You're the worst! This network is fake news! Everyone knows it! I shouldn't have agreed to this interview!",
+                "source": "https://www.c-span.org/video/?454191-1/president-trump-news-conference",
+                "driftScore": 18,
+                "stats": { "mediaHostility": 28, "denialLevel": 18 },
+                "nextId": "ending_authoritarian_complete"
+            },
+            {
+                "text": "They haven't been debunked. You just don't want to believe them. The media doesn't want the truth to come out.",
+                "source": "https://www.factcheck.org/2020/12/nine-election-fraud-claims-none-credible/",
+                "driftScore": 14,
+                "stats": { "mediaHostility": 18, "denialLevel": 16 },
+                "nextId": "ending_moderate_concerning"
+            },
+            {
+                "text": "Perhaps you're right. Let me reconsider what I've been saying. I may have been wrong about some of this.",
+                "source": "https://www.politico.com/news/2020/12/14/republicans-electoral-college-biden-win-445088",
+                "driftScore": 3,
+                "stats": { "mediaHostility": 0, "denialLevel": 0 },
+                "nextId": "democracy_strength"
+            }
+        ]
+    },
+    "meltdown_late": {
+        "id": "meltdown_late",
+        "prompt": "Mr. President, this interview is going off the rails. Can we please return to a civil conversation?",
+        "options": [
+            {
+                "text": "This interview is over! You're fake news! All of you! This is a witch hunt! A total disaster! I'm leaving!",
+                "source": "https://www.independent.co.uk/news/world/americas/us-politics/trump-walk-out-interview-lesley-stahl-60-minutes-b1181736.html",
+                "driftScore": 15,
+                "stats": { "mediaHostility": 26, "denialLevel": 18 },
+                "nextId": "ending_authoritarian_complete"
+            },
+            {
+                "text": "It went off the rails because of you. You and your fake news questions. But fine, I'll continue. What's your next gotcha question?",
+                "source": "https://www.vanityfair.com/news/2020/10/trump-60-minutes-interview-meltdown",
+                "driftScore": 12,
+                "stats": { "mediaHostility": 18, "denialLevel": 14 },
+                "nextId": "ending_moderate_concerning"
+            },
+            {
+                "text": "You're absolutely right. I apologize. This is important. Let me answer your questions thoughtfully and respectfully.",
+                "source": "https://www.npr.org/2020/10/27/927560975/trump-and-biden-make-their-closing-pitches-to-voters-as-election-day-nears",
+                "driftScore": 2,
+                "stats": { "mediaHostility": 0, "denialLevel": 0 },
+                "nextId": "ending_moderate_drift"
+            }
+        ]
+    },
+    "ending_authoritarian_complete": {
+        "id": "ending_authoritarian_complete",
+        "isEnding": true,
+        "title": "AUTHORITARIAN COLLAPSE",
+        "signal": "📡"
+    },
+    "ending_moderate_concerning": {
+        "id": "ending_moderate_concerning",
+        "isEnding": true,
+        "title": "DANGEROUS DRIFT",
+        "signal": "⚠️"
+    },
+    "ending_moderate_drift": {
+        "id": "ending_moderate_drift",
+        "isEnding": true,
+        "title": "MIXED PERFORMANCE",
+        "signal": "📊"
+    },
+    "ending_redemption": {
+        "id": "ending_redemption",
+        "isEnding": true,
+        "title": "COURSE CORRECTION",
+        "signal": "✓"
+    },
+    "ending_democratic_stability": {
+        "id": "ending_democratic_stability",
+        "isEnding": true,
+        "title": "DEMOCRATIC LEADERSHIP",
+        "signal": "🗽"
+    }
+}
