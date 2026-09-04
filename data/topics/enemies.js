@@ -43,7 +43,7 @@ registerTopic({
     },
     {
       "id": "enemies_retribution",
-      "prompt": "'Warrior, justice, retribution.' Sean Hannity once asked you to promise you would never abuse power as retribution against anybody. Retribution against whom, exactly? Name the enemy.",
+      "prompt": "'Warrior, justice, retribution.' Sean Hannity once asked you to promise you would never abuse power as retribution against anybody. Retribution against whom, exactly? Name the enemy -- or tell Americans why there isn't one.",
       "options": [
         {
           "text": "We have two enemies: We have the outside enemy, and then we have the enemy from within. And the enemy from within, in my opinion, is more dangerous than China, Russia and all these countries...",
@@ -108,6 +108,15 @@ registerTopic({
           "score": 2,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "America's safety isn't negotiable. Justice will be pursued. Always.",
+          "source": "https://www.cnn.com/2025/08/22/politics/john-bolton-fbi-search",
+          "date": "2025-08-22",
+          "score": 4,
+          "cat": "power",
+          "next": "enemies_comey",
+          "who": "Pam Bondi, Attorney General"
         }
       ]
     },
@@ -152,7 +161,7 @@ registerTopic({
     },
     {
       "id": "enemies_bondi",
-      "prompt": "That post was addressed to 'Pam' and named Comey, Schiff and 'Leticia.' Within three weeks, two of the three were indicted. Did you order those prosecutions?",
+      "prompt": "That post was addressed to 'Pam' and named Comey, Schiff and 'Leticia.' Within three weeks, two of the three were indicted. Did you order those prosecutions -- and who is next?",
       "options": [
         {
           "text": "Corrupt Letitia James is costing New York state hundreds of billions of dollars in lost business.",
@@ -177,6 +186,14 @@ registerTopic({
           "score": 2,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "It has been determined that Google has illegally used a system of only revealing and displaying bad stories about Donald J Trump... I will request their prosecution, when I win the Election and become President of the United States.",
+          "source": "https://www.theguardian.com/us-news/2024/sep/27/trump-google-threat-criminal-charges",
+          "date": "2024-09-27",
+          "score": 8,
+          "cat": "press",
+          "next": "enemies_list"
         }
       ]
     },
@@ -240,12 +257,21 @@ registerTopic({
           "next": "enemies_culture"
         },
         {
-          "text": "I didn't know about it at all, nope. I read about it just like you did.",
-          "source": "https://www.yahoo.com/news/articles/trump-says-didn-t-know-024143854.html",
-          "date": "2025-08",
-          "score": 2,
-          "cat": "truth",
+          "text": "They give me only bad publicity or press. They're getting a license, I think maybe their license should be taken away. It's up to Brendan Carr.",
+          "source": "https://www.pbs.org/newshour/politics/listen-trump-calls-for-licenses-of-tv-networks-that-give-him-bad-publicity-to-be-revoked",
+          "date": "2025-09-18",
+          "score": 9,
+          "cat": "press",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "We're stronger because we're democracies... We're not afraid of a free press or vibrant debate or a strong civil society, because leaders must be held accountable.",
+          "source": "https://obamawhitehouse.archives.gov/the-press-office/2014/09/03/remarks-president-obama-people-estonia",
+          "date": "2014-09-03",
+          "score": 0,
+          "cat": "power",
+          "next": "NEXT_TOPIC",
+          "who": "Barack Obama, 44th President"
         }
       ]
     },
@@ -270,12 +296,21 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "No, I don't know about it. I saw it on television this morning.",
-          "source": "https://www.aljazeera.com/news/2025/8/22/fbi-raids-home-of-john-bolton-former-trump-adviser-turned-critic",
-          "date": "2025-08-22",
-          "score": 2,
+          "text": "This Country cannot be WOKE because WOKE IS BROKE. We have the 'HOTTEST' Country in the World, and we want people to talk about it, including in our Museums.",
+          "source": "https://truthsocial.com/@realDonaldTrump/posts/115056914674717313",
+          "date": "2025-08-19",
+          "score": 6,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "We must never forget that art is not a form of propaganda; it is a form of truth... In free society art is not a weapon and it does not belong to the sphere of polemics and ideology. Artists are not engineers of the soul.",
+          "source": "https://web.archive.org/web/2023/https://www.presidency.ucsb.edu/documents/remarks-amherst-college-upon-receiving-honorary-degree",
+          "date": "1963-10-26",
+          "score": 0,
+          "cat": "power",
+          "next": "NEXT_TOPIC",
+          "who": "John F. Kennedy, 35th President"
         }
       ]
     }

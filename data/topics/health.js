@@ -45,7 +45,7 @@ registerTopic({
     },
     {
       "id": "health_never",
-      "prompt": "'Never felt better' - yet your own physician diagnosed chronic venous insufficiency in July, the hand bruises keep reappearing under the makeup, and you were filmed nodding off in the Oval Office. Level with us: what is going on?",
+      "prompt": "'Never felt better' - yet your own physician diagnosed chronic venous insufficiency in July, the hand bruises keep reappearing under the makeup, and you were filmed nodding off in the Oval Office. Level with us: what is going on -- and why should you get a pass you never gave Joe Biden?",
       "options": [
         {
           "text": "You'll never see me sleeping in front of a camera.",
@@ -83,7 +83,7 @@ registerTopic({
     },
     {
       "id": "health_mri",
-      "prompt": "'The best result he has ever seen.' Presidents do not get MRIs at routine checkups, and the White House still will not say what was scanned or why. Will you release the full report?",
+      "prompt": "'The best result he has ever seen.' Presidents do not get MRIs at routine checkups, and the White House still will not say what was scanned or why. Will you release the full report -- or is the answer, as usual, going to be about Joe Biden?",
       "options": [
         {
           "text": "They say, 'Nobody gets it in order.' It's actually not that easy, but for me it was easy.",
@@ -102,18 +102,26 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "I think that Crooked Joe Biden is not only dumb and incompetent, I believe he has gone MAD, a stark raving Lunatic... HE IS A MENTAL CATASTROPHE THAT IS LEADING OUR COUNTRY TO HELL!",
-          "source": "https://truthsocial.com/@realDonaldTrump/posts/110865224814637476",
-          "date": "2023-08",
-          "score": 7,
-          "cat": "dehumanization",
+          "text": "I'm not gonna tell you.",
+          "source": "https://abcnews.com/US/full-transcript-trumps-exclusive-100-days-broadcast-interview/story?id=121291672",
+          "date": "2025-04-29",
+          "score": 3,
+          "cat": "press",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "You are the most obnoxious reporter in the whole place. Let me just tell you, you are an obnoxious -- actually, a terrible reporter, and it's always the same with you.",
+          "source": "https://newrepublic.com/post/204152/donald-trump-pulls-180-releasing-boat-strike-video",
+          "date": "2025-12-08",
+          "score": 8,
+          "cat": "press",
           "next": "NEXT_TOPIC"
         }
       ]
     },
     {
       "id": "health_biden",
-      "prompt": "You and your allies said Joe Biden was unfit to serve at 81 and should resign on the spot. You are 79 now. Why does age disqualify him and not you?",
+      "prompt": "You and your allies said Joe Biden was unfit to serve at 81 and should resign on the spot. You are 79 now. Why does age disqualify him and not you -- and was pushing him out the right call?",
       "options": [
         {
           "text": "Crooked Joe Biden, the WORST President in the history of the U.S., whose Presidency was Unconstitutionally STOLEN from him by Kamabla, Barrack HUSSEIN Obama, Crazy Nancy Pelosi... tries to take back the Nomination...",
@@ -147,6 +155,14 @@ registerTopic({
           "score": 5,
           "cat": "truth",
           "next": "health_25th"
+        },
+        {
+          "text": "They threw him out of a campaign like a dog.",
+          "source": "https://abcnews.go.com/Politics/harris-trump-presidential-debate-transcript/story?id=113560542",
+          "date": "2024-09-10",
+          "score": 7,
+          "cat": "dehumanization",
+          "next": "health_debate"
         }
       ]
     },
@@ -191,7 +207,7 @@ registerTopic({
     },
     {
       "id": "health_debate",
-      "prompt": "Let's talk about that debate. Biden said 'we finally beat Medicare' and his own party pushed him out within weeks. If you had a night like that, would you step aside - and should he have?",
+      "prompt": "Let's talk about that debate. Biden said 'we finally beat Medicare' and his own party pushed him out within weeks. If you had a night like that, would you step aside -- and who do you think was actually running the country after his?",
       "options": [
         {
           "text": "The Lord Almighty's not coming down.",
@@ -218,12 +234,21 @@ registerTopic({
           "score": 8,
           "cat": "power",
           "next": "health_25th"
+        },
+        {
+          "text": "I have never been a quitter. To leave office before my term is completed is abhorrent to every instinct in my body. But as President, I must put the interest of America first.",
+          "source": "https://www.youtube.com/watch?v=IwQMpSxRPvc",
+          "date": "1974-08-08",
+          "score": 2,
+          "cat": "power",
+          "next": "NEXT_TOPIC",
+          "who": "Richard Nixon, President"
         }
       ]
     },
     {
       "id": "health_sleep",
-      "prompt": "The video shows your eyes closed for minutes while your own Cabinet talked around you. Joe Biden was branded 'Sleepy Joe' for far less. Were you asleep?",
+      "prompt": "The video shows your eyes closed for minutes while your own Cabinet talked around you. Joe Biden was branded 'Sleepy Joe' for far less. Were you asleep -- and is your mind as sharp as you keep telling us?",
       "options": [
         {
           "text": "...one of the great memories of all time.",
@@ -234,27 +259,35 @@ registerTopic({
           "next": "health_test"
         },
         {
-          "text": "I think we have to truly question the mental stability of any president that threatens to wipe out an entire civilization.",
-          "source": "https://www.the-independent.com/news/world/americas/us-politics/trump-mental-decline-ty-cobb-b2959984.html",
-          "date": "2026-04",
-          "score": 2,
-          "cat": "power",
-          "next": "NEXT_TOPIC",
-          "who": "Marjorie Taylor Greene, Rep. (R-GA)"
-        },
-        {
           "text": "There is no #JoeBiden - executed in 2020. #Biden clones doubles & robotic engineered soulless mindless entities are what you see. Democrats dont know the difference.",
           "source": "https://www.thedailybeast.com/donald-trump-shares-bonkers-conspiracy-theory-about-joe-biden-being-replaced-by-clones/",
           "date": "2025-05-31",
           "score": 8,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "I think that would qualify as not smart, but genius....and a very stable genius at that!",
+          "source": "https://www.cnn.com/2018/01/06/politics/donald-trump-white-house-fitness-very-stable-genius",
+          "date": "2018-01-06",
+          "score": 5,
+          "cat": "truth",
+          "next": "health_test"
+        },
+        {
+          "text": "Not at all -- and I want you to know that also I will not make age an issue of this campaign. I am not going to exploit, for political purposes, my opponent's youth and inexperience.",
+          "source": "https://www.debates.org/voter-education/debate-transcripts/october-21-1984-debate-transcript/",
+          "date": "1984-10-21",
+          "score": 1,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Ronald Reagan, 40th President"
         }
       ]
     },
     {
       "id": "health_25th",
-      "prompt": "More than fifty House Democrats have now signed on to invoking the 25th Amendment against you - the very remedy your side demanded for Joe Biden. Does the 25th apply to you?",
+      "prompt": "More than fifty House Democrats have now signed on to invoking the 25th Amendment against you - the very remedy your side demanded for Joe Biden. Does the 25th apply to you -- or should it have applied to him?",
       "options": [
         {
           "text": "What Crooked Joe Biden, who can't string two sentences together, has done to our once great Country through his Open Borders CATASTROPHE, may go down as the greatest and most damaging mistake ever made in USA HISTORY.",
@@ -280,6 +313,14 @@ registerTopic({
           "cat": "truth",
           "next": "NEXT_TOPIC",
           "who": "Joe Biden, 46th President"
+        },
+        {
+          "text": "I can't say what we're going to do because if I did, I wouldn't be sitting here for long. They'd probably -- what is it called? The 25th Amendment? ... They institute the 25th Amendment, which they didn't do with Biden, which is shocking.",
+          "source": "https://www.yahoo.com/news/articles/donald-trump-jokes-cabinet-25th-103104867.html",
+          "date": "2026-03-26",
+          "score": 5,
+          "cat": "power",
+          "next": "NEXT_TOPIC"
         }
       ]
     }

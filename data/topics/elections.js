@@ -40,10 +40,10 @@ registerTopic({
           "next": "elections_mail"
         },
         {
-          "text": "The best way we could show respect for the voters who were upset is by telling them the truth. That's the burden, that's the duty of leadership. The truth is that President-elect Biden won the election, President Trump lost.",
-          "who": "Mitt Romney, Senator, Utah",
-          "source": "https://www.c-span.org/video/?507698-5/senate-rejects-objection-arizona-electoral-votes-93-6",
-          "date": "2021-01-06",
+          "text": "The 2020 presidential election was not stolen. Anyone who claims it was is spreading THE BIG LIE, turning their back on the rule of law, and poisoning our democratic system.",
+          "who": "Liz Cheney, former Representative, Wyoming",
+          "source": "https://www.cnn.com/2021/05/03/politics/liz-cheney-criticism-trump-big-lie/index.html",
+          "date": "2021-05-03",
           "score": 0,
           "cat": "elections",
           "next": "elections_accept"
@@ -52,7 +52,7 @@ registerTopic({
     },
     {
       "id": "elections_fraud",
-      "prompt": "'Frankly, we did win.' You said that at 2 a.m. with millions of votes uncounted. Two months later a crowd you had summoned to Washington stormed the Capitol. What exactly did you tell them that morning?",
+      "prompt": "'Frankly, we did win.' You said that at 2 a.m. with millions of votes uncounted. Two months later a crowd you had summoned to Washington stormed the Capitol. What exactly did you tell them that morning -- and do your words bear any responsibility for what followed?",
       "options": [
         {
           "text": "I know that everyone here will soon be marching over to the Capitol building to peacefully and patriotically make your voices heard.",
@@ -92,7 +92,7 @@ registerTopic({
     },
     {
       "id": "elections_accept",
-      "prompt": "'If everything's honest.' You said the same before 2020 and then called it rigged. Who decides what counts as honest -- and will you accept a 2028 result if your party loses?",
+      "prompt": "You say you will accept the results 'if everything's honest.' You said the same before 2020 and then called it rigged. Who decides what counts as honest -- and what is your message to voters who fear you will not accept a loss in 2028?",
       "options": [
         {
           "text": "In four years, you don't have to vote again. We'll have it fixed so good you're not going to have to vote.",
@@ -132,7 +132,7 @@ registerTopic({
     },
     {
       "id": "elections_georgia",
-      "prompt": "'Find 11,780 votes' -- one more than the margin. Georgia's Republican secretary of state recorded that call and told you the numbers were simply wrong. Four days later you tweeted at your own vice president while a mob hunted him. Were you asking officials to break the law?",
+      "prompt": "'Find 11,780 votes' -- one more than the margin. Georgia's Republican secretary of state recorded that call and told you the numbers were simply wrong. Four days later you tweeted at your own vice president while a mob hunted him. Were you asking officials to break the law -- and would you do it again?",
       "options": [
         {
           "text": "Mike Pence didn't have the courage to do what should have been done to protect our Country and our Constitution, giving States a chance to certify a corrected set of facts.",
@@ -151,8 +151,8 @@ registerTopic({
           "next": "elections_vote"
         },
         {
-          "text": "President Trump is wrong -- I had no right to overturn the election. The presidency belongs to the American people, and the American people alone.",
-          "who": "Mike Pence, former Vice President",
+          "text": "I had no right to overturn the election. The presidency belongs to the American people, and the American people alone.",
+          "who": "Mike Pence",
           "source": "https://www.cnn.com/videos/politics/2022/02/04/pence-speech-trump-wrong-nr-vpx.cnn",
           "date": "2022-02-04",
           "score": 0,
@@ -160,19 +160,18 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "If you have legit concerns about fraud present EVIDENCE and take it to court. STOP Spreading debunked misinformation... This is getting insane.",
-          "who": "Adam Kinzinger, former Representative, Illinois",
-          "source": "https://twitter.com/RepKinzinger/status/1324503564891414528",
-          "date": "2020-11-06",
-          "score": 0,
-          "cat": "truth",
-          "next": "NEXT_TOPIC"
+          "text": "You know, that's a criminal offense. And you know, you can't let that happen. That's a big risk to you.",
+          "source": "https://www.theguardian.com/us-news/2021/jan/04/trumps-phone-call-to-brad-raffensperger-five-key-points",
+          "date": "2021-01-02",
+          "score": 9,
+          "cat": "elections",
+          "next": "elections_jan6"
         }
       ]
     },
     {
       "id": "elections_mail",
-      "prompt": "A movement to get rid of mail-in ballots. The Constitution hands election rules to the states and Congress, and courts blocked key parts of your March 2025 election order. Millions of your own voters -- including you, in Florida -- vote by mail. What is the case?",
+      "prompt": "A movement to get rid of mail-in ballots. The Constitution hands election rules to the states and Congress, and courts blocked key parts of your March 2025 election order. Millions of your own voters -- including you, in Florida -- vote by mail. What is the case? And will you say, tonight, that the 2020 result was legitimate?",
       "options": [
         {
           "text": "The cheating on mail-in voting is legendary. It's horrible what's going on.",
@@ -191,15 +190,6 @@ registerTopic({
           "next": "elections_vote"
         },
         {
-          "text": "The 2020 presidential election was not stolen. Anyone who claims it was is spreading THE BIG LIE, turning their back on the rule of law, and poisoning our democratic system.",
-          "who": "Liz Cheney, former Representative, Wyoming",
-          "source": "https://www.cnn.com/2021/05/03/politics/liz-cheney-criticism-trump-big-lie/index.html",
-          "date": "2021-05-03",
-          "score": 0,
-          "cat": "elections",
-          "next": "NEXT_TOPIC"
-        },
-        {
           "text": "When the president says the election was rigged, that's what he's talking about. The fix was in.",
           "who": "Mike Johnson, Speaker of the House",
           "source": "https://www.nytimes.com/2023/10/25/us/politics/mike-johnson-2020-election-overturn.html",
@@ -207,6 +197,15 @@ registerTopic({
           "score": 6,
           "cat": "elections",
           "next": "elections_vote"
+        },
+        {
+          "text": "The best way we could show respect for the voters who were upset is by telling them the truth. That's the burden, that's the duty of leadership. The truth is that President-elect Biden won the election.",
+          "source": "https://www.c-span.org/video/?507698-5/senate-rejects-objection-arizona-electoral-votes-93-6",
+          "date": "2021-01-06",
+          "score": 0,
+          "cat": "elections",
+          "next": "NEXT_TOPIC",
+          "who": "Mitt Romney, Senator (R-UT)"
         }
       ]
     },
@@ -262,14 +261,6 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "We fight like hell, and if you don't fight like hell you're not going to have a country anymore.",
-          "source": "https://www.washingtonpost.com/politics/interactive/2021/annotated-trump-speech-jan-6-capitol/",
-          "date": "2021-01-06",
-          "score": 8,
-          "cat": "violence",
-          "next": "NEXT_TOPIC"
-        },
-        {
           "text": "We'll see what happens. Nobody really knows.",
           "source": "https://www.cnn.com/2020/02/27/politics/trump-coronavirus-disappear/index.html",
           "date": "2020-02-27",
@@ -283,6 +274,14 @@ registerTopic({
           "source": "https://obamawhitehouse.archives.gov/blog/2014/09/03/we-are-stronger-because-we-are-democracies-president-obama-addresses-people-estonia",
           "date": "2014-09-03",
           "score": 0,
+          "cat": "elections",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "It is a problem I'm not on the ballot. Everyone says if I was on a ballot we'd win in a landslide. I have some of the best poll numbers I've ever had.",
+          "source": "https://www.newsweek.com/donald-trump-approval-rating-plummets-personality-traits-11905848",
+          "date": "2026-05-02",
+          "score": 6,
           "cat": "elections",
           "next": "NEXT_TOPIC"
         }

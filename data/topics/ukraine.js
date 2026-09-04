@@ -140,14 +140,6 @@ registerTopic({
           "next": "ukraine_oval"
         },
         {
-          "text": "I want to see a ceasefire rapidly. I don't know if it's going to be today. But I'm not going to be happy if it's not today.",
-          "source": "https://time.com/7309902/trump-putin-meeting-ultimatum-ceasefire-talks/",
-          "date": "2025-08-15",
-          "score": 2,
-          "cat": "truth",
-          "next": "ukraine_alaska"
-        },
-        {
           "text": "Vladimir Putin wants to restore the old Russian empire. He cannot stand a free, democratic, prosperous Ukraine, because sooner or later the people of Russia would want to have that kind of lifestyle as well.",
           "who": "John McCain, Senator, Arizona",
           "source": "https://www.voanews.com/a/mccain-urges-crushing-sanctions-for-russia-arms-for-ukraine/2439206.html",
@@ -155,12 +147,20 @@ registerTopic({
           "score": 0,
           "cat": "strongman",
           "next": "ukraine_alaska"
+        },
+        {
+          "text": "I hold both countries responsible. I think that the United States has been foolish. I think we've all been foolish.",
+          "source": "https://www.irishtimes.com/news/world/europe/trump-putin-meeting-edited-transcript-of-helsinki-press-conference-1.3567158",
+          "date": "2018-07-16",
+          "score": 5,
+          "cat": "strongman",
+          "next": "ukraine_oval"
         }
       ]
     },
     {
       "id": "ukraine_calls",
-      "prompt": "You have admitted the phone calls mean nothing -- 'the talk doesn't mean anything,' your words. Yet you rewarded Putin with a summit in Alaska and came home with nothing. Why keep calling?",
+      "prompt": "You have all but admitted the phone calls mean nothing -- nice call, then missiles on Kyiv. Yet you rewarded Putin with a summit in Alaska and came home with nothing. Why keep calling?",
       "options": [
         {
           "text": "I go home, I tell the first lady, 'I spoke to Vladimir today, we had a wonderful conversation.' And she says, 'Oh really, another city was just hit'",
@@ -194,12 +194,20 @@ registerTopic({
           "score": 0,
           "cat": "strongman",
           "next": "ukraine_plan"
+        },
+        {
+          "text": "I want to see a ceasefire rapidly. I don't know if it's going to be today. But I'm not going to be happy if it's not today.",
+          "source": "https://time.com/7309902/trump-putin-meeting-ultimatum-ceasefire-talks/",
+          "date": "2025-08-15",
+          "score": 2,
+          "cat": "truth",
+          "next": "ukraine_alaska"
         }
       ]
     },
     {
       "id": "ukraine_oval",
-      "prompt": "You called him a dictator and blamed him for the invasion. Then on February 28th you and the Vice President berated President Zelensky in this very room, on live television, and sent him home without the minerals deal. What did that achieve?",
+      "prompt": "You called him a dictator and blamed him for the invasion. Then on February 28th you and the Vice President berated President Zelensky in this very room, on live television, and sent him home without the minerals deal. What did you say to him -- and what did it achieve?",
       "options": [
         {
           "text": "You don't have the cards right now. With us, you start having cards.",
@@ -226,11 +234,10 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "History will remember this day -- when an American President and Vice President abandoned all we stand for.",
-          "who": "Liz Cheney, former Representative, Wyoming",
-          "source": "https://x.com/Liz_Cheney/status/1895543534377152668",
-          "date": "2025-02-28",
-          "score": 0,
+          "text": "I hope it gets done... we're going to save a lot of people from being killed... we'll see.",
+          "source": "https://www.nbcnews.com/politics/trump-administration/read-full-transcript-president-donald-trump-interviewed-meet-press-mod-rcna203514",
+          "date": "2025-05-04",
+          "score": 1,
           "cat": "strongman",
           "next": "NEXT_TOPIC"
         }
@@ -238,7 +245,7 @@ registerTopic({
     },
     {
       "id": "ukraine_alaska",
-      "prompt": "Let's talk about Alaska. You threatened 'severe consequences' if Putin refused a ceasefire, then rolled out a red carpet for a man under an ICC arrest warrant, dropped the ceasefire demand, and flew home without a deal. Did Putin get everything he wanted?",
+      "prompt": "Let's talk about Alaska. You threatened 'severe consequences' if Putin refused a ceasefire, then rolled out a red carpet for a man under an ICC arrest warrant, dropped the ceasefire demand, and flew home without a deal. Did Putin get everything he wanted -- and what did the two of you actually talk about?",
       "options": [
         {
           "text": "There's no deal until there's a deal.",
@@ -265,11 +272,10 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "If your position is being cheered by Vladimir Putin, then it's time to reconsider your position.",
-          "who": "Mitt Romney, Senator, Utah",
-          "source": "https://www.youtube.com/watch?v=w4VpVtVsSCo",
-          "date": "2024-02-12",
-          "score": 0,
+          "text": "The meeting was a 10 in the sense that we got along great... it's good when, you know, two big powers get along, especially when they're nuclear powers.",
+          "source": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-sean-hannity-fox-news-august-15-2025/",
+          "date": "2025-08-15",
+          "score": 5,
           "cat": "strongman",
           "next": "NEXT_TOPIC"
         }
@@ -277,7 +283,7 @@ registerTopic({
     },
     {
       "id": "ukraine_plan",
-      "prompt": "Even the First Lady sees it. Yet your 28-point plan, drafted with a Kremlin envoy in Miami, asked Kyiv to give up the Donbas, and you gave Zelensky a Thanksgiving deadline to sign. Why does the pressure always land on the country that was invaded?",
+      "prompt": "Even the First Lady sees it. Yet your 28-point plan, drafted with a Kremlin envoy in Miami, asked Kyiv to give up the Donbas, and you gave Zelensky a Thanksgiving deadline to sign. Why does the pressure always land on the country that was invaded? Whose side are you on?",
       "options": [
         {
           "text": "I think Ukraine, militarily they are defeated, OK? You wouldn't know that by reading the fake news.",
@@ -296,12 +302,21 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "There's no deal until there's a deal.",
-          "source": "https://www.nbcnews.com/politics/donald-trump/live-blog/trump-putin-summit-alaska-ukraine-war-russia-peace-live-updates-rcna224983",
-          "date": "2025-08-15",
-          "score": 1,
-          "cat": "truth",
+          "text": "I think it's in the U.S. best interest to get this war finished and just get it done. All right. Negotiate a deal.",
+          "source": "https://abcnews.go.com/Politics/harris-trump-presidential-debate-transcript/story?id=113560542",
+          "date": "2024-09-10",
+          "score": 5,
+          "cat": "strongman",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "I believe that it must be the policy of the United States to support free peoples who are resisting attempted subjugation by armed minorities or by outside pressures.",
+          "source": "https://avalon.law.yale.edu/20th_century/trudoc.asp",
+          "date": "1947-03-12",
+          "score": 0,
+          "cat": "strongman",
+          "next": "NEXT_TOPIC",
+          "who": "Harry S. Truman, 33rd President"
         }
       ]
     },

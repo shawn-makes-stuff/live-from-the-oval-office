@@ -5,7 +5,7 @@ registerTopic({
   "nodes": [
     {
       "id": "covid_intro",
-      "prompt": "Mr. President, more than a million Americans died of COVID-19. In January 2020 you told CNBC it was 'one person coming in from China.' Looking back, what did you get right, and what did you get wrong?",
+      "prompt": "Mr. President, more than a million Americans died of COVID-19. In January 2020 you told CNBC it was 'one person coming in from China.' Looking back, do you stand by that -- and what, if anything, did you get right?",
       "options": [
         {
           "text": "We have it totally under control. It's one person coming in from China, and we have it under control. It's going to be just fine.",
@@ -43,7 +43,7 @@ registerTopic({
     },
     {
       "id": "covid_control",
-      "prompt": "'Totally under control.' Five weeks later you said it would disappear 'like a miracle.' By June cases were surging and you told a rally in Tulsa you had asked your people to slow down testing. Your staff said you were joking. Were you?",
+      "prompt": "'Totally under control.' Five weeks later you said it would disappear 'like a miracle.' By June cases were surging and you told a rally in Tulsa you had asked your people to slow down testing. Your staff said you were joking. Were you -- and was that your real approach to the pandemic?",
       "options": [
         {
           "text": "So I said to my people, slow the testing down, please.",
@@ -68,12 +68,21 @@ registerTopic({
           "score": 3,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "None of us have ever been told to slow down on testing. That just is a fact.",
+          "source": "https://www.npr.org/2020/06/23/881674932/watch-live-fauci-redfield-to-testify-on-trump-administrations-covid-19-response",
+          "date": "2020-06-23",
+          "score": 0,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Anthony Fauci, NIAID Director"
         }
       ]
     },
     {
       "id": "covid_playdown",
-      "prompt": "You told Bob Woodward on tape you wanted to 'play it down' while privately calling the virus deadly. Then at an April briefing, on live television, you wondered aloud about disinfectant inside the body. Was that playing it down?",
+      "prompt": "You told Bob Woodward on tape you wanted to 'play it down' while privately calling the virus deadly. Then at an April briefing, on live television, you wondered aloud about disinfectant inside the body. Was that playing it down -- what exactly were you suggesting?",
       "options": [
         {
           "text": "And is there a way we can do something like that by injection inside or almost a cleaning? Because you see it gets in the lungs and it does a tremendous number on the lungs.",
@@ -98,6 +107,14 @@ registerTopic({
           "score": 3,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "Maybe you can. Maybe you can't. I'm not a doctor. I'm, like, a person who has a good you-know-what.",
+          "source": "https://www.nbcnews.com/politics/donald-trump/it-s-irresponsible-it-s-dangerous-experts-rip-trump-s-n1191246",
+          "date": "2020-04-24",
+          "score": 6,
+          "cat": "truth",
+          "next": "covid_cures"
         }
       ]
     },
@@ -128,6 +145,14 @@ registerTopic({
           "score": 1,
           "cat": "truth",
           "next": "covid_vaccine"
+        },
+        {
+          "text": "The buck stops with everybody.",
+          "source": "https://theweek.com/speedreads/816895/president-trump-buck-stops-everybody",
+          "date": "2019-01-10",
+          "score": 5,
+          "cat": "truth",
+          "next": "covid_fauci"
         }
       ]
     },
@@ -173,16 +198,8 @@ registerTopic({
     },
     {
       "id": "covid_testing",
-      "prompt": "Slow the testing down. Stop testing and the cases vanish. Mr. President, the virus does not read the test reports. Fewer tests just meant more Americans dying without a diagnosis. Do you understand that?",
+      "prompt": "Slow the testing down. Stop testing and the cases vanish. Mr. President, the virus does not read the test reports. Fewer tests just meant more Americans dying without a diagnosis. Do you understand that -- and what, honestly, has your administration done to save lives?",
       "options": [
-        {
-          "text": "They are dying, that's true, and you -- it is what it is, but that doesn't mean we aren't doing everything we can.",
-          "source": "https://www.axios.com/2020/08/04/trump-coronavirus-under-control",
-          "date": "2020-08-03",
-          "score": 7,
-          "cat": "truth",
-          "next": "NEXT_TOPIC"
-        },
         {
           "text": "It's under control as much as you can control it.",
           "source": "https://www.axios.com/2020/08/04/trump-coronavirus-under-control",
@@ -192,19 +209,36 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "Could maybe go away. We'll see what happens. Nobody really knows.",
-          "source": "https://www.cnn.com/2020/02/27/politics/trump-coronavirus-disappear/index.html",
-          "date": "2020-02-27",
-          "score": 2,
-          "cat": "truth",
-          "next": "NEXT_TOPIC"
-        },
-        {
           "text": "Since you have been in office President Trump, your DOJ agencies have seized more than 22 million fentanyl pills, 3,400 kilos of fentanyl... Which saved -- are you ready for this, media? -- 258 million lives.",
           "who": "Pam Bondi, Attorney General",
           "source": "https://www.yahoo.com/news/pam-bondi-makes-head-spinning-221414313.html",
           "date": "2025-05-01",
           "score": 3,
+          "cat": "truth",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "Even before we knew it was a coronavirus, I said it certainly sounds like a coronavirus-SARS type thing. As soon as it was identified, I called a meeting of top-level people and said, 'Let's start working on a vaccine right now.'",
+          "source": "https://www.nytimes.com/2020/03/08/health/fauci-coronavirus.html",
+          "date": "2020-03-08",
+          "score": 0,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Anthony Fauci, NIAID Director"
+        },
+        {
+          "text": "The 15 within a couple of days is going to be down to close to zero -- that's a pretty good job we've done.",
+          "source": "https://www.washingtonpost.com/politics/2020/04/28/yet-again-trump-pledges-that-coronavirus-will-simply-go-away/",
+          "date": "2020-02-26",
+          "score": 6,
+          "cat": "truth",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "We've tested more than every other country in the world even put together.",
+          "source": "https://www.vox.com/2020/4/21/21230400/trump-coronavirus-briefing-testing-other-countries-combined",
+          "date": "2020-04-21",
+          "score": 8,
           "cat": "truth",
           "next": "NEXT_TOPIC"
         }
@@ -270,10 +304,19 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "The vaccine is one of the greatest achievements of mankind.",
-          "source": "https://www.nbcnews.com/politics/donald-trump/trump-renews-praise-covid-vaccines-one-greatest-achievements-mankind-n1286551",
-          "date": "2021-12-22",
-          "score": 1,
+          "text": "Second term kicks off with firing Wray, firing Fauci... I'd actually like to go back to the old times of Tudor England, I'd put the heads on pikes... at the two corners of the White House as a warning to federal bureaucrats.",
+          "source": "https://www.newsweek.com/bannon-calls-fauci-beheading-1545287",
+          "date": "2020-11-05",
+          "score": 9,
+          "cat": "violence",
+          "next": "NEXT_TOPIC",
+          "who": "Steve Bannon, former White House chief strategist"
+        },
+        {
+          "text": "Tony, Tony Fauci, he's a nice guy. He said it is not a threat, it is not a problem. Then he said do not wear a mask... under any circumstances. But he's a nice guy so I keep him around.",
+          "source": "https://www.youtube.com/watch?v=yiDzC3xFork",
+          "date": "2020-10-15",
+          "score": 3,
           "cat": "truth",
           "next": "NEXT_TOPIC"
         }
@@ -281,16 +324,8 @@ registerTopic({
     },
     {
       "id": "covid_vaccine",
-      "prompt": "You call the vaccine one of mankind's greatest achievements, yet you stood beside Secretary Kennedy as he cut it from the childhood schedule, and told pregnant women to 'tough it out' rather than take Tylenol. Who is the doctor here?",
+      "prompt": "You have called the vaccine 'one of the greatest achievements of mankind,' yet you stood beside Secretary Kennedy as he cut it from the childhood schedule, and told pregnant women to 'tough it out' rather than take Tylenol. Who is the doctor here?",
       "options": [
-        {
-          "text": "Don't take Tylenol. Don't take it... Fight like hell not to take it.",
-          "source": "https://www.factcheck.org/2025/09/trump-administrations-problematic-claims-on-tylenol-and-autism/",
-          "date": "2025-09-22",
-          "score": 7,
-          "cat": "truth",
-          "next": "NEXT_TOPIC"
-        },
         {
           "text": "Taking Tylenol is not good, alright? I'll say it. It's not good.",
           "source": "https://www.cbsnews.com/news/trump-autism-tylenol-medical-experts/",
@@ -300,10 +335,27 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "I'm just making these statements from me, I'm not making them from these doctors.",
-          "source": "https://www.cbsnews.com/news/trump-autism-tylenol-medical-experts/",
-          "date": "2025-09-22",
-          "score": 3,
+          "text": "Trusting the experts is not a feature of either a science or democracy.",
+          "source": "https://www.splinter.com/rfk-jr-learns-he-is-not-also-denmarks-hhs-secretary",
+          "date": "2025-08-12",
+          "score": 5,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Robert F. Kennedy Jr., Health Secretary"
+        },
+        {
+          "text": "I really get it. People are surprised that I understand it. Every one of these doctors said, 'How do you know so much about this?' Maybe I have a natural ability. Maybe I should have done that instead of running for President.",
+          "source": "https://www.washingtonpost.com/politics/maybe-i-have-a-natural-ability-trump-plays-medical-expert-on-coronavirus-by-second-guessing-the-professionals/2020/03/06/3ee0574c-5ffb-11ea-9055-5fa12981bbbf_story.html",
+          "date": "2020-03-06",
+          "score": 8,
+          "cat": "truth",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "I recommend: take the vaccines. I did it. It's good. Take the vaccines.",
+          "source": "https://www.cnbc.com/2021/08/22/trump-booed-at-alabama-rally-after-telling-supporters-to-get-vaccinated.html",
+          "date": "2021-08-22",
+          "score": 1,
           "cat": "truth",
           "next": "NEXT_TOPIC"
         }

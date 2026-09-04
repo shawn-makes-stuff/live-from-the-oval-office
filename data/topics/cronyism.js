@@ -69,12 +69,20 @@ registerTopic({
           "score": 3,
           "cat": "cronyism",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "He who saves his Country does not violate any Law.",
+          "source": "https://thehill.com/homenews/administration/5148926-trump-post-saving-country/",
+          "date": "2025-02-15",
+          "score": 9,
+          "cat": "power",
+          "next": "cronyism_profit"
         }
       ]
     },
     {
       "id": "cronyism_ballroom",
-      "prompt": "In July you promised the ballroom 'won't interfere with the current building.' In October, bulldozers took down the entire East Wing. Which statement was true -- and are you actually allowed to knock down part of the White House?",
+      "prompt": "In July you promised the ballroom 'won't interfere with the current building.' In October, bulldozers took down the entire East Wing. Which statement was true -- are you even allowed to knock down part of the White House, and what do the donors paying for it get in return?",
       "options": [
         {
           "text": "Over the next few days, it's going to be demolished. Everything out there is coming down, and we're replacing it with one of the most beautiful ballrooms that you've ever seen.",
@@ -112,7 +120,7 @@ registerTopic({
     },
     {
       "id": "cronyism_coin",
-      "prompt": "'GET YOUR $TRUMP NOW.' Insiders hold most of the supply, trading fees have topped $300 million, and 220 top buyers got dinner with you. How did the dinner go -- and who is the customer here, the public or you?",
+      "prompt": "'GET YOUR $TRUMP NOW.' Insiders hold most of the supply, trading fees have topped $300 million, and 220 top buyers got dinner with you. How did the dinner go -- and between the coin buyers and the law firms lining up to settle with you, who is the customer here, the public or you?",
       "options": [
         {
           "text": "The U.S.A. is DOMINATING in Crypto, Bitcoin, etc., and we are going to keep it that way!",
@@ -137,6 +145,14 @@ registerTopic({
           "score": 7,
           "cat": "power",
           "next": "cronyism_dinner"
+        },
+        {
+          "text": "The law is totally on my side, meaning, the president can't have a conflict of interest... everything a president does in some ways is like a conflict of interest.",
+          "source": "https://www.nytimes.com/2016/11/23/us/politics/trump-new-york-times-interview-transcript.html",
+          "date": "2016-11-23",
+          "score": 6,
+          "cat": "cronyism",
+          "next": "cronyism_dinner"
         }
       ]
     },
@@ -144,14 +160,6 @@ registerTopic({
       "id": "cronyism_firms",
       "prompt": "You saw it on television. Fine -- let's talk about something you signed personally: executive orders against law firms, lifted after they pledged nearly a billion dollars in free legal work. You said they 'did nothing wrong.' So what were they paying for?",
       "options": [
-        {
-          "text": "They give you $100 million and then they announce that, 'But we have done nothing wrong.' And I agree, they've done nothing wrong. But what the hell, they give me a lot of money considering they've done nothing wrong.",
-          "source": "https://www.ms.now/rachel-maddow-show/maddowblog/white-houses-campaign-law-firms-continues-trump-says-bit-much-rcna200417",
-          "date": "2025-04-08",
-          "score": 7,
-          "cat": "cronyism",
-          "next": "cronyism_fed"
-        },
         {
           "text": "I could know about it. I could be the one starting it. I'm actually the chief law enforcement officer. But I feel it's better this way.",
           "source": "https://www.aljazeera.com/news/2025/8/22/fbi-raids-home-of-john-bolton-former-trump-adviser-turned-critic",
@@ -167,6 +175,22 @@ registerTopic({
           "score": 2,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "Have you noticed that lots of law firms have been signing up with Trump? $100 million. Another $100 million for -- ah -- damages that they've done.",
+          "source": "https://www.ms.now/rachel-maddow-show/maddowblog/white-houses-campaign-law-firms-continues-trump-says-bit-much-rcna200417",
+          "date": "2025-04-08",
+          "score": 8,
+          "cat": "cronyism",
+          "next": "cronyism_fed"
+        },
+        {
+          "text": "The law firms have to behave themselves, and we've proven that.",
+          "source": "https://www.sfchronicle.com/politics/article/donald-trump-biglaw-20239927.php",
+          "date": "2025-03-24",
+          "score": 8,
+          "cat": "cronyism",
+          "next": "cronyism_fed"
         }
       ]
     },
@@ -222,26 +246,35 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "I'm allowed to do it, but it's something I have not thought about.",
-          "source": "https://www.newsweek.com/donald-trump-pardon-ghislaine-maxwell-jeffrey-epstein-2104066",
-          "date": "2025-07-25",
-          "score": 4,
-          "cat": "power",
+          "text": "I don't know anything about it. You're telling me about it for the first time.",
+          "source": "https://thehill.com/homenews/administration/5211142-trump-atlantic-journalist-war-plan-text/",
+          "date": "2025-03-24",
+          "score": 1,
+          "cat": "truth",
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "I could know about it. I could be the one starting it. I'm actually the chief law enforcement officer. But I feel it's better this way.",
-          "source": "https://www.aljazeera.com/news/2025/8/22/fbi-raids-home-of-john-bolton-former-trump-adviser-turned-critic",
-          "date": "2025-08-22",
-          "score": 7,
-          "cat": "power",
+          "text": "The president is attending it in his personal time. It is not a White House dinner. It's not taking place here at the White House.",
+          "source": "https://www.nbcnews.com/tech/crypto/trumps-meme-coin-dinner-tuxedos-luxury-cars-protesters-rcna208647",
+          "date": "2025-05-22",
+          "score": 4,
+          "cat": "cronyism",
+          "next": "NEXT_TOPIC",
+          "who": "Karoline Leavitt, White House Press Secretary"
+        },
+        {
+          "text": "Are you stupid? Are you a stupid person?",
+          "source": "https://www.huffpost.com/entry/donald-trump-stupid-attack_n_6928ebbfe4b0237ded13a17a",
+          "date": "2025-11-27",
+          "score": 8,
+          "cat": "press",
           "next": "NEXT_TOPIC"
         }
       ]
     },
     {
       "id": "cronyism_eastwing",
-      "prompt": "$300 million from donors including companies you regulate, no congressional approval, the First Lady's offices and the bunker entrance gone. Who owns that ballroom when you leave office?",
+      "prompt": "$300 million from donors including companies you regulate, no congressional approval, the First Lady's offices and the bunker entrance gone. Who owns that ballroom when you leave office -- and is there anything within reach that this administration won't just take?",
       "options": [
         {
           "text": "I don't comment on something that's a dead issue. I gave all comments to the staff. It's a dead issue.",
@@ -252,19 +285,27 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "They've wanted a ballroom at the White House for more than 150 years, but there's never been a president that was good at ballrooms. I'm really good.",
-          "source": "https://en.wikiquote.org/wiki/Donald_Trump",
-          "date": "2025-07-31",
-          "score": 4,
-          "cat": "cronyism",
-          "next": "NEXT_TOPIC"
-        },
-        {
           "text": "We took over the ship. We took over the cargo, took over the oil. It's a very profitable business. We're like pirates. We're sort of like pirates.",
           "source": "https://en.wikiquote.org/wiki/Donald_Trump",
           "date": "2026-05-02",
           "score": 7,
           "cat": "cronyism",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "They call me king now. Do you believe it? No king. I'm such a king, I can't get a ballroom approved. It's pretty amazing, right? I'm a king. If I was a king, we'd be doing a lot more.",
+          "source": "https://newrepublic.com/post/208535/white-house-accidentally-easter-lunch-trump-speech",
+          "date": "2026-04-01",
+          "score": 6,
+          "cat": "strongman",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "It's a monument. I'm building a monument to myself -- because no one else will.",
+          "source": "https://people.com/jesse-watters-claims-trump-said-hes-building-white-house-ballroom-as-monument-to-himself-11874091",
+          "date": "2025-12-21",
+          "score": 7,
+          "cat": "power",
           "next": "NEXT_TOPIC"
         }
       ]

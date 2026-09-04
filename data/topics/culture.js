@@ -45,7 +45,7 @@ registerTopic({
     },
     {
       "id": "culture_woke",
-      "prompt": "'Woke recipients.' Tom Hanks played a soldier in Saving Private Ryan and spent decades raising money for veterans. You have also demanded investigations of the musicians who campaigned against you. Who decides which Americans get honored, and which get punished?",
+      "prompt": "'Woke recipients.' Tom Hanks played a soldier in Saving Private Ryan and spent decades raising money for veterans. You have also demanded investigations of the musicians who campaigned against you. Is there room in your America for an artist who is against you?",
       "options": [
         {
           "text": "HOW MUCH DID KAMALA HARRIS PAY BRUCE SPRINGSTEEN FOR HIS POOR PERFORMANCE DURING HER CAMPAIGN FOR PRESIDENT?... I am going to call for a major investigation into this matter.",
@@ -151,12 +151,21 @@ registerTopic({
           "cat": "dehumanization",
           "next": "culture_universities",
           "who": "JD Vance, Vice President"
+        },
+        {
+          "text": "Instead of knowledge, schools pour poison into the ears of our children.",
+          "source": "https://x.com/elonmusk/status/1711956787081969934",
+          "date": "2023-10-11",
+          "score": 8,
+          "cat": "truth",
+          "next": "culture_universities",
+          "who": "Elon Musk (DOGE)"
         }
       ]
     },
     {
       "id": "culture_universities",
-      "prompt": "'The enemy.' You froze billions in Harvard's research grants and tried to bar its foreign students, then this spring said it was insulting to tell a country we don't want its people in our schools. Which is it?",
+      "prompt": "'The enemy.' You froze billions in Harvard's research grants and tried to bar its foreign students, then this spring said it was insulting to tell a country we don't want its people in our schools. Which is it -- and what do you say to the students and professors who say you are out to break their universities?",
       "options": [
         {
           "text": "Harvard has been hiring almost all woke, Radical Left, idiots and 'birdbrains' who are only capable of teaching FAILURE to students and so-called 'future leaders",
@@ -224,19 +233,19 @@ registerTopic({
           "who": "Mike Johnson, Speaker of the House"
         },
         {
-          "text": "Freedom means free speech, not politically correct safe spaces. Freedom means religious freedom, whether you are Christian, Jew, Muslim, or atheist.",
-          "source": "https://web.archive.org/web/2016/http://www.rollcall.com/news/politics/transcript-ted-cruz-convention-speech",
-          "date": "2016-07-20",
-          "score": 1,
-          "cat": "truth",
+          "text": "I am not the Catholic candidate for president. I am the Democratic Party's candidate for president, who happens also to be a Catholic. I do not speak for my church on public matters, and the church does not speak for me.",
+          "source": "https://www.npr.org/templates/story/story.php?storyId=16920600",
+          "date": "1960-09-12",
+          "score": 0,
+          "cat": "power",
           "next": "culture_pope",
-          "who": "Ted Cruz, Senator"
+          "who": "John F. Kennedy, 35th President"
         }
       ]
     },
     {
       "id": "culture_pope",
-      "prompt": "You posted an AI image of yourself in papal robes and said you would like the job. Then the Church elected an American, and when he criticized your war you called him weak and said he owes you his seat. Does the Pope answer to you?",
+      "prompt": "You posted an AI image of yourself in papal robes and said you would like the job. Then the Church elected an American, and when he criticized your war you called him weak and said he owes you his seat. Does the Pope answer to you -- and where does your own faith stand in all this?",
       "options": [
         {
           "text": "Leo should be thankful because, as everyone knows, he was a shocking surprise. He wasn't on any list to be Pope... If I wasn't in the White House, Leo wouldn't be in the Vatican.",
@@ -265,7 +274,7 @@ registerTopic({
         },
         {
           "text": "I'm a Christian by choice.",
-          "source": "http://www.huffingtonpost.com/2010/09/28/obama-christian-by-choice_n_742124.html",
+          "source": "https://web.archive.org/web/2011/http://www.huffingtonpost.com/2010/09/28/obama-christian-by-choice_n_742124.html",
           "date": "2010-09-27",
           "score": 0,
           "cat": "truth",
@@ -316,7 +325,7 @@ registerTopic({
     },
     {
       "id": "culture_military",
-      "prompt": "Your Secretary of War fired the Chairman of the Joint Chiefs, the first woman to lead the Navy, and the Coast Guard commandant, and he says the Pentagon draws its strength from the word of God. Is the United States military a fighting force or a congregation?",
+      "prompt": "Your Secretary of War fired the Chairman of the Joint Chiefs, the first woman to lead the Navy, and the Coast Guard commandant, and he says the Pentagon draws its strength from the word of God. Is the United States military a fighting force or a congregation -- and who is welcome to serve in it?",
       "options": [
         {
           "text": "At the War Department, we see ourselves as the Strength Department. But we also need to remember that we derive our strength through faith, and through truth, and through the word of God.",

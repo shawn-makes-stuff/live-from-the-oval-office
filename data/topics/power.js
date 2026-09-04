@@ -164,6 +164,14 @@ registerTopic({
           "score": 2,
           "cat": "violence",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "In my administration, I'm going to enforce all laws concerning the protection of classified information. No one will be above the law.",
+          "source": "https://www.snopes.com/fact-check/trump-classified-above-law/",
+          "date": "2016-08-18",
+          "score": 1,
+          "cat": "power",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
@@ -194,12 +202,20 @@ registerTopic({
           "score": 2,
           "cat": "elections",
           "next": "power_third_term"
+        },
+        {
+          "text": "Now, I won't say cancel the election, they should cancel the election, because the fake news will say, 'He wants the elections canceled. He's a dictator.' They always call me a dictator.",
+          "source": "https://eu.delawareonline.com/story/news/2026/01/15/trump-impeachment-update-2026-is-trump-getting-impeached-midterm-elections-cancelled-predictions/88195759007/",
+          "date": "2026-01-15",
+          "score": 8,
+          "cat": "elections",
+          "next": "power_third_term"
         }
       ]
     },
     {
       "id": "power_third_term",
-      "prompt": "'There are methods.' Your allies float Vance running and handing the office back to you. Which method are you actually considering, Mr. President?",
+      "prompt": "Your allies float Vance running and handing the office back to you, and you have said there are 'methods.' Which method are you actually considering, Mr. President -- or will you commit tonight to leaving in January 2029?",
       "options": [
         {
           "text": "We're going to win four more years in the White House. And then after that, we'll negotiate, right? Because we're probably, based on the way we were treated, we're probably entitled to another four after that.",
@@ -238,7 +254,7 @@ registerTopic({
     },
     {
       "id": "power_constitution",
-      "prompt": "'I don't know' -- whether you must uphold the Constitution. You swore an oath to preserve, protect and defend it, and that same document limits you to two terms. Is the oath optional? Is the 22nd Amendment?",
+      "prompt": "You swore an oath to preserve, protect and defend the Constitution -- and asked whether you must uphold it, you said 'I don't know.' That same document limits you to two terms. Is the oath optional? Is the 22nd Amendment?",
       "options": [
         {
           "text": "It will be the greatest honor of my life to serve, not once but twice -- or three times or four times.",

@@ -43,7 +43,7 @@ registerTopic({
     },
     {
       "id": "strongmen_putin",
-      "prompt": "A ten out of ten -- for a summit that produced no ceasefire and no deal. In Helsinki you stood next to Putin and took his word over your own intelligence agencies. Do you believe Vladimir Putin?",
+      "prompt": "A ten out of ten -- for a summit that produced no ceasefire and no deal. In Helsinki you stood next to Putin and took his word over your own intelligence agencies. Do you believe Vladimir Putin -- and what is your message to him today?",
       "options": [
         {
           "text": "I have great confidence in my intelligence people, but I will tell you that President Putin was extremely strong and powerful in his denial today.",
@@ -91,7 +91,7 @@ registerTopic({
     },
     {
       "id": "strongmen_putin_deep",
-      "prompt": "Every US intelligence agency concluded Russia attacked the 2016 election, and Russia has bombed Ukrainian cities for three years. Which side is the President of the United States on?",
+      "prompt": "Every US intelligence agency concluded Russia attacked the 2016 election, and Russia has bombed Ukrainian cities for three years. Was it Russia -- and which side is the President of the United States on?",
       "options": [
         {
           "text": "I will say this: I don't see any reason why it would be.",
@@ -130,7 +130,7 @@ registerTopic({
     },
     {
       "id": "strongmen_kim",
-      "prompt": "You 'fell in love' with a man who runs prison camps and executes his own officials. Kim never faces an election. Neither does Xi Jinping. Is that the kind of leader you admire?",
+      "prompt": "You 'fell in love' with a man who runs prison camps and executes his own officials. Kim never faces an election. Neither does Xi Jinping. Is that the kind of leader you admire -- or is it just about the deals?",
       "options": [
         {
           "text": "He's now president for life. President for life. No, he's great. And look, he was able to do that. I think it's great. Maybe we'll have to give that a shot some day.",
@@ -155,12 +155,21 @@ registerTopic({
           "score": 2,
           "cat": "strongman",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "Dealing with Congress is a matter of give and take. The president doesn't get everything he wants, the Congress doesn't get everything they want. A dictatorship would be a heck of a lot easier, there's no question about it.",
+          "source": "http://seattlepi.nwsource.com/national/32902_bush27.shtml",
+          "date": "2001-07-26",
+          "score": 3,
+          "cat": "power",
+          "next": "NEXT_TOPIC",
+          "who": "George W. Bush, 43rd President"
         }
       ]
     },
     {
       "id": "strongmen_erdogan",
-      "prompt": "'He knows about rigged elections better than anybody' -- Erdogan jailed his main rival and thousands of journalists. Netanyahu is under an ICC arrest warrant, and he just handed you a Nobel nomination letter across the Oval Office desk. Is any ally's record disqualifying for you?",
+      "prompt": "'He knows about rigged elections better than anybody' -- Erdogan jailed his main rival and thousands of journalists. Netanyahu is under an ICC arrest warrant, and he just handed you a Nobel nomination letter across the Oval Office desk. Is any ally's record disqualifying for you -- and what did you say when he handed you that letter?",
       "options": [
         {
           "text": "This is a tough man. This is a guy who's highly opinionated. Usually, I don't like opinionated people, but I always like this one.",
@@ -185,12 +194,20 @@ registerTopic({
           "score": 7,
           "cat": "strongman",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "We like getting along with everybody. One of the reasons that I'm so successful, I get along with everybody.",
+          "source": "https://time.com/article/2026/09/01/trump-defends-hosting-russia-g20-european-disapproval-ukraine-war/",
+          "date": "2026-09-01",
+          "score": 3,
+          "cat": "cronyism",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
     {
       "id": "strongmen_ukraine",
-      "prompt": "'Aligned with nobody' -- yet you blamed Ukraine for being invaded and branded its elected president a dictator while Putin got a red carpet. Who started this war, Mr. President?",
+      "prompt": "'Aligned with nobody' -- yet you blamed Ukraine for being invaded and branded its elected president a dictator while Putin got a red carpet. Who started this war, Mr. President -- and do you stand by 'dictator'?",
       "options": [
         {
           "text": "You've been there for three years. You should have ended it three years -- you should have never started it, you could have made a deal.",
@@ -209,14 +226,6 @@ registerTopic({
           "next": "strongmen_ukraine_deep"
         },
         {
-          "text": "As far as I'm concerned there's no deal until there's a deal, but we did make a lot of progress.",
-          "source": "https://rollcall.com/factbase/trump/transcript/donald-trump-interview-sean-hannity-fox-news-august-15-2025/",
-          "date": "2025-08-15",
-          "score": 2,
-          "cat": "strongman",
-          "next": "strongmen_ukraine_deep"
-        },
-        {
           "text": "Russia is the aggressor. No if, ands, or buts about it. Russia is the aggressor. And the world must and will hold Russia accountable.",
           "who": "Joe Biden, 46th President",
           "source": "https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2022/04/28/remarks-by-president-biden-on-the-request-to-congress-for-additional-funding-to-support-ukraine/",
@@ -224,12 +233,20 @@ registerTopic({
           "score": 0,
           "cat": "strongman",
           "next": "strongmen_ukraine_deep"
+        },
+        {
+          "text": "I'm sure that Ukraine thought they were going to win, you're going to beat someone that's 15 times your size ... you don't go into a war that's 15 times your size.",
+          "source": "https://uk.news.yahoo.com/trump-repeats-favourite-kremlin-talking-113114361.html",
+          "date": "2025-08-27",
+          "score": 7,
+          "cat": "truth",
+          "next": "strongmen_ukraine_deep"
         }
       ]
     },
     {
       "id": "strongmen_ukraine_deep",
-      "prompt": "Ukraine's constitution bars elections under martial law, and it was Russian tanks that crossed the border. On February 28 you threw President Zelensky out of the Oval Office on live television. What did you tell him?",
+      "prompt": "Ukraine's constitution bars elections under martial law, and it was Russian tanks that crossed the border. On February 28 you threw President Zelensky out of the Oval Office on live television. What did you tell him -- and what did it achieve?",
       "options": [
         {
           "text": "You don't have the cards right now. With us, you start having cards.",

@@ -44,8 +44,8 @@ registerTopic({
 - 9-10 explicit calls for violence, ignoring courts, indefinite power, ending elections
 
 ## Tree shape per topic
-- `<topic>_intro` with 3-4 options, each leading to its **own** follow-up node.
-- Follow-ups have 3-4 options (up to 6 stored; the game shows at most 4 per question, always including a low and a high scorer); each goes to a depth-3 node or `NEXT_TOPIC`.
+- `<topic>_intro` with 4 options (4-6 stored; the game shows 4), each leading to its **own** follow-up node.
+- Follow-ups have at least 4 options (up to 6 stored; the game shows 4 per question, always including a low and a high scorer); each goes to a depth-3 node or `NEXT_TOPIC`.
 - At least two lines of questioning reach depth 3. Aim for 7-12 nodes per topic.
 - Every node mixes severities: at least one option <= 3 and one >= 7.
 

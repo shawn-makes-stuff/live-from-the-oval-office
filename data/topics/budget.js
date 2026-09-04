@@ -63,13 +63,21 @@ registerTopic({
           "next": "budget_medicaid"
         },
         {
-          "text": "This bill raises the debt ceiling by $5 TRILLION, the biggest increase in history.",
-          "source": "https://www.yahoo.com/news/elon-back-blasting-trump-big-233525897.html",
-          "date": "2025-06-29",
-          "score": 1,
+          "text": "You can't win elections unless you have the support of the working class of this country.",
+          "source": "https://www.theguardian.com/us-news/commentisfree/2022/oct/10/democrats-midterms-victory-economy-bernie-sanders",
+          "date": "2022-10-10",
+          "score": 0,
           "cat": "truth",
-          "next": "budget_debt",
-          "who": "Elon Musk (DOGE)"
+          "next": "budget_medicaid",
+          "who": "Bernie Sanders, Senator (I-VT)"
+        },
+        {
+          "text": "I don't know that they are saying that. I think polls are fake. We have the greatest economy we've ever had.",
+          "source": "https://www.mediaite.com/media/tv/foxs-laura-ingraham-confronts-trump-on-50-year-mortgage-plan-is-that-really-a-good-idea/",
+          "date": "2025-11-10",
+          "score": 5,
+          "cat": "truth",
+          "next": "budget_medicaid"
         }
       ]
     },
@@ -84,14 +92,6 @@ registerTopic({
           "score": 7,
           "cat": "cronyism",
           "next": "budget_debt"
-        },
-        {
-          "text": "One of the things they're going to be talking about pretty soon are the tremendous drop in drug prices. You know, we've cut drug prices by 1,200, 1,300, 1,400, 1,500 percent. I don't mean 50 percent. I mean 14-, 1,500 percent.",
-          "source": "https://www.newsweek.com/donald-trump-doubles-down-impossible-drug-price-cuts-2108365",
-          "date": "2025-08-04",
-          "score": 5,
-          "cat": "truth",
-          "next": "budget_medicaid"
         },
         {
           "text": "Billionaires need the working class. The working class does not need billionaires.",
@@ -110,12 +110,20 @@ registerTopic({
           "cat": "truth",
           "next": "NEXT_TOPIC",
           "who": "Bernie Sanders, Senator (I-VT)"
+        },
+        {
+          "text": "If you can't get rich dealing with politicians, there's something wrong with you.",
+          "source": "http://www.motherjones.com/mojo/2015/07/donald-trump-campaign-speech-lindsey-graham",
+          "date": "2015-07",
+          "score": 8,
+          "cat": "cronyism",
+          "next": "budget_debt"
         }
       ]
     },
     {
       "id": "budget_die",
-      "prompt": "'We are all going to die.' That line got groans at your Iowa town hall, and Chuck Schumer renamed the bill after it. Researchers project thousands of additional deaths a year from the Medicaid cuts. Do you stand by it?",
+      "prompt": "'We are all going to die.' That line got groans at your Iowa town hall, and Chuck Schumer renamed the bill after it. Researchers project thousands of additional deaths a year from the Medicaid cuts. Do you stand by it -- and what do you say to the people about to lose coverage?",
       "options": [
         {
           "text": "I made an incorrect assumption that everyone in the auditorium understood that yes, we are all going to perish from this Earth.",
@@ -168,24 +176,6 @@ registerTopic({
           "next": "budget_medicaid"
         },
         {
-          "text": "In Washington over the last few years, it's become increasingly evident that leaders who are willing to embrace bipartisanship, compromise, and demonstrate independent thinking are becoming an endangered species.",
-          "source": "https://apnews.com/article/tillis-senate-north-carolina-trump-reelection-republicans-382f72ff5228d864b38009904cbc4e6b",
-          "date": "2025-06-29",
-          "score": 0,
-          "cat": "power",
-          "next": "NEXT_TOPIC",
-          "who": "Thom Tillis, Senator (R-NC)"
-        },
-        {
-          "text": "This immense level of overspending will drive America into debt slavery!",
-          "source": "https://www.foxnews.com/politics/elon-musk-warns-excessive-spending-plunge-us-into-debt-slavery",
-          "date": "2025-06-04",
-          "score": 3,
-          "cat": "truth",
-          "next": "budget_debt",
-          "who": "Elon Musk (DOGE)"
-        },
-        {
           "text": "We want the bureaucrats to be traumatically affected. When they wake up in the morning, we want them to not want to go to work because they are increasingly viewed as the villains... We want to put them in trauma.",
           "source": "https://www.propublica.org/article/video-donald-trump-russ-vought-center-renewing-america-maga",
           "date": "2024-10",
@@ -193,6 +183,23 @@ registerTopic({
           "cat": "dehumanization",
           "next": "budget_shutdown",
           "who": "Russell Vought, OMB Director"
+        },
+        {
+          "text": "It's not possible for us to take care of day care, Medicaid, Medicare, all these individual things. They can do it on a state basis. You can't do it on a federal. We have to take care of one thing: military protection.",
+          "source": "https://www.nbcnews.com/politics/donald-trump/trump-says-not-possible-us-pay-medicaid-medicare-daycare-re-fighting-w-rcna266381",
+          "date": "2026-04-02",
+          "score": 7,
+          "cat": "power",
+          "next": "budget_shutdown"
+        },
+        {
+          "text": "This bill does not add to the deficit. In fact, according to the Council of Economic Advisors, this bill will save $1.6 trillion... There's $1.6 trillion worth of savings in this bill.",
+          "source": "https://www.politifact.com/factchecks/2025/may/21/karoline-leavitt/donald-trump-reconciliation-bill-deficit/",
+          "date": "2025-05-21",
+          "score": 2,
+          "cat": "truth",
+          "next": "budget_medicaid",
+          "who": "Karoline Leavitt, White House Press Secretary"
         }
       ]
     },
@@ -217,13 +224,30 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "House Democrats will always put American values over autocracy, benevolence over bigotry, the Constitution over the cult, democracy over demagogues, economic opportunity over extremism, freedom over fascism...",
-          "source": "https://www.c-span.org/video/?c5050190/york-democrat-hakeem-jeffries-delivers-speech-mccarthys-election-speaker-house",
-          "date": "2023-01-07",
-          "score": 0,
+          "text": "One of the things they're going to be talking about pretty soon are the tremendous drop in drug prices. You know, we've cut drug prices by 1,200, 1,300, 1,400, 1,500 percent. I don't mean 50 percent. I mean 14-, 1,500 percent.",
+          "source": "https://www.newsweek.com/donald-trump-doubles-down-impossible-drug-price-cuts-2108365",
+          "date": "2025-08-04",
+          "score": 5,
+          "cat": "truth",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "...we move the workforce towards automation and 100 percent American participation. With 34 million people, able-bodied adults on Medicaid, we should be able to do that fairly quickly.",
+          "source": "https://www.politico.com/live-updates/2025/07/08/congress/rollins-says-able-bodied-medicaid-recipients-should-replace-immigrant-farm-workforce-00442065",
+          "date": "2025-07-08",
+          "score": 6,
           "cat": "power",
           "next": "NEXT_TOPIC",
-          "who": "Hakeem Jeffries, House Minority Leader"
+          "who": "Brooke Rollins, Agriculture Secretary"
+        },
+        {
+          "text": "If Congress cuts funding for Medicaid benefits, Missouri workers and their children will lose their health care. And hospitals will close. It's that simple.",
+          "source": "https://www.nytimes.com/2025/05/12/opinion/josh-hawley-dont-cut-medicaid.html",
+          "date": "2025-05-12",
+          "score": 0,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Josh Hawley, Senator (R-MO)"
         }
       ]
     },
@@ -260,6 +284,15 @@ registerTopic({
           "text": "The latest Senate draft bill will destroy millions of jobs in America and cause immense strategic harm to our country. Utterly insane and destructive.",
           "source": "https://time.com/7298552/trump-big-beautiful-bill-senate-advance-musk-criticism-opposition/",
           "date": "2025-06-29",
+          "score": 3,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Elon Musk (DOGE)"
+        },
+        {
+          "text": "This immense level of overspending will drive America into debt slavery!",
+          "source": "https://www.foxnews.com/politics/elon-musk-warns-excessive-spending-plunge-us-into-debt-slavery",
+          "date": "2025-06-04",
           "score": 3,
           "cat": "truth",
           "next": "NEXT_TOPIC",
@@ -310,7 +343,7 @@ registerTopic({
     },
     {
       "id": "budget_snap",
-      "prompt": "During the shutdown, November food-stamp benefits lapsed for 42 million people. Two federal judges ordered you to pay them; you posted that benefits would come only when Democrats reopened the government. Why did people go hungry?",
+      "prompt": "During the shutdown, November food-stamp benefits lapsed for 42 million people. Two federal judges ordered you to pay them; you posted that benefits would come only when Democrats reopened the government. Why did people go hungry -- and what do you say to the families who missed a month of food?",
       "options": [
         {
           "text": "SNAP BENEFITS, which increased by Billions and Billions of Dollars (MANY FOLD!) during Crooked Joe Biden's disastrous term in office, will be given only when the Radical Left Democrats open up government.",

@@ -92,7 +92,7 @@ registerTopic({
     },
     {
       "id": "identity_enemies",
-      "prompt": "'Hate' is a strong word from a president. Are Democrats your opponents or your enemies? You have called your last two of them mentally impaired.",
+      "prompt": "Your opponents. You have called your last two of them mentally impaired. Are Democrats your opponents, Mr. President, or your enemies?",
       "options": [
         {
           "text": "Joe Biden became mentally impaired. Kamala was born that way.",
@@ -100,14 +100,6 @@ registerTopic({
           "date": "2024-09-28",
           "score": 7,
           "cat": "dehumanization",
-          "next": "NEXT_TOPIC"
-        },
-        {
-          "text": "I think that would qualify as not smart, but genius....and a very stable genius at that!",
-          "source": "https://www.cnn.com/2018/01/06/politics/donald-trump-white-house-fitness-very-stable-genius",
-          "date": "2018-01-06",
-          "score": 4,
-          "cat": "truth",
           "next": "NEXT_TOPIC"
         },
         {
@@ -127,12 +119,21 @@ registerTopic({
           "score": 8,
           "cat": "violence",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "[The country is run by] a bunch of childless cat ladies who are miserable at their own lives and the choices that they've made, and so they wanna make the rest of the country miserable.",
+          "source": "https://www.usatoday.com/story/news/politics/elections/2024/07/23/jd-vance-cat-lady-kamala-harris/74513245007/",
+          "date": "2021-07-29",
+          "score": 4,
+          "cat": "dehumanization",
+          "next": "NEXT_TOPIC",
+          "who": "JD Vance, Vice President"
         }
       ]
     },
     {
       "id": "identity_race",
-      "prompt": "Least racist in the room. You said there were 'very fine people on both sides' of a torch-lit neo-Nazi march, and you called African nations 'shithole countries.' Explain.",
+      "prompt": "You condemn violence and call yourself the least racist person in the room. Yet you said there were 'very fine people on both sides' of a torch-lit neo-Nazi march, and you called African nations 'shithole countries.' Explain.",
       "options": [
         {
           "text": "You also had people that were very fine people, on both sides.",
@@ -158,12 +159,20 @@ registerTopic({
           "score": 0,
           "cat": "dehumanization",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "I think I've done more for the black community than any other President and let's take a pass on Abraham Lincoln because he did good but although it's always questionable, you know in other words the end result.",
+          "source": "https://slate.com/news-and-politics/2020/06/what-was-trump-trying-to-say-about-abraham-lincoln.html",
+          "date": "2020-06-12",
+          "score": 5,
+          "cat": "truth",
+          "next": "identity_charlottesville"
         }
       ]
     },
     {
       "id": "identity_charlottesville",
-      "prompt": "The 'fine people' marched with men chanting 'Jews will not replace us,' and one of them killed Heather Heyer. Which of them were fine? And while we are on respect: you used 'Pocahontas' as a slur at a ceremony honoring Navajo code talkers.",
+      "prompt": "The 'fine people' marched with men chanting 'Jews will not replace us,' and one of them killed Heather Heyer. Which of them were fine? And while we are on respect: you used 'Pocahontas' as a slur at a ceremony honoring Navajo code talkers. Do you regret either?",
       "options": [
         {
           "text": "I'm not talking about the neo-Nazis and the white nationalists -- because they should be condemned totally.",
@@ -189,12 +198,20 @@ registerTopic({
           "score": 0,
           "cat": "dehumanization",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "...answered that question, and if you look at what I said, you will see that question was answered perfectly... talking about people that went because they felt very strongly about the monument to Robert E. Lee, a great general.",
+          "source": "https://www.politico.com/story/2019/04/26/trump-charlottesville-comments-1290724",
+          "date": "2019-04-26",
+          "score": 6,
+          "cat": "dehumanization",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
     {
       "id": "identity_shithole",
-      "prompt": "Haiti, El Salvador, Africa -- and you said you would rather have people from Norway. What separates a Norwegian from a Haitian in your mind?",
+      "prompt": "Haiti, El Salvador, Africa -- and you said you would rather have people from Norway. What separates a Norwegian from a Haitian in your mind -- and does that go for Puerto Ricans, American citizens, too?",
       "options": [
         {
           "text": "We should have more people from places like Norway.",
@@ -213,14 +230,6 @@ registerTopic({
           "next": "identity_puertorico"
         },
         {
-          "text": "That's a nasty question.",
-          "source": "https://www.fox9.com/news/trump-taco-tariff-question",
-          "date": "2025-05-28",
-          "score": 3,
-          "cat": "press",
-          "next": "NEXT_TOPIC"
-        },
-        {
           "text": "America has never been united by blood or birth or soil. We are bound by ideals that move us beyond our backgrounds, lift us above our interests and teach us what it means to be citizens.",
           "who": "George W. Bush, 43rd President",
           "source": "http://www.bartleby.com/124/pres66.html",
@@ -228,12 +237,20 @@ registerTopic({
           "score": 0,
           "cat": "dehumanization",
           "next": "identity_puertorico"
+        },
+        {
+          "text": "Why do we need more Haitians? Take them out.",
+          "source": "https://www.cbsnews.com/news/donald-trump-shthole-countries-response-from-haiti-africa-el-salvador/",
+          "date": "2018-01-11",
+          "score": 9,
+          "cat": "dehumanization",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
     {
       "id": "identity_puertorico",
-      "prompt": "You said that in San Juan the same day you told hurricane survivors they had thrown your budget out of whack, then tossed paper towels into the crowd. Nearly 3,000 people died. Was it fun?",
+      "prompt": "Fine words. In San Juan you told hurricane survivors they had thrown your budget out of whack, then tossed paper towels into the crowd. Nearly 3,000 people died. Was it fun -- and do you owe them anything?",
       "options": [
         {
           "text": "I was having fun, they were having fun. They said, 'Throw 'em to me!'",
@@ -257,6 +274,14 @@ registerTopic({
           "date": "2017-10-03",
           "score": 7,
           "cat": "dehumanization",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "3000 people did not die in the two hurricanes that hit Puerto Rico. When I left the Island, AFTER the storm had hit, they had anywhere from 6 to 18 deaths. As time went by it did not go up by much.",
+          "source": "https://www.bbc.com/news/world-us-canada-45511865",
+          "date": "2018-09-13",
+          "score": 8,
+          "cat": "truth",
           "next": "NEXT_TOPIC"
         }
       ]
@@ -282,15 +307,6 @@ registerTopic({
           "next": "identity_haitians"
         },
         {
-          "text": "I hated that dog... I guess if I were a better politician I wouldn't tell the story here.",
-          "who": "Kristi Noem, Homeland Security Secretary",
-          "source": "https://www.theguardian.com/books/2024/apr/26/trump-kristi-noem-shot-dog-and-goat-book",
-          "date": "2024-04-26",
-          "score": 3,
-          "cat": "strongman",
-          "next": "identity_haitians"
-        },
-        {
           "text": "If I have to create stories so that the American media actually pays attention to the suffering of the American people, then that's what I'm going to do.",
           "who": "JD Vance, Vice President",
           "source": "https://www.theguardian.com/us-news/2024/sep/15/jd-vance-lies-haitian-immigrants",
@@ -298,12 +314,20 @@ registerTopic({
           "score": 6,
           "cat": "truth",
           "next": "identity_haitians"
+        },
+        {
+          "text": "That's what you say.",
+          "source": "https://abcnews.com/US/full-transcript-trumps-exclusive-100-days-broadcast-interview/story?id=121291672",
+          "date": "2025-04-29",
+          "score": 3,
+          "cat": "press",
+          "next": "identity_haitians"
         }
       ]
     },
     {
       "id": "identity_haitians",
-      "prompt": "Most of Springfield's Haitians are here legally under Temporary Protected Status. 'Poisoning the blood' is a phrase historians trace to the 1930s. Who exactly is the poison?",
+      "prompt": "Most of Springfield's Haitians are here legally under Temporary Protected Status, and you have said migrants are 'poisoning the blood' of the country -- a phrase historians trace to the 1930s. Who exactly is the poison, Mr. President -- and what do you say to those who hear the 1930s in it?",
       "options": [
         {
           "text": "Why don't they go back and help fix the totally broken and crime-infested places from which they came.",
@@ -322,27 +346,27 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "I'm the least racist person in this room.",
-          "source": "https://en.wikipedia.org/wiki/2020_United_States_presidential_debates",
-          "date": "2020-10-22",
-          "score": 3,
-          "cat": "truth",
-          "next": "NEXT_TOPIC"
+          "text": "They said Hitler said that... It's true. They're destroying the blood of the country, they're destroying the fabric of our country, and we're going to have to get them out.",
+          "source": "https://abcnews.go.com/Politics/donald-trumps-history-adolf-hitler-nazi-writings-analysis/story?id=105810745",
+          "date": "2023-12-21",
+          "score": 9,
+          "cat": "dehumanization",
+          "next": "identity_goback"
         },
         {
-          "text": "Appealing to tribe, appealing to fear, pitting one group against another, telling people that order and security will be restored if it weren't for those who don't look like us or don't sound like us... that's an old playbook.",
-          "who": "Barack Obama, 44th President",
-          "source": "https://www.theguardian.com/commentisfree/2018/sep/08/barack-obama-you-need-to-vote-because-our-democracy-depends-on-it",
-          "date": "2018-09-07",
+          "text": "We live in a land made of ideals, not blood and soil.",
+          "source": "https://www.cnn.com/2017/10/16/politics/john-mccain-joe-biden-liberty-medal/index.html",
+          "date": "2017-10-16",
           "score": 0,
           "cat": "dehumanization",
-          "next": "NEXT_TOPIC"
+          "next": "NEXT_TOPIC",
+          "who": "John McCain, Senator, Arizona"
         }
       ]
     },
     {
       "id": "identity_goback",
-      "prompt": "You tweeted that at four congresswomen, three of whom were born in the United States. Go back where? You spent years questioning where a president was born, too.",
+      "prompt": "You tweeted that at four congresswomen, three of whom were born in the United States. Go back where? You spent years questioning where a president was born, and you have questioned whether Kamala Harris is Black. Do you decide who counts as American?",
       "options": [
         {
           "text": "President Barack Obama was born in the United States. Period.",
@@ -365,6 +389,14 @@ registerTopic({
           "source": "https://www.salon.com/2025/12/22/trumps-favorite-excuse-in-2025-i-dont-know/",
           "date": "2025-03",
           "score": 1,
+          "cat": "truth",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "Because if you're not born in the United States, you cannot be president. And, there is a real question... I'm starting to wonder myself whether or not he was born in this country.",
+          "source": "http://mediamatters.org/mmtv/201103280006",
+          "date": "2011-03-28",
+          "score": 7,
           "cat": "truth",
           "next": "NEXT_TOPIC"
         }
@@ -391,14 +423,6 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "I don't know anything about it.",
-          "source": "https://www.salon.com/2025/12/22/trumps-favorite-excuse-in-2025-i-dont-know/",
-          "date": "2025-03",
-          "score": 1,
-          "cat": "truth",
-          "next": "NEXT_TOPIC"
-        },
-        {
           "text": "When you don't have the best standards in who you're hiring, it means on the one hand, you're not getting the best people in government. But on the other hand, it puts stresses on the people who are already there.",
           "who": "JD Vance, Vice President",
           "source": "https://www.politico.com/newsletters/playbook-pm/2025/01/30/trump-lashes-out-in-dca-crash-presser-00132333",
@@ -406,6 +430,15 @@ registerTopic({
           "score": 4,
           "cat": "dehumanization",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "Despicable... We put safety first, drove down close calls, grew Air Traffic Control, and had zero commercial airline crash fatalities out of millions of flights on our watch.",
+          "source": "https://www.axios.com/2025/01/30/pete-buttigieg-trump-plane-crash",
+          "date": "2025-01-30",
+          "score": 0,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Pete Buttigieg, former Transportation Secretary"
         }
       ]
     }

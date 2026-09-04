@@ -68,12 +68,20 @@ registerTopic({
           "score": 9,
           "cat": "violence",
           "next": "troops_quantico"
+        },
+        {
+          "text": "I'd do it if it was necessary. So far it hasn't been necessary. But we have an Insurrection Act for a reason.",
+          "source": "https://www.nbcnews.com/politics/donald-trump/trump-floats-invoking-insurrection-act-rcna236030",
+          "date": "2025-10-06",
+          "score": 7,
+          "cat": "violence",
+          "next": "troops_quantico"
         }
       ]
     },
     {
       "id": "troops_quantico",
-      "prompt": "You flew every general and admiral to Quantico and told them American cities should be 'training grounds' for the military. Are you describing law enforcement, or an occupation?",
+      "prompt": "You flew every general and admiral to Quantico and told them American cities should be 'training grounds' for the military. Are you describing law enforcement, or an occupation -- and what was that summit really for?",
       "options": [
         {
           "text": "We should use some of these dangerous cities as training grounds for our military.",
@@ -112,7 +120,7 @@ registerTopic({
     },
     {
       "id": "troops_dc",
-      "prompt": "'Liberation Day.' Violent crime in Washington was at a thirty-year low when you seized its police department and sent in the Guard. Liberated from what, exactly?",
+      "prompt": "'Liberation Day.' Violent crime in Washington was at a thirty-year low when you seized its police department and sent in the Guard. Liberated from what, exactly -- and what do you say to the residents who never asked for this?",
       "options": [
         {
           "text": "Our capital city has been overtaken by violent gangs and bloodthirsty criminals, roving mobs of wild youth, drugged out maniacs and homeless people.",
@@ -137,6 +145,22 @@ registerTopic({
           "score": 3,
           "cat": "power",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "I have the right to do anything I want to do. I'm the president of the United States. If I think our country is in danger, and it is in danger in these cities, I can do it.",
+          "source": "https://rollcall.com/2025/08/27/the-u-s-system-always-had-loopholes-trump-2-0-exploits-what-others-resisted/",
+          "date": "2025-08-26",
+          "score": 9,
+          "cat": "power",
+          "next": "troops_template"
+        },
+        {
+          "text": "Anybody that thinks crime is going down is a serious brain problem.",
+          "source": "https://www.scrippsnews.com/us-news/crime/murder-other-violent-crime-rates-dropped-across-us-last-year-new-fbi-data-shows",
+          "date": "2024-09-23",
+          "score": 6,
+          "cat": "truth",
+          "next": "troops_template"
         }
       ]
     },
@@ -169,11 +193,11 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "If the governor of Illinois would call up, call me up, I would love to do it.",
-          "source": "https://time.com/7314045/trump-announcement-chicago-baltimore-national-guard/",
-          "date": "2025-09-02",
+          "text": "I'm not gonna tell you.",
+          "source": "https://abcnews.com/US/full-transcript-trumps-exclusive-100-days-broadcast-interview/story?id=121291672",
+          "date": "2025-04-29",
           "score": 3,
-          "cat": "power",
+          "cat": "press",
           "next": "NEXT_TOPIC"
         }
       ]
@@ -205,6 +229,14 @@ registerTopic({
           "score": 3,
           "cat": "power",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "Chicago is the worst and most dangerous city in the World, by far. Pritzker needs help badly, he just doesn't know it yet. I will solve the crime problem fast.",
+          "source": "https://www.nbcnews.com/politics/donald-trump/donald-trump-threatens-chicago-deportations-department-war-crackdown-rcna229544",
+          "date": "2025-09-06",
+          "score": 6,
+          "cat": "power",
+          "next": "troops_la"
         }
       ]
     },
@@ -269,28 +301,27 @@ registerTopic({
           "next": "troops_enemy"
         },
         {
-          "text": "Whether you choose violence or not, violence is coming to you. You either fight back or you die.",
-          "who": "Elon Musk (DOGE), DOGE adviser",
-          "source": "https://www.bbc.co.uk/news/articles/c0m4rz0pvmno",
-          "date": "2025-09-13",
-          "score": 9,
-          "cat": "violence",
-          "next": "troops_enemy"
-        },
-        {
           "text": "I wouldn't let Congress leave town until we fix this. I would literally use the military to keep them in if I had to.",
           "who": "Lindsey Graham, Senator",
-          "source": "http://benswann.com/graham-military-force-congress/",
+          "source": "https://web.archive.org/web/2015/http://benswann.com/graham-military-force-congress/",
           "date": "2015-03-07",
           "score": 6,
           "cat": "power",
+          "next": "troops_enemy"
+        },
+        {
+          "text": "...the real insurrection happened on November 3rd, the Presidential Election, not on January 6th -- which was a day of protesting the Fake Election results.",
+          "source": "https://www.npr.org/2021/10/06/1043746455/trump-continues-to-lie-says-real-insurrection-happened-when-he-lost-election",
+          "date": "2021-10-06",
+          "score": 6,
+          "cat": "elections",
           "next": "troops_enemy"
         }
       ]
     },
     {
       "id": "troops_enemy",
-      "prompt": "'The enemy from within.' That phrase used to mean foreign spies; you have applied it to a sitting congressman and to protesters, and in 2020 you tweeted 'when the looting starts, the shooting starts.' Is any American who opposes you an enemy the military should handle?",
+      "prompt": "You have talked about 'the enemy from within.' That phrase used to mean foreign spies; you have applied it to a sitting congressman and to protesters, and in 2020 you tweeted 'when the looting starts, the shooting starts.' Is any American who opposes you an enemy the military should handle?",
       "options": [
         {
           "text": "Then I will deploy the United States military and quickly solve the problem for them.",

@@ -44,7 +44,7 @@ registerTopic({
     },
     {
       "id": "economy_bls",
-      "prompt": "You said Erika McEntarfer 'faked' the numbers. She's a career economist, the revisions came from late survey responses, and her predecessor -- your own first-term appointee -- called the firing 'totally groundless.' What evidence do you have?",
+      "prompt": "You said Erika McEntarfer 'faked' the numbers. She's a career economist, the revisions came from late survey responses, and her predecessor -- your own first-term appointee -- called the firing 'totally groundless.' What evidence do you have -- and if the next numbers are bad, will you own them?",
       "options": [
         {
           "text": "...RIGGED in order to make the Republicans, and ME, look bad.",
@@ -69,6 +69,15 @@ registerTopic({
           "score": 3,
           "cat": "truth",
           "next": "economy_market"
+        },
+        {
+          "text": "The commissioner doesn't do anything to collect the numbers... By the time the commissioner sees the numbers, they're all prepared.",
+          "source": "https://www.politico.com/news/2025/08/03/trump-labor-statistics-chief-fired-unemployment-00490988",
+          "date": "2025-08-03",
+          "score": 0,
+          "cat": "truth",
+          "next": "economy_market",
+          "who": "William Beach, former BLS Commissioner"
         }
       ]
     },
@@ -102,12 +111,13 @@ registerTopic({
           "who": "Bernie Sanders, Senator (I-VT)"
         },
         {
-          "text": "Fox gives me terrible polls all the time, you know, they do nothing, but they... I've never had a good poll with Fox.",
-          "source": "https://www.mediaite.com/media/tv/trump-loses-it-on-cnbc-when-hosts-fact-check-insane-approval-rating-whopper-nbc-is-the-worst/",
-          "date": "2025-08-05",
+          "text": "If you've heard it from the president of the United States, obviously it's true.",
+          "source": "https://www.huffpost.com/entry/karoline-leavitt-donald-trump-claim_n_69c4d935e4b081f8eb14f2bc/amp",
+          "date": "2026-03-26",
           "score": 4,
-          "cat": "press",
-          "next": "NEXT_TOPIC"
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Karoline Leavitt, White House Press Secretary"
         }
       ]
     },
@@ -147,12 +157,20 @@ registerTopic({
           "score": 8,
           "cat": "press",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "Fox gives me terrible polls all the time, you know, they do nothing, but they... I've never had a good poll with Fox.",
+          "source": "https://www.mediaite.com/media/tv/trump-loses-it-on-cnbc-when-hosts-fact-check-insane-approval-rating-whopper-nbc-is-the-worst/",
+          "date": "2025-08-05",
+          "score": 4,
+          "cat": "press",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
     {
       "id": "economy_eggs",
-      "prompt": "'Down 400 percent.' A price can't fall more than 100 percent. Eggs peaked around $6.23 a dozen in March and were about $3.50 by summer -- still higher than the year before. Where do your numbers come from?",
+      "prompt": "'Down 400 percent.' A price can't fall more than 100 percent. Eggs peaked around $6.23 a dozen in March and were about $3.50 by summer -- still higher than the year before. Where do your numbers come from -- and if grocery prices keep rising, who do you blame?",
       "options": [
         {
           "text": "As you know, the cost of eggs has come down like 93, 94% since we took office.",
@@ -269,7 +287,7 @@ registerTopic({
     },
     {
       "id": "economy_market",
-      "prompt": "Let's use your own yardstick. On the market's worst days this spring you called it 'Biden's stock market'; on record days it's yours, and the tariff-driven boom is always just around the corner. Whose economy is it -- and who is it working for?",
+      "prompt": "Let's use your own yardstick. On the market's worst days this spring you called it 'Biden's stock market'; on record days it's yours, and the tariff-driven boom is always just around the corner. Whose economy is it -- and who is it working for, the family at home or the people in the room with you?",
       "options": [
         {
           "text": "This is Biden's Stock Market, not Trump's... I didn't take over until January 20th. Tariffs will soon start kicking in, and companies are starting to move into the USA in record numbers.... Our Country will boom",

@@ -22,14 +22,14 @@ for (const f of fs.readdirSync(dir)) {
     if (!id.startsWith(t.id + '_')) err(f, `node ${id} not prefixed ${t.id}_`);
     if (!n.prompt || n.prompt.length < 20) err(f, `node ${id} prompt too short`);
     if (!depth.has(id)) err(f, `node ${id} unreachable`);
-    if (!Array.isArray(n.options) || n.options.length < 2 || n.options.length > 6) err(f, `node ${id} needs 2-6 options`);
+    if (!Array.isArray(n.options) || n.options.length < 4 || n.options.length > 6) err(f, `node ${id} needs 4-6 options`);
     let lo = false, hi = false;
     for (const o of n.options || []) {
       opts++;
       if (o.who !== undefined && (typeof o.who !== 'string' || !o.who)) err(f, `${id}: bad who`);
       if (!o.text || o.text.length > 240) err(f, `${id}: option text missing or >240 chars`);
       if (!/^https?:\/\//.test(o.source || '')) err(f, `${id}: bad source "${o.source}"`);
-      if (!/^\d{4}(-\d{2}){1,2}$/.test(o.date || '')) err(f, `${id}: bad date "${o.date}"`);
+      if (!/^\d{4}(-\d{2}){0,2}$/.test(o.date || '')) err(f, `${id}: bad date "${o.date}"`);
       if (!Number.isInteger(o.score) || o.score < 0 || o.score > 10) err(f, `${id}: bad score ${o.score}`);
       if (!CATS.has(o.cat)) err(f, `${id}: bad cat "${o.cat}"`);
       if (o.next !== 'NEXT_TOPIC' && !ids.has(o.next)) err(f, `${id}: next "${o.next}" missing`);
@@ -37,6 +37,10 @@ for (const f of fs.readdirSync(dir)) {
     }
     if (!lo || !hi) err(f, `${id}: needs one option <=3 and one >=7`);
   }
+  // the same quote in two nodes of one topic can surface twice in a single interview
+  const byText = new Map();
+  for (const [id, n] of ids) for (const o of n.options) (byText.get(o.text) || byText.set(o.text, []).get(o.text)).push(id);
+  for (const [txt, where] of byText) if (where.length > 1) err(f, `same quote in ${where.join(", ")}: "${txt.slice(0, 45)}"`);
   if (maxDepth < 3) err(f, `max depth ${maxDepth} < 3`);
   if (ids.size < 7) err(f, `only ${ids.size} nodes (want 7-12)`);
 }

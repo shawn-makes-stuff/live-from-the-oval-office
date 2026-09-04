@@ -5,7 +5,7 @@ registerTopic({
   "nodes": [
     {
       "id": "iran_intro",
-      "prompt": "Mr. President, in June 2025 you bombed Fordow, Natanz and Isfahan and declared Iran's nuclear program obliterated. Eight months later you launched a full-scale war because, you said, Iran was rebuilding it. Which was it?",
+      "prompt": "Mr. President, in June 2025 you bombed Fordow, Natanz and Isfahan and declared Iran's nuclear program obliterated. Eight months later you launched a full-scale war because, you said, Iran was rebuilding it. Which was it -- and what should Tehran expect from you next?",
       "options": [
         {
           "text": "Iran's key nuclear enrichment facilities have been completely and totally obliterated",
@@ -68,12 +68,20 @@ registerTopic({
           "score": 8,
           "cat": "violence",
           "next": "iran_war2026"
+        },
+        {
+          "text": "They've rejected every opportunity to renounce their nuclear ambitions, and we can't take it anymore. Instead, they attempted to rebuild their nuclear program and to continue developing the long range missiles.",
+          "source": "https://www.pbs.org/newshour/world/read-trumps-full-statement-on-iran-attack",
+          "date": "2026-02-28",
+          "score": 6,
+          "cat": "power",
+          "next": "iran_war2026"
         }
       ]
     },
     {
       "id": "iran_madman",
-      "prompt": "'Nobody knows what I'm going to do.' You demanded unconditional surrender, then said you were open to talks, then bombed anyway -- while your own 'America First' base asked why. Is unpredictability a strategy, or the absence of one?",
+      "prompt": "'Nobody knows what I'm going to do.' You demanded unconditional surrender, then said you were open to talks, then bombed anyway -- while your own 'America First' base asked why. Is unpredictability a strategy, or the absence of one -- and why not simply pick up the phone to Tehran?",
       "options": [
         {
           "text": "I don't believe in telephones.",
@@ -111,7 +119,7 @@ registerTopic({
     },
     {
       "id": "iran_regime",
-      "prompt": "'MIGA.' You floated regime change in 2025, and on February 28th, 2026 you told the Iranian people to 'take over your government.' Is the United States now in the business of toppling governments?",
+      "prompt": "'MIGA.' You floated regime change in 2025, and on February 28th, 2026 you told the Iranian people to 'take over your government.' Is the United States now in the business of toppling governments -- and who decides when it stops?",
       "options": [
         {
           "text": "To the members of the Islamic Revolutionary Guard, the armed forces and all of the police, I say tonight that you must lay down your weapons and have complete immunity. Or in the alternative, face certain death.",
@@ -227,7 +235,7 @@ registerTopic({
     },
     {
       "id": "iran_war2026",
-      "prompt": "February 28th, 2026. You announced 'major combat operations' against Iran -- a war Congress never declared -- and later admitted you call it a 'military operation' for legal reasons. Who authorized this?",
+      "prompt": "February 28th, 2026. You announced 'major combat operations' against Iran -- a war Congress never declared -- and later admitted you call it a 'military operation' for legal reasons. Who authorized this, and is it even over?",
       "options": [
         {
           "text": "I say 'military' because as a military operation, I don't need any approvals. As a war, you're supposed to get approval from Congress. Something like that.",
@@ -306,7 +314,7 @@ registerTopic({
     },
     {
       "id": "iran_allies",
-      "prompt": "You decide what 'America First' means -- and apparently it means going it alone. You said NATO did 'absolutely nothing,' told Britain to 'go get your own oil,' and joked about Pearl Harbor to the Japanese prime minister. Who is still standing with you?",
+      "prompt": "You decide what 'America First' means -- and apparently it means going it alone. You said NATO did 'absolutely nothing,' told Britain to 'go get your own oil,' and joked about Pearl Harbor to the Japanese prime minister. Who is still standing with you, and what has going it alone cost Americans at home?",
       "options": [
         {
           "text": "NATO nations have done absolutely nothing to help with the lunatic nation, now militarily decimated, of Iran. the U.S.A needs nothing from NATO, but 'never forget' this very important point in time!",

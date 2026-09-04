@@ -62,12 +62,20 @@ registerTopic({
           "next": "wars_ukraine"
         },
         {
-          "text": "You're gambling with the lives of millions of people. You're gambling with World War III!",
-          "source": "https://www.haaretz.com/us-news/2025-02-28/ty-article/youre-gambling-with-world-war-iii-zelenskyy-trump-clash-in-oval-office-shouting-match/00000195-4de3-d46a-a19f-fde377050000",
-          "date": "2025-02-28",
+          "text": "If I got Russia to give up Moscow as part of the Deal, the Fake News, and their PARTNER, the Radical Left Democrats, would say I made a terrible mistake and a very bad deal. That's why they are the FAKE NEWS!",
+          "source": "https://www.huffpost.com/entry/donald-trump-if-i-got-russia-to-give-up-moscow-truth-social_n_68a1df07e4b07702299b5342",
+          "date": "2025-08-17",
           "score": 7,
-          "cat": "strongman",
+          "cat": "press",
           "next": "wars_ukraine"
+        },
+        {
+          "text": "I have ended seven unendable wars. They said they were unendable... This includes Cambodia and Thailand, Kosovo and Serbia, the Congo and Rwanda, Pakistan and India, Israel and Iran, Egypt and Ethiopia, and Armenia and Azerbaijan.",
+          "source": "https://www.rev.com/transcripts/trump-speaks-at-un",
+          "date": "2025-09-23",
+          "score": 5,
+          "cat": "truth",
+          "next": "wars_nobel"
         }
       ]
     },
@@ -96,6 +104,14 @@ registerTopic({
           "source": "https://www.realclearpolitics.com/video/2015/11/13/trumps_updated_isis_plan_bomb_the_shit_out_of_them_send_exxon_in_to_rebuild.html",
           "date": "2015-11-12",
           "score": 8,
+          "cat": "violence",
+          "next": "wars_fbomb"
+        },
+        {
+          "text": "We could have dialogue, but I don't want to do a ceasefire. You know you don't do a ceasefire when you're literally obliterating the other side.",
+          "source": "https://www.cnbc.com/2026/03/20/trump-iran-war-ceasefire.html",
+          "date": "2026-03-20",
+          "score": 7,
           "cat": "violence",
           "next": "wars_fbomb"
         }
@@ -207,12 +223,20 @@ registerTopic({
           "score": 7,
           "cat": "strongman",
           "next": "wars_gaza"
+        },
+        {
+          "text": "Considering your Country decided not to give me the Nobel Peace Prize for having stopped 8 Wars PLUS, I no longer feel an obligation to think purely of Peace... The World is not secure unless we have Complete and Total Control of Greenland.",
+          "source": "https://en.wikiquote.org/wiki/Donald_Trump",
+          "date": "2026-01-18",
+          "score": 8,
+          "cat": "strongman",
+          "next": "wars_gaza"
         }
       ]
     },
     {
       "id": "wars_ukraine",
-      "prompt": "You told Zelensky in the Oval Office that he 'doesn't have the cards' and promised to end his war in 24 hours. It is still going. What happened?",
+      "prompt": "You told Zelensky in the Oval Office that he 'doesn't have the cards' and promised to end his war in 24 hours. It is still going. What happened -- and what is your message to Zelensky now?",
       "options": [
         {
           "text": "You don't have the cards right now.",
@@ -237,12 +261,20 @@ registerTopic({
           "score": 1,
           "cat": "strongman",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "You're gambling with the lives of millions of people. You're gambling with World War III!",
+          "source": "https://www.haaretz.com/us-news/2025-02-28/ty-article/youre-gambling-with-world-war-iii-zelenskyy-trump-clash-in-oval-office-shouting-match/00000195-4de3-d46a-a19f-fde377050000",
+          "date": "2025-02-28",
+          "score": 7,
+          "cat": "strongman",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
     {
       "id": "wars_fbomb",
-      "prompt": "That was an f-bomb on live television about a ceasefire you brokered. Is that how a commander-in-chief talks about war and peace?",
+      "prompt": "You dropped an f-bomb on the White House lawn about a ceasefire you had just brokered. Is that how a commander-in-chief talks about war and peace?",
       "options": [
         {
           "text": "I don't know anything about it.",
@@ -269,13 +301,13 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "The members are reminded to abide by decorum of the House.",
-          "who": "Marjorie Taylor Greene, Congresswoman",
-          "source": "https://thehill.com/homenews/house/4019823-democrats-erupt-in-laughter-after-greene-calls-for-decorum-in-house/",
-          "date": "2023-05-24",
-          "score": 1,
-          "cat": "power",
-          "next": "NEXT_TOPIC"
+          "text": "The words of a president matter, no matter how good or bad that president is. At their best, the words of a president can inspire. At their worst, they can incite.",
+          "source": "https://www.cnn.com/politics/live-news/congress-electoral-college-vote-count-2021/index.html",
+          "date": "2021-01-06",
+          "score": 0,
+          "cat": "violence",
+          "next": "NEXT_TOPIC",
+          "who": "Joe Biden, 46th President"
         }
       ]
     },
@@ -306,6 +338,14 @@ registerTopic({
           "score": 6,
           "cat": "strongman",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "...right now we are going to do something on Greenland, whether they like it or not. So we're going to be doing something with Greenland, either the nice way or the more difficult.",
+          "source": "https://www.cnbc.com/2026/01/09/trump-greenland-military-denmark-nato.html",
+          "date": "2026-01-09",
+          "score": 9,
+          "cat": "strongman",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
@@ -319,14 +359,6 @@ registerTopic({
           "date": "2025-02-04",
           "score": 7,
           "cat": "strongman",
-          "next": "NEXT_TOPIC"
-        },
-        {
-          "text": "We'll see what happens.",
-          "source": "https://www.voanews.com/a/trump-catchphrase-for-any-circumstance-we-will-see/4019006.html",
-          "date": "2017-09",
-          "score": 1,
-          "cat": "truth",
           "next": "NEXT_TOPIC"
         },
         {
@@ -346,6 +378,15 @@ registerTopic({
           "score": 8,
           "cat": "violence",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "We have no business contemplating yet another occupation to doom our treasure and spill our soldiers' blood.",
+          "source": "https://en.wikipedia.org/wiki/2025_Donald_Trump_Gaza_Strip_takeover_proposal",
+          "date": "2025-02-05",
+          "score": 0,
+          "cat": "power",
+          "next": "NEXT_TOPIC",
+          "who": "Rand Paul, Senator (R-KY)"
         }
       ]
     }

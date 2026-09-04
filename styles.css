@@ -127,9 +127,11 @@ kbd { background: #23284a; border: 1px solid var(--line); border-bottom-width: 2
 .option {
     position: relative; text-align: left; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
     padding: 11px 44px 11px 50px; line-height: 1.4; opacity: 0; transform: translateY(8px);
+    pointer-events: none; /* not clickable until revealed */
     transition: opacity .3s, transform .3s, background .15s, border-color .15s;
 }
-.option.in { opacity: 1; transform: none; }
+.option.in { opacity: 1; transform: none; pointer-events: auto; }
+.option:disabled { pointer-events: none; }
 .option:hover, .option:focus-visible { background: var(--card-hover); border-color: var(--gold); outline: none; }
 .option .num { position: absolute; left: 12px; top: 10px; width: 26px; height: 26px; border-radius: 7px; background: #262c58; display: grid; place-items: center; font-size: .75em; font-weight: 800; color: var(--muted); }
 .option .src {

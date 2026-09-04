@@ -29,6 +29,15 @@ const CORE = {
                     "score": 1,
                     "cat": "truth",
                     "next": "NEXT_TOPIC"
+                },
+                {
+                    "text": "Truth isn't truth.",
+                    "source": "https://www.cnn.com/videos/cnnmoney/2018/08/19/giuliani-truth-isnt-truth-nbc-rs-vpx.cnn",
+                    "date": "2018-08-19",
+                    "score": 8,
+                    "cat": "truth",
+                    "next": "NEXT_TOPIC",
+                    "who": "Rudy Giuliani, Trump legal adviser"
                 }
             ]
         },
@@ -57,6 +66,14 @@ const CORE = {
                     "source": "https://www.independent.co.uk/news/world/americas/us-politics/trump-dictator-crime-cities-b2813664.html",
                     "date": "2025-08-25",
                     "score": 5,
+                    "cat": "power",
+                    "next": "NEXT_TOPIC"
+                },
+                {
+                    "text": "They all hated me in my first term, and now they're kissing my ass.",
+                    "source": "https://apnews.com/article/trump-alabama-commencement-address-protests-6bcea5b4058c819c26a8135b41d73dd1",
+                    "date": "2025-05-01",
+                    "score": 6,
                     "cat": "power",
                     "next": "NEXT_TOPIC"
                 }
@@ -107,20 +124,12 @@ const CORE = {
             "options": [
                 {
                     "text": "Government power has been the unavoidable constant in life. Government decrees and the people obey, but not here. We have no king or queen, we have no dictator, we the people constrain government.",
-                    "source": "http://www.rollcall.com/news/politics/transcript-ted-cruz-convention-speech",
+                    "source": "https://web.archive.org/web/2016/http://www.rollcall.com/news/politics/transcript-ted-cruz-convention-speech",
                     "date": "2016-07-20",
                     "score": 1,
                     "cat": "power",
                     "next": "NEXT_TOPIC",
                     "who": "Ted Cruz, Senator"
-                },
-                {
-                    "text": "They're saying I'm a threat to democracy, They would say that, that was standard line, just keep saying it, and you know that can get assassins or potential assassins going. ... Maybe that bullet is because of their rhetoric.",
-                    "source": "https://archive.ph/mamCT",
-                    "date": "2024-08-28",
-                    "score": 6,
-                    "cat": "truth",
-                    "next": "NEXT_TOPIC"
                 },
                 {
                     "text": "This election is a total sham and a travesty. We are not a democracy!",
@@ -138,6 +147,14 @@ const CORE = {
                     "cat": "power",
                     "next": "NEXT_TOPIC",
                     "who": "Stephen Miller, Deputy Chief of Staff"
+                },
+                {
+                    "text": "These monsters, all controlled and coordinated by the DOJ and Radical Left Lunatics, are Criminalizing Political Speech, a total SHUTDOWN OF DEMOCRACY!",
+                    "source": "https://truthsocial.com/@realDonaldTrump/posts/110895990420845351",
+                    "date": "2023-08-15",
+                    "score": 7,
+                    "cat": "truth",
+                    "next": "NEXT_TOPIC"
                 }
             ]
         },
@@ -168,6 +185,14 @@ const CORE = {
                     "date": "2021-10-19",
                     "score": 7,
                     "cat": "press",
+                    "next": "NEXT_TOPIC"
+                },
+                {
+                    "text": "Well, as somebody that's contributed something to the United States and to the City of New York, and to the various other places that I'm going, and somebody that's done a little bit better than other people at what he does.",
+                    "source": "https://www.washingtonpost.com/wp-stat/graphics/politics/trump-archive/docs/rona-barrett-1980-interview-of-donald-trump.pdf",
+                    "date": "1980",
+                    "score": 2,
+                    "cat": "truth",
                     "next": "NEXT_TOPIC"
                 }
             ]
@@ -278,6 +303,14 @@ const CORE = {
                     "score": 7,
                     "cat": "violence",
                     "next": "RESULTS"
+                },
+                {
+                    "text": "I never said I'm a perfect person. Nor pretended to be someone that I'm not. I've said and done things I regret... I said it. I was wrong and I apologize.",
+                    "source": "https://www.cbsnews.com/news/donald-trump-defends-lewd-2005-conversation-about-women-as-locker-room-banter/",
+                    "date": "2016-10-08",
+                    "score": 2,
+                    "cat": "truth",
+                    "next": "RESULTS"
                 }
             ]
         },
@@ -308,6 +341,14 @@ const CORE = {
                     "date": "2025-05-04",
                     "score": 2,
                     "cat": "elections",
+                    "next": "RESULTS"
+                },
+                {
+                    "text": "You got to win the midterms because if we don't win the midterms, it's just going to be -- I mean, they'll find a reason to impeach me. I'll get impeached.",
+                    "source": "https://eu.delawareonline.com/story/news/2026/01/15/trump-impeachment-update-2026-is-trump-getting-impeached-midterm-elections-cancelled-predictions/88195759007/",
+                    "date": "2026-01-15",
+                    "score": 5,
+                    "cat": "power",
                     "next": "RESULTS"
                 }
             ]

@@ -92,7 +92,7 @@ registerTopic({
     },
     {
       "id": "press_first",
-      "prompt": "You say you love the First Amendment. Yet in September your FCC chairman told ABC it could do things 'the easy way or the hard way,' and Jimmy Kimmel was off the air within hours. Is that love?",
+      "prompt": "You profess love for the First Amendment and a free press. Yet in September your FCC chairman told ABC it could do things 'the easy way or the hard way,' and Jimmy Kimmel was off the air within hours. Is that love?",
       "options": [
         {
           "text": "Great News for America: The ratings challenged Jimmy Kimmel Show is CANCELLED. Congratulations to ABC for finally having the courage to do what had to be done.",
@@ -131,7 +131,7 @@ registerTopic({
     },
     {
       "id": "press_fakenews",
-      "prompt": "'You are fake news' -- you said that to a CNN reporter before you were even sworn in. Eight years later Paramount paid you $16 million to settle a suit over a '60 Minutes' edit, and two weeks after that CBS cancelled Stephen Colbert. Coincidence?",
+      "prompt": "'You are fake news' -- you said that to a CNN reporter before you were even sworn in. Eight years later Paramount paid you $16 million to settle a suit over a '60 Minutes' edit, and two weeks after that CBS cancelled Stephen Colbert. Coincidence -- or a warning to the other networks?",
       "options": [
         {
           "text": "I absolutely love that Colbert got fired. His talent was even less than his ratings.",
@@ -158,13 +158,13 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "It's very easy to speak truth from this podium when you have a president who is implementing policies that are wildly popular... many of the lies that have been told to your faces in this very briefing room. I will not do that.",
-          "who": "Karoline Leavitt, White House Press Secretary",
-          "source": "https://www.whitehouse.gov/briefings-statements/2025/01/press-briefing-by-press-secretary-karoline-leavitt/",
-          "date": "2025-01-29",
-          "score": 4,
+          "text": "This is a very, very serious issue right now for Disney. We can do this the easy way or the hard way. These companies can find ways to take action on Kimmel or there is going to be additional work for the FCC ahead.",
+          "source": "https://www.nbcnews.com/pop-culture/tv/disneys-abc-pulls-jimmy-kimmel-live-fcc-chair-blasts-hosts-charlie-kir-rcna232033",
+          "date": "2025-09-17",
+          "score": 9,
           "cat": "press",
-          "next": "NEXT_TOPIC"
+          "next": "press_licenses",
+          "who": "Brendan Carr, FCC Chairman"
         }
       ]
     },
@@ -228,14 +228,6 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "I love the First Amendment. Nobody loves it better than me.",
-          "source": "https://trumpwhitehouse.archives.gov/briefings-statements/remarks-president-trump-conservative-political-action-conference/",
-          "date": "2017-02-24",
-          "score": 3,
-          "cat": "press",
-          "next": "NEXT_TOPIC"
-        },
-        {
           "text": "We need a free press. We must have it. It's vital... That's how dictators get started. They get started by suppressing free press.",
           "who": "John McCain, Senator, Arizona",
           "source": "http://www.reuters.com/article/us-usa-trump-mccain-idUSKBN15Y07R",
@@ -243,6 +235,15 @@ registerTopic({
           "score": 0,
           "cat": "press",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "We can do this the easy way or the hard way. These companies can find ways to change conduct and take action, frankly, on Kimmel, or there's going to be additional work for the FCC ahead.",
+          "source": "https://deadline.com/2025/09/fcc-jimmy-kimmel-charlie-kirk-suspect-1236547238/",
+          "date": "2025-09-17",
+          "score": 8,
+          "cat": "press",
+          "next": "NEXT_TOPIC",
+          "who": "Brendan Carr, FCC Chairman"
         }
       ]
     },
@@ -255,14 +256,6 @@ registerTopic({
           "source": "https://www.cnn.com/2025/09/16/media/trump-lawsuit-new-york-times-hnk",
           "date": "2025-09-15",
           "score": 7,
-          "cat": "press",
-          "next": "NEXT_TOPIC"
-        },
-        {
-          "text": "And you ask a nasty question like that? It's called negotiation.",
-          "source": "https://www.foxnews.com/media/trump-blasts-nasty-question-from-oval-office-reporter-whether-he-always-chickens-out-tariffs",
-          "date": "2025-05-28",
-          "score": 4,
           "cat": "press",
           "next": "NEXT_TOPIC"
         },
@@ -282,6 +275,14 @@ registerTopic({
           "date": "2026-02-11",
           "score": 5,
           "cat": "power",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "In a little while, you'll be seeing I'm suing the BBC for putting words in my mouth. Literally, they put words in my mouth. They had me saying things that I never said coming out.",
+          "source": "https://www.cnbc.com/2025/12/16/trump-bbc-panorama-election-defamation-lawsuit.html",
+          "date": "2025-12-15",
+          "score": 6,
+          "cat": "press",
           "next": "NEXT_TOPIC"
         }
       ]

@@ -100,11 +100,20 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "Between Walmart and China they should, as is said, 'EAT THE TARIFFS,' and not charge valued customers ANYTHING. I'll be watching, and so will your customers!",
-          "source": "https://www.cnbc.com/2025/05/17/trump-tells-walmart-to-eat-the-tariffs.html",
-          "date": "2025-05-17",
+          "text": "The Dow is over 50,000 right now. The S&P at almost 7,000 and the Nasdaq smashing records. Americans' 401Ks and retirements are booming. That's what we should be talking about.",
+          "source": "https://www.latimes.com/entertainment-arts/story/2026-02-13/pam-bondi-epstein-files-testimony-unintended-hilarity",
+          "date": "2026-02-11",
+          "score": 4,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Pam Bondi, Attorney General"
+        },
+        {
+          "text": "TO THE MANY INVESTORS COMING INTO THE UNITED STATES AND INVESTING MASSIVE AMOUNTS OF MONEY, MY POLICIES WILL NEVER CHANGE. THIS IS A GREAT TIME TO GET RICH, RICHER THAN EVER BEFORE!!!",
+          "source": "https://www.theguardian.com/us-news/2025/apr/04/trump-tariffs-truth-social",
+          "date": "2025-04-04",
           "score": 7,
-          "cat": "power",
+          "cat": "truth",
           "next": "NEXT_TOPIC"
         }
       ]
@@ -162,28 +171,28 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "But likewise, an old-fashioned term that we use -- groceries.",
-          "source": "https://singjupost.com/transcript-of-president-trump-remarks-at-liberation-day-event-april-2-2025/",
-          "date": "2025-04-02",
-          "score": 2,
-          "cat": "truth",
-          "next": "NEXT_TOPIC"
-        },
-        {
-          "text": "If it drops from $600 to $100, that's a 600% savings. And the President used that mathematical device to illustrate the magnitude of the theft that has been happening against our country and our people.",
-          "who": "Robert F. Kennedy Jr., Health Secretary",
-          "source": "https://www.pbs.org/newshour/politics/fact-checking-rfk-jr-s-claim-theres-more-than-one-way-to-calculate-a-percentage-decrease",
-          "date": "2026-04-24",
-          "score": 3,
-          "cat": "truth",
-          "next": "NEXT_TOPIC"
-        },
-        {
           "text": "Between Walmart and China they should, as is said, 'EAT THE TARIFFS,' and not charge valued customers ANYTHING. I'll be watching, and so will your customers!",
           "source": "https://www.cnbc.com/2025/05/17/trump-tells-walmart-to-eat-the-tariffs.html",
           "date": "2025-05-17",
           "score": 7,
           "cat": "power",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "Access to cheap goods is not the essence of the American Dream.",
+          "source": "https://www.politico.com/news/2025/03/06/bessent-defends-trump-tariffs-00216320",
+          "date": "2025-03-06",
+          "score": 3,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Scott Bessent, Treasury Secretary"
+        },
+        {
+          "text": "...everybody knows that it's far less expensive under Trump than it was under Sleepy Joe Biden, and the prices are way down.",
+          "source": "https://www.yahoo.com/news/articles/cnn-host-skewers-trump-over-235330797.html",
+          "date": "2025-11-08",
+          "score": 8,
+          "cat": "truth",
           "next": "NEXT_TOPIC"
         }
       ]
@@ -216,6 +225,15 @@ registerTopic({
           "score": 7,
           "cat": "press",
           "next": "tariffs_taco"
+        },
+        {
+          "text": "The only reason there could possibly be a recession is because the Biden nonsense that we had to live with.",
+          "source": "https://www.axios.com/2025/03/12/trump-tariffs-lutnick-recession-worth-it",
+          "date": "2025-03-12",
+          "score": 3,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Howard Lutnick, Commerce Secretary"
         }
       ]
     },

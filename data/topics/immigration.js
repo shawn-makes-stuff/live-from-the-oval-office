@@ -42,7 +42,7 @@ registerTopic({
         {
           "text": "We are and always will be a nation of immigrants. We were strangers once, too.",
           "who": "Barack Obama, 44th President",
-          "source": "http://www.whitehouse.gov/the-press-office/2014/11/20/remarks-president-address-nation-immigration",
+          "source": "https://obamawhitehouse.archives.gov/the-press-office/2014/11/20/remarks-president-address-nation-immigration",
           "date": "2014-11-20",
           "score": 0,
           "cat": "dehumanization",
@@ -157,12 +157,21 @@ registerTopic({
           "score": 3,
           "cat": "press",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "If I have to create stories so that the American media actually pays attention to the suffering of the American people, then that's what I'm going to do.",
+          "source": "https://www.theguardian.com/us-news/2024/sep/15/jd-vance-lies-haitian-immigrants",
+          "date": "2024-09-15",
+          "score": 6,
+          "cat": "truth",
+          "next": "immigration_raids",
+          "who": "JD Vance, Vice President"
         }
       ]
     },
     {
       "id": "immigration_raids",
-      "prompt": "'Cheat in elections' -- there is no evidence of that. Meanwhile masked agents without warrants have detained US citizens in Los Angeles, you sent in the Marines, and you have floated the Insurrection Act. Why do federal officers need to hide their faces, and how far does this go?",
+      "prompt": "Your post also said Democrats use these people to 'cheat in elections' -- there is no evidence of that. Meanwhile masked agents without warrants have detained US citizens in Los Angeles, you sent in the Marines, and you have floated the Insurrection Act. Why do federal officers need to hide their faces, and how far does this go?",
       "options": [
         {
           "text": "I am a BIG proponent of ICE wearing masks as they search for, and are forced to deal with, hardened criminals.",
@@ -240,7 +249,7 @@ registerTopic({
     },
     {
       "id": "immigration_ms13",
-      "prompt": "MS-13 -- that is also what you called Kilmar Abrego Garcia, a Maryland father your own government admitted it deported by mistake. The Supreme Court told you to facilitate his return. Why didn't you?",
+      "prompt": "You say you mean MS-13 -- and that is also what you called Kilmar Abrego Garcia, a Maryland father your own government admitted it deported by mistake. The Supreme Court told you to facilitate his return. Why didn't you?",
       "options": [
         {
           "text": "He had MS-13 on his knuckles.",
@@ -288,7 +297,7 @@ registerTopic({
     },
     {
       "id": "immigration_abrego",
-      "prompt": "The tattoo photo was digitally labeled, and a unanimous Supreme Court is not 'lawyers who don't want to do this.' Does every person on American soil get due process before you deport them?",
+      "prompt": "The tattoo photo your team showed was digitally labeled, and a unanimous Supreme Court is not a suggestion. Does every person on American soil get due process before you deport them?",
       "options": [
         {
           "text": "We cannot give everyone a trial, because to do so would take, without exaggeration, 200 years. We would need hundreds of thousands of trials for the hundreds of thousands of Illegals we are sending out of the Country.",
@@ -320,15 +329,6 @@ registerTopic({
           "source": "https://www.npr.org/2025/05/20/nx-s1-5405144/habeas-corpus-noem-dhs-senate",
           "date": "2025-05-20",
           "score": 7,
-          "cat": "power",
-          "next": "NEXT_TOPIC"
-        },
-        {
-          "text": "[He] is not coming back to our country... There was no situation ever where he was going to stay in this country.",
-          "who": "Pam Bondi, Attorney General",
-          "source": "https://thehill.com/homenews/administration/5251491-pam-bondi-kilmar-abrego-garcia-not-coming-back/",
-          "date": "2025-04-16",
-          "score": 6,
           "cat": "power",
           "next": "NEXT_TOPIC"
         }

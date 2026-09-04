@@ -132,7 +132,7 @@ registerTopic({
     },
     {
       "id": "science_ocean",
-      "prompt": "NASA measured a third of an inch of sea-level rise between 2022 and 2023 alone -- more in one year than your figure for 250. Do you stand by that number?",
+      "prompt": "NASA measured a third of an inch of sea-level rise between 2022 and 2023 alone -- more in one year than your figure for 250. Do you stand by that number? And what do you tell the coastal towns already flooding?",
       "options": [
         {
           "text": "You'll have more oceanfront property.",
@@ -151,14 +151,6 @@ registerTopic({
           "next": "science_hurricane"
         },
         {
-          "text": "We'll see what happens.",
-          "source": "https://www.voanews.com/a/trump-catchphrase-for-any-circumstance-we-will-see/4019006.html",
-          "date": "2017-09",
-          "score": 1,
-          "cat": "truth",
-          "next": "NEXT_TOPIC"
-        },
-        {
           "text": "If you've heard it from the president of the United States, obviously it's true.",
           "who": "Karoline Leavitt, White House Press Secretary",
           "source": "https://www.huffpost.com/entry/karoline-leavitt-donald-trump-claim_n_69c4d935e4b081f8eb14f2bc/amp",
@@ -166,12 +158,21 @@ registerTopic({
           "score": 4,
           "cat": "truth",
           "next": "science_hurricane"
+        },
+        {
+          "text": "Over the past century, the world sea level rose by about eight inches. That was in the last century; by the end of this century, it's projected to rise another one to four feet.",
+          "source": "https://obamawhitehouse.archives.gov/the-press-office/2015/05/20/remarks-president-united-states-coast-guard-academy-commencement",
+          "date": "2015-05-20",
+          "score": 0,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Barack Obama, 44th President"
         }
       ]
     },
     {
       "id": "science_clean",
-      "prompt": "Crystal clean -- yet your first orders revived 'beautiful, clean coal,' declared an energy emergency to drill, and, for some reason, deregulated showerheads. What does 'crystal clean' actually mean to you?",
+      "prompt": "Fine words. Your first orders revived 'beautiful, clean coal,' declared an energy emergency to drill, and, for some reason, deregulated showerheads. What does clean actually mean to you?",
       "options": [
         {
           "text": "If you don't get away from this green scam, your country is going to fail.",
@@ -209,7 +210,7 @@ registerTopic({
     },
     {
       "id": "science_wind",
-      "prompt": "Both sides of the picture. You have also said wind turbines cause cancer and drive whales crazy. Is there any evidence for either?",
+      "prompt": "So the science is in dispute. You have also said wind turbines cause cancer and drive whales crazy. Is there any evidence for either?",
       "options": [
         {
           "text": "If you have a windmill anywhere near your house, congratulations, your house just went down 75% in value. And they say the noise causes cancer.",
@@ -247,7 +248,7 @@ registerTopic({
     },
     {
       "id": "science_knows",
-      "prompt": "You said that to California's natural resources secretary while the state was on fire. He said he wished science agreed with you. Does it -- or do you know better than the scientists?",
+      "prompt": "When California's natural resources secretary told you science disagreed, you said it would start getting cooler. Does science know -- or do you know better than the scientists?",
       "options": [
         {
           "text": "OK, well, I don't think science knows, actually.",
@@ -311,6 +312,14 @@ registerTopic({
           "score": 4,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "I got it. I got it. Why don't we nuke them?",
+          "source": "https://www.axios.com/2019/08/25/trump-nuclear-bombs-hurricanes",
+          "date": "2019-08-25",
+          "score": 9,
+          "cat": "truth",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
@@ -341,6 +350,15 @@ registerTopic({
           "score": 1,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "I do not believe it is in the best interest of the American people to eliminate the Federal Emergency Management Agency.",
+          "source": "https://en.wikipedia.org/wiki/Federal_Emergency_Management_Agency",
+          "date": "2025-05-07",
+          "score": 0,
+          "cat": "power",
+          "next": "NEXT_TOPIC",
+          "who": "Cameron Hamilton, acting FEMA Administrator"
         }
       ]
     },
@@ -371,12 +389,20 @@ registerTopic({
           "score": 6,
           "cat": "cronyism",
           "next": "science_tylenol"
+        },
+        {
+          "text": "So showerheads -- you take a shower, the water doesn't come out... So what do you do? You just stand there longer or you take a shower longer? Because my hair -- I don't know about you, but it has to be perfect. Perfect.",
+          "source": "https://www.thesun.co.uk/news/12369436/donald-trump-latest-news-live-updates/",
+          "date": "2020-08-12",
+          "score": 3,
+          "cat": "truth",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
     {
       "id": "science_tylenol",
-      "prompt": "Every major obstetrics body says acetaminophen is the safest option in pregnancy and that untreated fever is the real danger. What should a pregnant woman with a 103-degree fever do tonight?",
+      "prompt": "Every major obstetrics body says acetaminophen is the safest option in pregnancy and that untreated fever is the real danger. What should a pregnant woman with a 103-degree fever do tonight -- and why should she take your word over her doctor's?",
       "options": [
         {
           "text": "If you can't tough it out, if you can't do it, that's what you're gonna have to do. You'll take a Tylenol, but it'll be very sparingly.",
@@ -399,6 +425,14 @@ registerTopic({
           "source": "https://www.cbsnews.com/news/trump-autism-tylenol-medical-experts/",
           "date": "2025-09-22",
           "score": 3,
+          "cat": "truth",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "But with Tylenol, don't take it. Don't take it. And if you can't live, if your fever is so bad, you have to take one because there's no alternative to that. Sadly... there's not an alternative to that.",
+          "source": "https://singjupost.com/transcript-trump-rfk-jr-and-dr-oz-on-autism-rates-and-tylenol/",
+          "date": "2025-09-22",
+          "score": 8,
           "cat": "truth",
           "next": "NEXT_TOPIC"
         }

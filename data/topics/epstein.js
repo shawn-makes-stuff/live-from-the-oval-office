@@ -16,14 +16,6 @@ registerTopic({
           "next": "epstein_promise"
         },
         {
-          "text": "Are you still talking about Jeffrey Epstein? This guy's been talked about for years. Are people still talking about this guy, this creep? That is unbelievable.",
-          "source": "https://www.aljazeera.com/news/2025/7/9/trump-blasts-maga-focus-on-jeffrey-epstein-after-memo-causes-uproar",
-          "date": "2025-07-08",
-          "score": 7,
-          "cat": "press",
-          "next": "epstein_creep"
-        },
-        {
           "text": "These files were made up by Comey, they were made up by Obama, they were made up by the Biden -- and you know, we went through years of that with the Russia, Russia, Russia hoax.",
           "source": "https://en.wikiquote.org/wiki/Donald_Trump",
           "date": "2025-07-15",
@@ -46,13 +38,13 @@ registerTopic({
           "date": "2025-07-15",
           "score": 1,
           "cat": "truth",
-          "next": "epstein_promise"
+          "next": "epstein_creep"
         }
       ]
     },
     {
       "id": "epstein_promise",
-      "prompt": "'No problem with it.' Yet your Justice Department closed its review in July with a two-page memo, no list, and a surveillance video missing a minute. Did you keep that promise?",
+      "prompt": "You said you'd have 'no problem with it.' Yet your Justice Department closed its review in July with a two-page memo, no list, and a surveillance video missing a minute. Did you keep that promise?",
       "options": [
         {
           "text": "It's pretty boring stuff. It's sordid, but it's boring.",
@@ -92,7 +84,7 @@ registerTopic({
     },
     {
       "id": "epstein_creep",
-      "prompt": "'This creep' was your Palm Beach neighbor and, in your own words in 2002, a 'terrific guy' for fifteen years. Why did the two of you fall out?",
+      "prompt": "Then let's talk about the man himself. He was your Palm Beach neighbour for years, and you say he 'stole' workers from your spa -- one of them, Virginia Giuffre, was sixteen. How close were the two of you, and why did you fall out?",
       "options": [
         {
           "text": "For years, I wouldn't talk to Jeffrey Epstein... He stole people that worked for me. I said, 'don't ever do that again.' He did it again. And I threw him out of the place persona non-grata.",
@@ -100,7 +92,7 @@ registerTopic({
           "date": "2025-07-28",
           "score": 3,
           "cat": "truth",
-          "next": "epstein_spa"
+          "next": "epstein_hoax"
         },
         {
           "text": "I never had the privilege of going to his island... a lot of people in Palm Beach were invited to his island.",
@@ -108,38 +100,46 @@ registerTopic({
           "date": "2025-07-28",
           "score": 3,
           "cat": "truth",
-          "next": "epstein_spa"
+          "next": "epstein_hoax"
         },
         {
-          "text": "It's started by Democrats... It's a hoax.",
-          "source": "https://abcnews.com/Politics/trump-jeffrey-epstein-years-including-2024-campaign-trail/story?id=123778541",
-          "date": "2025-07-16",
-          "score": 7,
+          "text": "I've known Jeff for fifteen years. Terrific guy. He's a lot of fun to be with. It is even said that he likes beautiful women as much as I do, and many of them are on the younger side. No doubt about it -- Jeffrey enjoys his social life.",
+          "source": "https://nymag.com/nymetro/news/people/n_7912/",
+          "date": "2002-10-28",
+          "score": 8,
           "cat": "truth",
           "next": "epstein_hoax"
+        },
+        {
+          "text": "I have a great spa, one of the best spas in the world in Mar-a-Lago. And people were taken out of the spa.",
+          "source": "https://time.com/7306371/trump-epstein-mar-a-lago-virginia-giuffre/",
+          "date": "2025-07-29",
+          "score": 3,
+          "cat": "cronyism",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "Epstein was a Democrat, and he is the Democrat's problem, not the Republican's problem! Ask Bill Clinton, Reid Hoffman, and Larry Summers about Epstein, they know all about him, don't waste your time with Trump. I have a Country to run!",
+          "source": "https://www.reuters.com/world/us/trump-says-he-will-ask-justice-department-probe-epstein-ties-with-bill-clinton-2025-11-14/",
+          "date": "2025-11-14",
+          "score": 7,
+          "cat": "truth",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "I can't believe you're asking a question on Epstein at a time like this, where we're having some of the greatest success and also tragedy, with what happened in Texas. It just seems like a desecration.",
+          "source": "https://time.com/7301051/trump-jeffrey-epstein-bondi/",
+          "date": "2025-07-08",
+          "score": 7,
+          "cat": "press",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
     {
       "id": "epstein_madeup",
-      "prompt": "Made up by Comey, Obama and Biden? Your own FBI seized those files in 2019, during your first term, under your own attorney general. Who exactly fabricated them?",
+      "prompt": "Made up by Comey, Obama and Biden? Your own FBI seized those files in 2019, during your first term, under your own attorney general. Who exactly fabricated them -- and what is actually in them?",
       "options": [
-        {
-          "text": "It's started by Democrats... It's a hoax.",
-          "source": "https://abcnews.com/Politics/trump-jeffrey-epstein-years-including-2024-campaign-trail/story?id=123778541",
-          "date": "2025-07-16",
-          "score": 7,
-          "cat": "truth",
-          "next": "epstein_hoax"
-        },
-        {
-          "text": "It's pretty boring stuff. It's sordid, but it's boring.",
-          "source": "https://abcnews.com/Politics/trump-jeffrey-epstein-years-including-2024-campaign-trail/story?id=123778541",
-          "date": "2025-07-15",
-          "score": 3,
-          "cat": "truth",
-          "next": "epstein_boring"
-        },
         {
           "text": "Did Bill Clinton go to the island? That's the question.",
           "source": "https://abcnews.com/Politics/trump-jeffrey-epstein-years-including-2024-campaign-trail/story?id=123778541",
@@ -156,6 +156,22 @@ registerTopic({
           "score": 0,
           "cat": "truth",
           "next": "epstein_boring"
+        },
+        {
+          "text": "Why didn't these Radical Left Lunatics release the Epstein Files? If there was ANYTHING in there that could have hurt the MAGA Movement, why didn't they use it?",
+          "source": "https://www.cnn.com/2025/07/12/politics/bondi-epstein-investigation-trump",
+          "date": "2025-07-12",
+          "score": 7,
+          "cat": "truth",
+          "next": "epstein_hoax"
+        },
+        {
+          "text": "I was never on Epstein's Plane.",
+          "source": "https://www.bbc.com/news/articles/c74xgp81pqgo",
+          "date": "2025-12-23",
+          "score": 6,
+          "cat": "truth",
+          "next": "epstein_hoax"
         }
       ]
     },
@@ -180,14 +196,6 @@ registerTopic({
           "next": "epstein_maxwell"
         },
         {
-          "text": "These files were made up by Comey, they were made up by Obama, they were made up by the Biden -- and you know, we went through years of that with the Russia, Russia, Russia hoax.",
-          "source": "https://en.wikiquote.org/wiki/Donald_Trump",
-          "date": "2025-07-15",
-          "score": 8,
-          "cat": "truth",
-          "next": "epstein_hoax"
-        },
-        {
           "text": "[He] knows what his supporters want. It's transparency, and he has given them that on all accounts when it comes to everything this administration has done.",
           "who": "Karoline Leavitt, White House Press Secretary",
           "source": "https://www.yahoo.com/news/opposite-reality-critics-torch-karoline-090042018.html",
@@ -204,12 +212,20 @@ registerTopic({
           "score": 4,
           "cat": "power",
           "next": "epstein_maxwell"
+        },
+        {
+          "text": "Let these weaklings continue forward and do the Democrats work, don't even think about talking of our incredible and unprecedented success, because I don't want their support anymore!",
+          "source": "https://www.mediaite.com/media/news/trump-melts-down-over-epstein-hoax-slams-supporters-who-believe-this-bullsht-i-dont-want-their-support-anymore/",
+          "date": "2025-07-16",
+          "score": 9,
+          "cat": "truth",
+          "next": "epstein_hoax"
         }
       ]
     },
     {
       "id": "epstein_boring",
-      "prompt": "'Boring.' The files describe the trafficking of underage girls. One victim, Virginia Giuffre, said she was recruited as a teenager from your own Mar-a-Lago spa. Boring?",
+      "prompt": "You have called this 'pretty boring stuff.' The files describe the trafficking of underage girls. One victim, Virginia Giuffre, said she was recruited as a teenager from your own Mar-a-Lago spa. Boring?",
       "options": [
         {
           "text": "I think she worked at the spa. I think so. I think that was one of the people, yeah. He stole her.",
@@ -260,22 +276,6 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "Are you still talking about Jeffrey Epstein? This guy's been talked about for years. Are people still talking about this guy, this creep? That is unbelievable.",
-          "source": "https://www.aljazeera.com/news/2025/7/9/trump-blasts-maga-focus-on-jeffrey-epstein-after-memo-causes-uproar",
-          "date": "2025-07-08",
-          "score": 7,
-          "cat": "press",
-          "next": "NEXT_TOPIC"
-        },
-        {
-          "text": "Did Bill Clinton go to the island? That's the question.",
-          "source": "https://abcnews.com/Politics/trump-jeffrey-epstein-years-including-2024-campaign-trail/story?id=123778541",
-          "date": "2019-08",
-          "score": 5,
-          "cat": "truth",
-          "next": "NEXT_TOPIC"
-        },
-        {
           "text": "The hoax is the Democrats pretending to care about victims of crime... The Democrats view the story as nothing more than an attempt to distract from the accomplishments and achievements of this administration.",
           "who": "Karoline Leavitt, White House Press Secretary",
           "source": "https://www.youtube.com/watch?v=KKmbWwM7-Cw",
@@ -283,35 +283,21 @@ registerTopic({
           "score": 5,
           "cat": "truth",
           "next": "NEXT_TOPIC"
-        }
-      ]
-    },
-    {
-      "id": "epstein_spa",
-      "prompt": "You say Epstein 'stole' spa workers from you. Virginia Giuffre was sixteen when Ghislaine Maxwell approached her at that spa. You banned him for poaching staff -- did you ever report what he was doing with them?",
-      "options": [
+        },
         {
-          "text": "I have a great spa, one of the best spas in the world in Mar-a-Lago. And people were taken out of the spa.",
-          "source": "https://time.com/7306371/trump-epstein-mar-a-lago-virginia-giuffre/",
-          "date": "2025-07-29",
-          "score": 3,
+          "text": "My friends will get hurt.",
+          "source": "https://uk.news.yahoo.com/trump-yelled-friends-hurt-marjorie-181823942.html",
+          "date": "2025-12-29",
+          "score": 9,
           "cat": "cronyism",
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "I think she worked at the spa. I think so. I think that was one of the people, yeah. He stole her.",
-          "source": "https://time.com/7306371/trump-epstein-mar-a-lago-virginia-giuffre/",
-          "date": "2025-07-29",
-          "score": 5,
-          "cat": "dehumanization",
-          "next": "NEXT_TOPIC"
-        },
-        {
-          "text": "I can't believe you're asking a question on Epstein at a time like this, where we're having some of the greatest success and also tragedy, with what happened in Texas. It just seems like a desecration.",
-          "source": "https://time.com/7301051/trump-jeffrey-epstein-bondi/",
-          "date": "2025-07-08",
-          "score": 7,
-          "cat": "press",
+          "text": "Merry Christmas to all, including the many Sleazebags who loved Jeffrey Epstein, gave him bundles of money, went to his Island, attended his parties, and thought he was the greatest guy on earth...",
+          "source": "https://www.yahoo.com/news/articles/sleazebags-trump-wishes-merry-christmas-012444246.html",
+          "date": "2025-12-26",
+          "score": 8,
+          "cat": "truth",
           "next": "NEXT_TOPIC"
         }
       ]
@@ -321,14 +307,6 @@ registerTopic({
       "prompt": "You signed the Epstein Files Transparency Act after fighting the discharge petition for months -- even summoning Lauren Boebert to the Situation Room. Then the House voted 427 to 1. Why the reversal?",
       "options": [
         {
-          "text": "Perhaps the truth about these Democrats, and their associations with Jeffrey Epstein, will soon be revealed, because I HAVE JUST SIGNED THE BILL TO RELEASE THE EPSTEIN FILES!",
-          "source": "https://thehill.com/homenews/5614156-trump-signs-epstein-transparency-act/",
-          "date": "2025-11-19",
-          "score": 3,
-          "cat": "truth",
-          "next": "NEXT_TOPIC"
-        },
-        {
           "text": "House Republicans should vote to release the Epstein files, because we have nothing to hide, and it's time to move on from this Democrat Hoax perpetrated by Radical Left Lunatics...",
           "source": "https://www.cbsnews.com/news/epstein-files-house-november-vote/",
           "date": "2025-11-16",
@@ -337,18 +315,35 @@ registerTopic({
           "next": "NEXT_TOPIC"
         },
         {
-          "text": "It's started by Democrats... It's a hoax.",
-          "source": "https://abcnews.com/Politics/trump-jeffrey-epstein-years-including-2024-campaign-trail/story?id=123778541",
-          "date": "2025-07-16",
+          "text": "Sure, I would. Let the Senate look at it, let anybody look at it, but don't talk about it too much, because, honestly, I don't want to take it away from us.",
+          "source": "https://www.cnn.com/politics/live-news/trump-epstein-venezuela-news-11-17-25",
+          "date": "2025-11-17",
+          "score": 4,
+          "cat": "truth",
+          "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "We're on one Team, MAGA, and I don't like what's happening. We have a PERFECT Administration... and 'selfish people' are trying to hurt it, all over a guy who never dies, Jeffrey Epstein... somebody that nobody cares about.",
+          "source": "https://www.cnn.com/2025/07/12/politics/bondi-epstein-investigation-trump",
+          "date": "2025-07-12",
           "score": 7,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "The Epstein rape and pedophile network must be exposed... Release all the Epstein information by any means possible.",
+          "source": "https://www.huffpost.com/entry/marjorie-taylor-greene-not-suicidal_n_68da278ce4b0a3d9991e0187",
+          "date": "2025-09-29",
+          "score": 1,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "Marjorie Taylor Greene, Representative (R-GA)"
         }
       ]
     },
     {
       "id": "epstein_maxwell",
-      "prompt": "'Allowed to do it.' A week after Ghislaine Maxwell met your deputy attorney general, she was moved from a Florida prison to a minimum-security camp in Texas. Is a pardon for a convicted child sex trafficker on the table? And the Wall Street Journal says a birthday letter to Epstein carries your signature.",
+      "prompt": "Let's talk about that pardon. A week after Ghislaine Maxwell met your deputy attorney general, she was moved from a Florida prison to a minimum-security camp in Texas. Is a pardon for a convicted child sex trafficker on the table? And the Wall Street Journal says a birthday letter to Epstein carries your signature.",
       "options": [
         {
           "text": "I didn't know about it at all, nope. I read about it just like you did.",

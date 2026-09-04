@@ -56,14 +56,6 @@ registerTopic({
           "next": "pv_walz"
         },
         {
-          "text": "I think to a certain extent it's Biden's fault and Harris's fault... They're saying I'm a threat to democracy... you know that can get assassins or potential assassins going... Maybe that bullet is because of their rhetoric.",
-          "source": "https://archive.ph/mamCT",
-          "date": "2024-08-28",
-          "score": 7,
-          "cat": "violence",
-          "next": "pv_butler"
-        },
-        {
           "text": "Look, there's no place in America for this kind of violence. It's sick. It's sick. It's one of the reasons we have to unite this country... Everybody must condemn it.",
           "source": "https://www.nytimes.com/2024/07/13/us/politics/biden-trump-rally.html",
           "date": "2024-07-13",
@@ -71,6 +63,22 @@ registerTopic({
           "cat": "violence",
           "next": "NEXT_TOPIC",
           "who": "Joe Biden, 46th President"
+        },
+        {
+          "text": "We pledge to you that we will root out the Communists, Marxists, Fascists, and Radical Left Thugs that live like vermin within the confines of our Country.",
+          "source": "https://abcnews.com/Politics/trump-compares-political-opponents-vermin-root-alarming-historians/story?id=104847748",
+          "date": "2023-11-11",
+          "score": 9,
+          "cat": "dehumanization",
+          "next": "pv_butler"
+        },
+        {
+          "text": "I don't want this to happen, and that's what the expression put out last night means.",
+          "source": "https://www.lbc.co.uk/article/donald-trump-twitter-looters-shot-george-floyd-DWybGn_2/",
+          "date": "2020-05-29",
+          "score": 2,
+          "cat": "truth",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
@@ -102,6 +110,14 @@ registerTopic({
           "cat": "violence",
           "next": "NEXT_TOPIC",
           "who": "Mike Pence, former Vice President"
+        },
+        {
+          "text": "I hate my opponent, and I don't want the best for them.",
+          "source": "https://web.archive.org/web/20250922075233/https://www.politico.com/news/2025/09/21/trump-lionizes-charlie-kirk-warns-of-dangers-to-america-00574586",
+          "date": "2025-09-21",
+          "score": 7,
+          "cat": "violence",
+          "next": "pv_antifa"
         }
       ]
     },
@@ -134,6 +150,15 @@ registerTopic({
           "cat": "power",
           "next": "pv_hate",
           "who": "Pam Bondi, Attorney General"
+        },
+        {
+          "text": "The organized doxxing campaigns, the organized riots, the organized street violence, the organized campaigns of dehumanization, vilification, posting people's addresses... It is a vast domestic terror movement.",
+          "source": "https://www.realclearpolitics.com/video/2025/09/15/stephen_miller_we_will_uproot_and_dismantle_terrorist_networks_that_led_to_charlie_kirk_assassination.html",
+          "date": "2025-09-15",
+          "score": 8,
+          "cat": "power",
+          "next": "pv_hate",
+          "who": "Stephen Miller, White House Deputy Chief of Staff"
         }
       ]
     },
@@ -199,19 +224,27 @@ registerTopic({
           "who": "Pam Bondi, Attorney General"
         },
         {
-          "text": "Democrats want Republicans dead. They've already started the killings.",
-          "source": "https://web.archive.org/web/2022/https://www.businessinsider.in/politics/world/news/marjorie-taylor-greene-deceptively-tells-trump-rally-that-democrat-killings-of-republicans-have-already-started/articleshow/94601077.cms",
-          "date": "2022-10-02",
-          "score": 9,
-          "cat": "violence",
+          "text": "Antifa is not a group or an organization. It's a movement or an ideology.",
+          "source": "https://apnews.com/article/donald-trump-ap-top-news-elections-james-comey-politics-bdd3b6078e9efadcfcd0be4b65f2362e",
+          "date": "2020-09-17",
+          "score": 0,
+          "cat": "truth",
           "next": "NEXT_TOPIC",
-          "who": "Marjorie Taylor Greene, Rep. (R-GA)"
+          "who": "Christopher Wray, FBI Director"
+        },
+        {
+          "text": "Buffalo protester shoved by Police could be an ANTIFA provocateur. 75 year old Martin Gugino was pushed away after appearing to scan police communications in order to black out the equipment. Could be a set up?",
+          "source": "https://web.archive.org/web/2020/https://www.unilad.co.uk/news/trump-accuses-75-year-old-knocked-down-by-buffalo-police-of-faking-fall/",
+          "date": "2020-06-09",
+          "score": 8,
+          "cat": "violence",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
     {
       "id": "pv_hate",
-      "prompt": "Your Attorney General says the Justice Department will 'target' hate speech, and you told a reporter you would go after him for hate. Is criticizing this administration now a crime?",
+      "prompt": "Your Attorney General says the Justice Department will 'target' hate speech, and you told a reporter you would go after him for hate. Is criticizing this administration now a crime -- and where do you draw the line between speech and violence?",
       "options": [
         {
           "text": "These monsters, all controlled and coordinated by the DOJ and Radical Left Lunatics, are Criminalizing Political Speech, a total SHUTDOWN OF DEMOCRACY!",
@@ -238,12 +271,20 @@ registerTopic({
           "cat": "violence",
           "next": "NEXT_TOPIC",
           "who": "Nancy Pelosi, former Speaker"
+        },
+        {
+          "text": "They give me only bad publicity or press. They're getting a license, I think maybe their license should be taken away. It's up to Brendan Carr.",
+          "source": "https://www.pbs.org/newshour/politics/listen-trump-calls-for-licenses-of-tv-networks-that-give-him-bad-publicity-to-be-revoked",
+          "date": "2025-09-18",
+          "score": 9,
+          "cat": "press",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
     {
       "id": "pv_walz",
-      "prompt": "In June a gunman murdered Minnesota's former House Speaker Melissa Hortman and her husband in their home. You never called Governor Walz. Why not?",
+      "prompt": "In June a gunman murdered Minnesota's former House Speaker Melissa Hortman and her husband in their home. You never called Governor Walz. Why not -- and was the murder of a Democrat your tragedy too?",
       "options": [
         {
           "text": "I think the governor of Minnesota is so whacked out. I'm not calling him. Why would I call him? I could call and say, 'Hi, how you doing?' Uh, the guy doesn't have a clue. He's a mess. I could be nice and call, but why waste time?",
@@ -270,6 +311,14 @@ registerTopic({
           "cat": "violence",
           "next": "NEXT_TOPIC",
           "who": "Spencer Cox, Governor of Utah"
+        },
+        {
+          "text": "Our Attorney General, Pam Bondi, and the FBI, are investigating the situation, and they will be prosecuting anyone involved to the fullest extent of the law. Such horrific violence will not be tolerated in the United States of America.",
+          "source": "https://apnews.com/article/minnesota-lawmakers-shot-d7983e1e4f1a7573a487cab1a98cd172",
+          "date": "2025-06-14",
+          "score": 3,
+          "cat": "violence",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
@@ -301,12 +350,21 @@ registerTopic({
           "score": 2,
           "cat": "violence",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "The Internet remains undefeated.",
+          "source": "https://www.cnn.com/2022/10/31/politics/donald-trump-jr-paul-pelosi-reaction/index.html",
+          "date": "2022-10-31",
+          "score": 9,
+          "cat": "violence",
+          "next": "NEXT_TOPIC",
+          "who": "Donald Trump Jr."
         }
       ]
     },
     {
       "id": "pv_butler",
-      "prompt": "You were shot at in Butler, Pennsylvania. Bleeding, you raised a fist and shouted 'Fight!' What did surviving an assassin's bullet teach you about political violence?",
+      "prompt": "You were shot at in Butler, Pennsylvania. Bleeding, you raised a fist and shouted 'Fight!' What did surviving an assassin's bullet teach you about political violence -- and who, in your view, are its real victims?",
       "options": [
         {
           "text": "Fight! Fight! Fight!",
@@ -331,6 +389,15 @@ registerTopic({
           "score": 2,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "We hear... more and more talk about violence as an acceptable political tool in this country. It's not. It can never be an acceptable tool... There is no place for political violence in America. Period. None. Ever.",
+          "source": "https://bidenwhitehouse.archives.gov/briefing-room/speeches-remarks/2022/09/01/remarks-by-president-bidenon-the-continued-battle-for-the-soul-of-the-nation/",
+          "date": "2022-09-01",
+          "score": 0,
+          "cat": "violence",
+          "next": "NEXT_TOPIC",
+          "who": "Joe Biden, 46th President"
         }
       ]
     }

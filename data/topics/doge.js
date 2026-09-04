@@ -43,7 +43,7 @@ registerTopic({
     },
     {
       "id": "doge_approval",
-      "prompt": "'Without our approval.' You approved giving the world's richest man -- a federal contractor with billions in SpaceX and Tesla deals -- access to the Treasury payment system. How is that not a conflict of interest?",
+      "prompt": "'Without our approval.' You approved giving the world's richest man -- a federal contractor with billions in SpaceX and Tesla deals -- access to the Treasury payment system. How is that not a conflict of interest -- and what was he sent in there to find?",
       "options": [
         {
           "text": "If there's conflict, then we won't let him get near it.",
@@ -107,6 +107,14 @@ registerTopic({
           "score": 7,
           "cat": "cronyism",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "I just want people to know that you can't be penalized for being a patriot.",
+          "source": "https://abcnews.com/Politics/trump-checks-teslas-white-house-musks-auto-company/story?id=119683027",
+          "date": "2025-03-11",
+          "score": 6,
+          "cat": "cronyism",
+          "next": "NEXT_TOPIC"
         }
       ]
     },
@@ -151,7 +159,7 @@ registerTopic({
     },
     {
       "id": "doge_aggressive",
-      "prompt": "'More aggressive.' By then he had already frozen USAID and fired probationary workers by the thousand. What did 'more aggressive' look like in your mind?",
+      "prompt": "'More aggressive.' By then he had already frozen USAID and fired probationary workers by the thousand. What did 'more aggressive' look like in your mind -- and where were the limits?",
       "options": [
         {
           "text": "One person is listed at 360 years of age -- more than 100 years older than our country.",
@@ -190,7 +198,7 @@ registerTopic({
     },
     {
       "id": "doge_ss",
-      "prompt": "You told a joint session of Congress that millions of 140-year-olds are on Social Security. The Social Security Administration says that is a database quirk -- almost none of them are being paid a cent. Do you stand by the number, and is Elon staying on to find more?",
+      "prompt": "You told a joint session of Congress that millions of 140-year-olds are on Social Security. The Social Security Administration says that is a database quirk -- almost none of them are being paid a cent. Do you stand by the number -- and what happens to Social Security, and to Elon, next?",
       "options": [
         {
           "text": "3.47 million people from ages 120 to 129, 3.9 million people from ages 130 to 139, 3.5 million people from ages 140 to 149.",
@@ -229,7 +237,7 @@ registerTopic({
     },
     {
       "id": "doge_email",
-      "prompt": "'Nobody knows they work for the government.' The 'five things you did this week' email went to two million people, and your own Pentagon and FBI told their staff to ignore it. Was that genius, or chaos?",
+      "prompt": "'Nobody knows they work for the government.' The 'five things you did this week' email went to two million people, and your own Pentagon and FBI told their staff to ignore it. Was that genius, or chaos -- and did anyone actually read two million replies?",
       "options": [
         {
           "text": "There was a lot of genius in sending it.",
@@ -254,6 +262,15 @@ registerTopic({
           "score": 1,
           "cat": "truth",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "The email request was utterly trivial, as the standard for passing the test was to type some words and press send!",
+          "source": "https://www.nbcnews.com/politics/doge/hhs-warns-responses-elon-musks-email-may-read-malign-foreign-actors-rcna193553",
+          "date": "2025-02-24",
+          "score": 6,
+          "cat": "truth",
+          "next": "doge_shutdown",
+          "who": "Elon Musk, DOGE adviser"
         }
       ]
     },
@@ -322,6 +339,14 @@ registerTopic({
           "score": 2,
           "cat": "cronyism",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "He's going to be building a very big plant in the United States. He has to. Because we help him, so he has to help us.",
+          "source": "https://www.youtube.com/watch?v=gxEwTFJG1DQ",
+          "date": "2020-01-22",
+          "score": 6,
+          "cat": "cronyism",
+          "next": "doge_lostmind"
         }
       ]
     },
@@ -352,6 +377,15 @@ registerTopic({
           "score": 3,
           "cat": "cronyism",
           "next": "NEXT_TOPIC"
+        },
+        {
+          "text": "If American democracy can survive ten years of Greta Thunberg's scolding you guys can survive a few months of Elon Musk.",
+          "source": "https://www.spectator.co.uk/article/jd-vance-what-i-worry-about-is-the-threat-from-within/",
+          "date": "2025-02-14",
+          "score": 3,
+          "cat": "truth",
+          "next": "NEXT_TOPIC",
+          "who": "JD Vance, Vice President"
         }
       ]
     }
