@@ -4,9 +4,6 @@
 
 ![Title screen](docs/screenshot.png)
 
-Most lines are Trump's. Cabinet members and allies (Hegseth, Rubio, Bondi, Noem, Leavitt, Vance, RFK Jr., Musk, Greene, Graham, Johnson, Cruz) supply the absurd end; Obama, Biden, the Clintons, Sanders, McCain, Bush, Romney, Pence, Cheney, Pelosi and Rand Paul supply the tame end. Speakers are not labelled in-game; the source link on each answer tells you who said it and where. Some quotes are lifted out of context for the joke.
-
-![An interview question](docs/interview.png)
 
 **Play:** open `index.html` (no build step, works from `file://` and GitHub Pages).
 
@@ -18,18 +15,6 @@ Most lines are Trump's. Cabinet members and allies (Hegseth, Rubio, Bondi, Noem,
 - Settings (gear icon): text speed (incl. instant), speech / music / SFX volume, mute. `Enter` skips the typing, `1`-`4` pick answers. Settings persist in localStorage.
 - Procedural breaking-news music and sound effects via Web Audio; no asset files.
 
-## Files
-| Path | What |
-|---|---|
-| `index.html`, `styles.css` | markup and theme |
-| `game.js` | engine: flow, typing, scoring, results |
-| `audio.js` | music loop, blips, clicks, stings |
-| `data/core.js` | openings, finals, meltdown, endings |
-| `data/news.js` | ticker headlines |
-| `data/topics/*.js` | one topic tree per file |
-| `tools/validate.js` | schema + graph check for topics |
-| `tools/checksources.js` | fetches every source URL and greps it for the quote |
-| `tools/import.js` | wraps topic JSON as `data/topics/*.js` |
 
 ## Adding content
 See `CONTENT_GUIDE.md`. Short version: real quotes only, one source URL each, optional `who` for non-Trump speakers, the question must read as something every option under it answers, run `node tools/validate.js` and `node tools/checksources.js` before opening a PR. Sources that return 403/406 to bots (Reuters, The Hill, Forbes, RealClearPolitics) are listed in the checker report as `HTTP`; confirm those by hand.
